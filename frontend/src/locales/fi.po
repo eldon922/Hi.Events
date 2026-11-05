@@ -145,7 +145,7 @@ msgid "{0} left"
 msgstr "{0} jäljellä"
 
 #: src/components/layouts/AppLayout/Sidebar/index.tsx:100
-#: src/components/layouts/AuthLayout/AuthShell.tsx:153
+#: src/components/layouts/AuthLayout/AuthShell.tsx:152
 msgid "{0} logo"
 msgstr "{0}-logo"
 
@@ -930,6 +930,10 @@ msgstr "Muutama nopea vaihe ja olet valmis myymään."
 #: src/components/routes/event/HomepageDesigner/LayoutPicker/index.tsx:26
 msgid "A focused reading column. Tickets appear wherever you place them in Sections."
 msgstr "Keskittynyt lukusarake. Liput näkyvät siellä, mihin sijoitat ne Osiot-kohdassa."
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:40
+msgid "A free promotion tool for your event."
+msgstr "Ilmainen työkalu tapahtumasi markkinointiin."
 
 #: src/components/routes/event/HomepageDesigner/SectionsEditor/SectionContentEditor.tsx:238
 msgid "A gallery can have up to {MAX_GALLERY_PHOTOS} photos."
@@ -1738,6 +1742,11 @@ msgstr "Ylläpitohallintapaneeli"
 msgid "Admins"
 msgstr "Järjestelmänvalvojat"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:50
+#: src/components/layouts/AuthLayout/AuthShell.tsx:72
+msgid "Admit One"
+msgstr "Yhden hengen sisäänpääsy"
+
 #: src/components/forms/ProductForm/index.tsx:228
 msgid "Admits attendees to your event"
 msgstr "Antaa osallistujille pääsyn tapahtumaasi"
@@ -1762,7 +1771,7 @@ msgstr "Kumppani luotu onnistuneesti"
 msgid "Affiliate deleted successfully"
 msgstr "Kumppani poistettu onnistuneesti"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:21
+#: src/components/layouts/AuthLayout/AuthShell.tsx:20
 msgid "Affiliate program"
 msgstr "Kumppaniohjelma"
 
@@ -2539,7 +2548,7 @@ msgstr "Haluatko varmasti poistaa tämän mallineen? Tätä toimintoa ei voi per
 msgid "Are you sure you want to delete this webhook?"
 msgstr "Haluatko varmasti poistaa tämän webhookin?"
 
-#: src/components/layouts/Checkout/index.tsx:523
+#: src/components/layouts/Checkout/index.tsx:521
 msgid "Are you sure you want to leave?"
 msgstr "Haluatko varmasti poistua?"
 
@@ -2744,7 +2753,7 @@ msgstr "Osallistumis- ja sisäänkirjautumisasteet kaikissa tapahtumissa"
 msgid "attendee"
 msgstr "osallistuja"
 
-#: src/components/common/AttendeeTicket/index.tsx:101
+#: src/components/common/AttendeeTicket/index.tsx:100
 #: src/components/common/QuestionsTable/index.tsx:473
 #: src/components/routes/product-widget/CollectInformation/index.tsx:670
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:365
@@ -2927,7 +2936,7 @@ msgstr "vapaana"
 msgid "Available"
 msgstr "Saatavilla"
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "Available once payment completes"
 msgstr "Saatavilla, kun maksu on suoritettu"
 
@@ -2963,7 +2972,7 @@ msgstr "Odottaa maksua"
 
 #: src/components/layouts/CheckIn/AttendeeDetailSheet.tsx:117
 #: src/components/layouts/CheckIn/tabs/SearchTab.tsx:225
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/modals/ProductPurchasesModal/index.tsx:79
 #: src/components/modals/ProductPurchasesModal/index.tsx:209
 #: src/components/modals/ProductPurchasesModal/index.tsx:247
@@ -3012,8 +3021,8 @@ msgstr "Takaisin tileihin"
 msgid "Back to Event"
 msgstr "Takaisin tapahtumaan"
 
-#: src/components/layouts/Checkout/index.tsx:362
-#: src/components/layouts/Checkout/index.tsx:363
+#: src/components/layouts/Checkout/index.tsx:360
+#: src/components/layouts/Checkout/index.tsx:361
 msgid "Back to event page"
 msgstr "Takaisin tapahtumasivulle"
 
@@ -3676,7 +3685,7 @@ msgstr "Peruuttaminen peruuttaa kaikki tähän tilaukseen liittyvät osallistuja
 
 #: src/components/common/AttendeeStatusBadge/index.tsx:28
 #: src/components/common/AttendeeTable/index.tsx:286
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/common/OrdersTable/index.tsx:378
 #: src/components/common/OrderStatusBadge/index.tsx:9
 #: src/components/common/WaitlistTable/index.tsx:29
@@ -3732,7 +3741,7 @@ msgstr "Kapasiteetin kohdistus poistettu onnistuneesti"
 msgid "Capacity assignments"
 msgstr "Kapasiteettimääritykset"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:27
+#: src/components/layouts/AuthLayout/AuthShell.tsx:26
 msgid "Capacity management"
 msgstr "Kapasiteetin hallinta"
 
@@ -3997,7 +4006,7 @@ msgstr "Kirjaa ulos"
 msgid "Check out this event: {0}"
 msgstr "Tutustu tähän tapahtumaan: {0}"
 
-#: src/components/layouts/Checkout/index.tsx:428
+#: src/components/layouts/Checkout/index.tsx:426
 msgid "Check out this event!"
 msgstr "Tutustu tähän tapahtumaan!"
 
@@ -4180,7 +4189,7 @@ msgstr "Tarkistetaan…"
 msgid "Checkout"
 msgstr "Kassa"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Checkout · step {stepNumber} of {stepCount}"
 msgstr "Kassa · vaihe {stepNumber}/{stepCount}"
 
@@ -4501,8 +4510,8 @@ msgstr "sulje"
 #: src/components/layouts/EventHomepage/Lineup/SessionModal.tsx:86
 #: src/components/layouts/EventHomepage/Sections/GallerySection.tsx:122
 #: src/components/modals/CreateEventModal/index.tsx:288
-#: src/components/modals/JoinWaitlistModal/index.tsx:117
-#: src/components/modals/JoinWaitlistModal/index.tsx:144
+#: src/components/modals/JoinWaitlistModal/index.tsx:115
+#: src/components/modals/JoinWaitlistModal/index.tsx:142
 #: src/components/modals/RefundOrderModal/index.tsx:172
 #: src/components/routes/event/OccurrencesTab/RecurrenceScheduleDrawer/index.tsx:892
 #: src/components/routes/product-widget/SelectProducts/index.tsx:1245
@@ -5091,7 +5100,7 @@ msgstr "Konversio"
 msgid "Cookie settings"
 msgstr "Evästeasetukset"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/common/TwoFactor/RecoveryCodesDisplay.tsx:84
@@ -5220,7 +5229,7 @@ msgstr "Kopioi avain"
 msgid "Copy link"
 msgstr "Kopioi linkki"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/modals/ShareModal/index.tsx:171
 msgid "Copy Link"
 msgstr "Kopioi linkki"
@@ -5821,7 +5830,7 @@ msgstr "Kaarevat rivit ja parveke."
 msgid "Custom"
 msgstr "Mukautettu"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:14
+#: src/components/layouts/AuthLayout/AuthShell.tsx:13
 msgid "Custom branding"
 msgstr "Mukautettu brändäys"
 
@@ -5845,7 +5854,7 @@ msgstr "Mukautettu kartta-URL"
 msgid "Custom order and ticket emails for this event"
 msgstr "Tämän tapahtuman mukautetut tilaus- ja lippusähköpostit"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:23
+#: src/components/layouts/AuthLayout/AuthShell.tsx:22
 msgid "Custom questions"
 msgstr "Mukautetut kysymykset"
 
@@ -6009,7 +6018,7 @@ msgctxt "Lineup spreadsheet column"
 msgid "Date"
 msgstr "Päivämäärä"
 
-#: src/components/common/AttendeeTicket/index.tsx:110
+#: src/components/common/AttendeeTicket/index.tsx:109
 #: src/components/routes/event/OccurrencesTab/OccurrenceEditModal/index.tsx:443
 msgid "Date & Time"
 msgstr "Päivämäärä ja aika"
@@ -6666,6 +6675,10 @@ msgstr "Lahjoitus"
 msgid "Done"
 msgstr "Valmis"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:57
+msgid "Door"
+msgstr "Ovi"
+
 #: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
 msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
 msgstr "Ovihenkilökunta voi avata tämän linkin tai skannata tämän QR-koodin puhelimellaan. Käsittele sitä kuin jaettua salasanaa."
@@ -6706,7 +6719,7 @@ msgstr "Lataa CSV"
 msgid "Download invoice"
 msgstr "Lataa lasku"
 
-#: src/components/layouts/Checkout/index.tsx:450
+#: src/components/layouts/Checkout/index.tsx:448
 msgid "Download Invoice"
 msgstr "Lataa lasku"
 
@@ -6722,7 +6735,7 @@ msgstr "Lataa myynti-, osallistuja- ja talousraportit kaikista valmiista tilauks
 msgid "Download spreadsheet (.xlsx)"
 msgstr "Lataa taulukko (.xlsx)"
 
-#: src/components/layouts/Checkout/index.tsx:240
+#: src/components/layouts/Checkout/index.tsx:238
 #: src/hooks/useOrderActions.tsx:80
 msgid "Downloading Invoice"
 msgstr "Ladataan laskua"
@@ -7190,7 +7203,7 @@ msgstr "Kelpoiset sisäänkirjautumislistat"
 #: src/components/common/QuestionsTable/index.tsx:264
 #: src/components/forms/AffiliateForm/index.tsx:89
 #: src/components/modals/InviteUserModal/index.tsx:61
-#: src/components/modals/JoinWaitlistModal/index.tsx:190
+#: src/components/modals/JoinWaitlistModal/index.tsx:188
 #: src/components/modals/ManageAttendeeModal/index.tsx:174
 #: src/components/modals/ManageOrderModal/index.tsx:141
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:165
@@ -7212,7 +7225,7 @@ msgstr "Sähköposti"
 msgid "Email & Notification Settings"
 msgstr "Sähköposti- ja ilmoitusasetukset"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:19
+#: src/components/layouts/AuthLayout/AuthShell.tsx:18
 msgid "Email & scheduled messages"
 msgstr "Sähköposti- ja ajoitetut viestit"
 
@@ -7351,7 +7364,7 @@ msgstr "Sähköpostit lähetetään järjestäjäsi nimellä, ja painikkeet ja l
 msgid "Embed Widget"
 msgstr "Upota widget"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:20
+#: src/components/layouts/AuthLayout/AuthShell.tsx:19
 msgid "Embeddable widget"
 msgstr "Upotettava widget"
 
@@ -7666,7 +7679,7 @@ msgid "Entries will appear here when customers join the waitlist for sold out pr
 msgstr "Merkinnät näkyvät tässä, kun asiakkaat liittyvät jonotuslistalle loppuunmyytyjen tuotteiden kohdalla."
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:248
+#: src/components/layouts/Checkout/index.tsx:246
 #: src/hooks/useOrderActions.tsx:88
 msgid "Error"
 msgstr "Virhe"
@@ -8204,7 +8217,7 @@ msgstr "Epäonnistuneet työt"
 msgid "Failed Jobs"
 msgstr "Epäonnistuneet tehtävät"
 
-#: src/components/layouts/Checkout/index.tsx:263
+#: src/components/layouts/Checkout/index.tsx:261
 msgid "Failed to abandon order. Please try again."
 msgstr "Tilauksen hylkääminen epäonnistui. Yritä uudelleen."
 
@@ -8333,7 +8346,7 @@ msgstr "Kysymyksen poisto epäonnistui"
 msgid "Failed to delete template"
 msgstr "Mallin poisto epäonnistui"
 
-#: src/components/layouts/Checkout/index.tsx:249
+#: src/components/layouts/Checkout/index.tsx:247
 #: src/hooks/useOrderActions.tsx:89
 msgid "Failed to download invoice. Please try again."
 msgstr "Laskun lataus epäonnistui. Yritä uudelleen."
@@ -8766,7 +8779,7 @@ msgstr "Etunimi"
 #: src/components/common/QuestionsTable/index.tsx:262
 #: src/components/modals/EditUserModal/index.tsx:87
 #: src/components/modals/InviteUserModal/index.tsx:54
-#: src/components/modals/JoinWaitlistModal/index.tsx:180
+#: src/components/modals/JoinWaitlistModal/index.tsx:178
 #: src/components/routes/auth/AcceptInvitation/index.tsx:226
 #: src/components/routes/auth/Register/index.tsx:139
 #: src/components/routes/product-widget/CollectInformation/index.tsx:478
@@ -8776,7 +8789,7 @@ msgstr "Etunimi"
 msgid "First Name"
 msgstr "Etunimi"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:56
+#: src/components/modals/JoinWaitlistModal/index.tsx:54
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:31
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:31
 msgid "First name is required"
@@ -8921,7 +8934,7 @@ msgstr "Neljäs"
 msgid "Foyer"
 msgstr "Aula"
 
-#: src/components/common/AttendeeTicket/index.tsx:138
+#: src/components/common/AttendeeTicket/index.tsx:137
 #: src/components/common/Currency/index.tsx:88
 #: src/components/common/Currency/index.tsx:128
 #: src/components/common/OrderSummary/index.tsx:58
@@ -8929,6 +8942,8 @@ msgstr "Aula"
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:160
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:170
 #: src/components/forms/ProductForm/index.tsx:296
+#: src/components/layouts/AuthLayout/AuthShell.tsx:66
+#: src/components/layouts/AuthLayout/AuthShell.tsx:102
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:157
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:229
 #: src/ee/box-office/components/layouts/BoxOffice/AmountSheet.tsx:37
@@ -9018,7 +9033,7 @@ msgstr "Edessä oikealla"
 msgid "Full access to every event, the team, payments and account settings."
 msgstr "Täysi pääsy kaikkiin tapahtumiin, tiimiin, maksuihin ja tilin asetuksiin."
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:25
+#: src/components/layouts/AuthLayout/AuthShell.tsx:24
 msgid "Full data ownership"
 msgstr "Täydellinen datan omistajuus"
 
@@ -9720,7 +9735,7 @@ msgstr "Unkari"
 msgid "I acknowledge my responsibilities as a data controller"
 msgstr "Vahvistan vastuuni rekisterinpitäjänä"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:196
+#: src/components/modals/JoinWaitlistModal/index.tsx:194
 msgid "I agree to receive email notifications related to this event"
 msgstr "Hyväksyn vastaanottaa sähköpostitiedotteita tähän tapahtumaan liittyen"
 
@@ -10003,10 +10018,6 @@ msgstr "Lisää mukautettuja tunnisteita työkalupalkin aaltosulkupainikkeesta."
 msgid "Instagram"
 msgstr "Instagram"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:13
-msgid "Instant Stripe payouts"
-msgstr "Välittömät Stripe-tilitykset"
-
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:165
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:180
 msgid "Instructions"
@@ -10092,7 +10103,7 @@ msgstr "Kutsuttu"
 msgid "Invoice"
 msgstr "Lasku"
 
-#: src/components/layouts/Checkout/index.tsx:245
+#: src/components/layouts/Checkout/index.tsx:243
 #: src/hooks/useOrderActions.tsx:85
 msgid "Invoice downloaded successfully"
 msgstr "Lasku ladattu onnistuneesti"
@@ -10207,11 +10218,11 @@ msgid "Join from anywhere"
 msgstr "Liity mistä tahansa"
 
 #: src/components/common/JoinWaitlistButton/index.tsx:38
-#: src/components/modals/JoinWaitlistModal/index.tsx:208
+#: src/components/modals/JoinWaitlistModal/index.tsx:206
 msgid "Join Waitlist"
 msgstr "Liity jonolistalle"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:157
+#: src/components/modals/JoinWaitlistModal/index.tsx:155
 msgid "Join Waitlist for {productDisplayName}"
 msgstr "Liity jonolistalle tuotteelle {productDisplayName}"
 
@@ -10259,10 +10270,6 @@ msgstr "Pidä se lyhyenä — bannerit näyttävät yhden rivin. {0}/200"
 #: src/components/routes/product-widget/CollectInformation/index.tsx:614
 msgid "Keep me updated on news and events from {0}"
 msgstr "Pidä minut ajan tasalla uutisista ja tapahtumista kohteessa {0}"
-
-#: src/components/layouts/AuthLayout/AuthShell.tsx:42
-msgid "Keep the profit."
-msgstr "Säilytä voitto."
 
 #: src/components/routes/event/Lineup/ProfileDrawer.tsx:263
 msgid "Keep them off the public lineup and schedule until you're ready to announce"
@@ -10412,7 +10419,7 @@ msgstr "Sukunimi"
 #: src/components/common/QuestionsTable/index.tsx:263
 #: src/components/modals/EditUserModal/index.tsx:88
 #: src/components/modals/InviteUserModal/index.tsx:55
-#: src/components/modals/JoinWaitlistModal/index.tsx:185
+#: src/components/modals/JoinWaitlistModal/index.tsx:183
 #: src/components/routes/auth/AcceptInvitation/index.tsx:232
 #: src/components/routes/auth/Register/index.tsx:145
 #: src/components/routes/product-widget/CollectInformation/index.tsx:485
@@ -10817,8 +10824,8 @@ msgstr "Ladataan…"
 msgid "Loads content from {service}"
 msgstr "Lataa sisältöä palvelusta {service}"
 
-#: src/components/common/AttendeeTicket/index.tsx:120
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:119
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/common/LocationPicker/index.tsx:173
 #: src/components/common/LocationPicker/index.tsx:221
 #: src/components/common/LocationPicker/index.tsx:294
@@ -11454,7 +11461,7 @@ msgstr "Useita päivämääriä {lastOccurrenceDate} asti"
 msgid "Multiple locations"
 msgstr "Useita sijainteja"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:26
+#: src/components/layouts/AuthLayout/AuthShell.tsx:25
 msgid "Multiple ticket types"
 msgstr "Useita lipputyyppejä"
 
@@ -12324,7 +12331,7 @@ msgstr "Tälle päätepisteelle ei ole vielä kirjattu webhook-tapahtumia. Tapah
 msgid "No Webhooks"
 msgstr "Ei webhookeja"
 
-#: src/components/layouts/Checkout/index.tsx:533
+#: src/components/layouts/Checkout/index.tsx:531
 msgid "No, keep me here"
 msgstr "Ei, pidä minut täällä"
 
@@ -12858,7 +12865,7 @@ msgstr "Verkossa ja paikan päällä"
 msgid "Online & in-person — see schedule"
 msgstr "Verkossa ja paikan päällä — katso aikataulu"
 
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/modals/ManageOccurrenceModal/index.tsx:151
 #: src/components/widget/WidgetSections/index.tsx:59
 msgid "Online event"
@@ -13188,7 +13195,7 @@ msgstr "Tilaus peruutettu"
 msgid "Order Cancelled"
 msgstr "Tilaus peruutettu"
 
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/routes/product-widget/CollectInformation/index.tsx:384
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:430
 msgid "Order complete"
@@ -13771,11 +13778,11 @@ msgstr "Tauolla"
 msgid "Pay"
 msgstr "Maksa"
 
-#: src/components/layouts/Checkout/index.tsx:392
+#: src/components/layouts/Checkout/index.tsx:390
 msgid "Pay by"
 msgstr "Maksettava viimeistään"
 
-#: src/components/layouts/Checkout/index.tsx:393
+#: src/components/layouts/Checkout/index.tsx:391
 msgid "Pay by {0}"
 msgstr "Maksettava viimeistään {0}"
 
@@ -13895,7 +13902,7 @@ msgstr "Maksu ilmoitettu"
 msgid "Payment reported by buyer"
 msgstr "Ostaja ilmoitti maksun"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Payment request"
 msgstr "Maksupyyntö"
 
@@ -14290,7 +14297,7 @@ msgstr "Luo ensin lippu"
 msgid "Please don't leave a single empty seat: {0}"
 msgstr "Älä jätä yksittäistä tyhjää paikkaa: {0}"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:57
+#: src/components/modals/JoinWaitlistModal/index.tsx:55
 msgid "Please enter a valid email address"
 msgstr "Anna kelvollinen sähköpostiosoite"
 
@@ -14331,7 +14338,7 @@ msgstr "Anna kuva."
 msgid "Please restart the checkout process."
 msgstr "Käynnistä kassaprosessi uudelleen."
 
-#: src/components/layouts/Checkout/index.tsx:502
+#: src/components/layouts/Checkout/index.tsx:500
 msgid "Please return to the event page to start over."
 msgstr "Palaa tapahtumasivulle aloittaaksesi alusta."
 
@@ -14369,7 +14376,7 @@ msgstr "Odota, kun valmistamme kumppaneitasi vientiä varten..."
 msgid "Please wait while we prepare your attendees for export..."
 msgstr "Odota, kun valmistamme osallistujiasi vientiä varten..."
 
-#: src/components/layouts/Checkout/index.tsx:241
+#: src/components/layouts/Checkout/index.tsx:239
 #: src/hooks/useOrderActions.tsx:81
 msgid "Please wait while we prepare your invoice..."
 msgstr "Odota, kun valmistamme laskuasi..."
@@ -14413,6 +14420,10 @@ msgstr "Kassanjälkeinen viesti"
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
 msgid "Powered by"
 msgstr "Powered by"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:53
+msgid "Prayer Night"
+msgstr "Rukousilta"
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
 msgid "Pre Checkout message"
@@ -14475,10 +14486,11 @@ msgstr "Edellinen kuukausi"
 msgid "Previous photo"
 msgstr "Edellinen kuva"
 
-#: src/components/common/AttendeeTicket/index.tsx:137
+#: src/components/common/AttendeeTicket/index.tsx:136
 #: src/components/common/ProductsTable/index.tsx:93
 #: src/components/forms/ProductForm/index.tsx:319
 #: src/components/forms/ProductForm/ProductPriceTierForm.tsx:173
+#: src/components/layouts/AuthLayout/AuthShell.tsx:65
 msgid "Price"
 msgstr "Hinta"
 
@@ -14548,12 +14560,12 @@ msgstr "Tulostuksen esikatselu käyttää viimeksi tallennettua ulkoasua"
 msgid "Print Ticket"
 msgstr "Tulosta lippu"
 
-#: src/components/layouts/Checkout/index.tsx:438
+#: src/components/layouts/Checkout/index.tsx:436
 #: src/components/routes/my-tickets/index.tsx:136
 msgid "Print Tickets"
 msgstr "Tulosta liput"
 
-#: src/components/common/AttendeeTicket/index.tsx:181
+#: src/components/common/AttendeeTicket/index.tsx:180
 msgid "Print to PDF"
 msgstr "Tulosta PDF:ksi"
 
@@ -14743,7 +14755,7 @@ msgstr "Kampanjakoodin käyttö ja alennuksen erittely"
 msgid "promo codes"
 msgstr "kampanjakoodit"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:17
+#: src/components/layouts/AuthLayout/AuthShell.tsx:16
 #: src/components/modals/DuplicateEventModal/index.tsx:124
 msgid "Promo codes"
 msgstr "Kampanjakoodit"
@@ -14850,7 +14862,7 @@ msgstr "Aseta uusi avain muuttujaan <0>APP_LICENCE_KEY</0> ja ota taustajärjest
 msgid "QR Code"
 msgstr "QR-koodi"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:15
+#: src/components/layouts/AuthLayout/AuthShell.tsx:14
 msgid "QR code check-in"
 msgstr "QR-koodilla sisäänkirjautuminen"
 
@@ -14979,7 +14991,7 @@ msgstr "Valmis lisättäväksi esiintyjiin"
 msgid "Ready to go live?"
 msgstr "Valmis julkaistavaksi?"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:18
+#: src/components/layouts/AuthLayout/AuthShell.tsx:17
 msgid "Real-time analytics"
 msgstr "Reaaliaikainen analytiikka"
 
@@ -15236,6 +15248,10 @@ msgstr "Rekisteröidy"
 #: src/components/layouts/Event/index.tsx:142
 msgid "Registration Questions"
 msgstr "Rekisteröitymiskysymykset"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:41
+msgid "Registration, invitations and QR check-in."
+msgstr "Ilmoittautuminen, kutsut ja sisäänkirjautuminen QR-koodilla."
 
 #: src/components/common/CookieConsentBanner/index.tsx:135
 msgid "Reject all"
@@ -15745,7 +15761,7 @@ msgstr "Yritä tehtävää uudelleen"
 msgid "Return to Event"
 msgstr "Palaa tapahtumaan"
 
-#: src/components/layouts/Checkout/index.tsx:509
+#: src/components/layouts/Checkout/index.tsx:507
 msgid "Return to Event Page"
 msgstr "Palaa tapahtumasivulle"
 
@@ -16497,7 +16513,8 @@ msgstr "Haetaan..."
 msgid "Seasonal"
 msgstr "Sesonkiaikainen"
 
-#: src/components/common/AttendeeTicket/index.tsx:133
+#: src/components/common/AttendeeTicket/index.tsx:132
+#: src/components/layouts/AuthLayout/AuthShell.tsx:61
 #: src/components/modals/ManageAttendeeModal/index.tsx:170
 #: src/ee/seating/components/ManualSeatField/index.tsx:42
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:339
@@ -16879,10 +16896,6 @@ msgstr "Myy ovella"
 #: src/ee/box-office/components/layouts/BoxOffice/ReaderSwitchSheet.tsx:64
 msgid "Sell cash only"
 msgstr "Myy vain käteisellä"
-
-#: src/components/layouts/AuthLayout/AuthShell.tsx:41
-msgid "Sell out your event."
-msgstr "Tee tapahtumastasi loppuunmyyty."
 
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:48
 msgid "Sell tickets at the door with cash, comps, or a card reader."
@@ -17811,6 +17824,7 @@ msgid "Sold out"
 msgstr "Loppuunmyyty"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:128
+#: src/components/layouts/AuthLayout/AuthShell.tsx:106
 #: src/components/layouts/EventHomepage/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:221
 #: src/components/routes/event/Reports/OccurrenceSummaryReport/index.tsx:22
@@ -17908,7 +17922,7 @@ msgstr "Jotain meni pieleen! Yritä uudelleen"
 msgid "Something went wrong."
 msgstr "Jotain meni pieleen."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:141
+#: src/components/modals/JoinWaitlistModal/index.tsx:139
 msgid "Something went wrong. Please try again later."
 msgstr "Jotain meni pieleen. Yritä myöhemmin uudelleen."
 
@@ -18470,7 +18484,7 @@ msgid "Subtotal"
 msgstr "Välisumma"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:244
+#: src/components/layouts/Checkout/index.tsx:242
 #: src/hooks/useOrderActions.tsx:84
 msgid "Success"
 msgstr "Onnistui"
@@ -18844,7 +18858,7 @@ msgstr "Tiimi"
 msgid "Team Access"
 msgstr "Tiimin pääsy"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:22
+#: src/components/layouts/AuthLayout/AuthShell.tsx:21
 msgid "Team collaboration"
 msgstr "Tiimityöskentely"
 
@@ -19127,15 +19141,15 @@ msgstr "Tuotteiden enimmäismäärä kohteelle {0}on {1}"
 msgid "The new event keeps this event's repeat schedule. You can change its dates after duplicating."
 msgstr "Uusi tapahtuma säilyttää tämän tapahtuman toistoaikataulun. Voit muuttaa päiviä kopioinnin jälkeen."
 
-#: src/components/layouts/Checkout/index.tsx:499
+#: src/components/layouts/Checkout/index.tsx:497
 msgid "The order was not paid in time, so the places are no longer held. Let {0} know so they can register again."
 msgstr "Tilausta ei maksettu ajoissa, joten paikat eivät ole enää varattuina. Ilmoita asiasta henkilölle {0}, jotta hän voi rekisteröityä uudelleen."
 
-#: src/components/layouts/Checkout/index.tsx:500
+#: src/components/layouts/Checkout/index.tsx:498
 msgid "The order was not paid in time, so the places are no longer held. Let the person who registered know so they can register again."
 msgstr "Tilausta ei maksettu ajoissa, joten paikat eivät ole enää varattuina. Ilmoita asiasta rekisteröityneelle henkilölle, jotta hän voi rekisteröityä uudelleen."
 
-#: src/components/layouts/Checkout/index.tsx:501
+#: src/components/layouts/Checkout/index.tsx:499
 msgid "The order was not paid in time, so your places have been released. Return to the event page to start a new order."
 msgstr "Tilausta ei maksettu ajoissa, joten paikkasi on vapautettu. Palaa tapahtumasivulle aloittaaksesi uuden tilauksen."
 
@@ -19780,7 +19794,7 @@ msgstr "Järjestäjäprofiilia ei ole vielä julkaistu"
 msgid "This overrides all visibility settings and will hide the product from all customers."
 msgstr "Tämä ohittaa kaikki näkyvyysasetukset ja piilottaa tuotteen kaikilta asiakkailta."
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "This payment link has expired"
 msgstr "Tämä maksulinkki on vanhentunut"
 
@@ -19853,7 +19867,7 @@ msgstr "Tämä kirjautumisvaihtoehto ei ole käytettävissä"
 msgid "This space is reserved for wheelchair users and guests with access needs."
 msgstr "Tämä paikka on varattu pyörätuolin käyttäjille ja esteettömyyttä tarvitseville vieraille."
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "This ticket is no longer valid"
 msgstr "Tämä lippu ei ole enää voimassa"
 
@@ -19920,7 +19934,7 @@ msgstr "Valitse kirjautuessasi \"Luota tähän laitteeseen\" ohittaaksesi koodin
 msgid "ticket"
 msgstr "lippu"
 
-#: src/components/common/AttendeeTicket/index.tsx:130
+#: src/components/common/AttendeeTicket/index.tsx:129
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:442
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:580
 #: src/components/forms/ProductForm/index.tsx:227
@@ -19964,7 +19978,7 @@ msgstr "Lipunhaltijat"
 msgid "Ticket Holders"
 msgstr "Lipunhaltijat"
 
-#: src/components/common/AttendeeTicket/index.tsx:166
+#: src/components/common/AttendeeTicket/index.tsx:165
 msgid "Ticket ID"
 msgstr "Lipun tunnus"
 
@@ -20111,7 +20125,7 @@ msgstr "TikTok"
 msgid "Time"
 msgstr "Aika"
 
-#: src/components/layouts/Checkout/index.tsx:410
+#: src/components/layouts/Checkout/index.tsx:408
 msgid "Time left"
 msgstr "Aikaa jäljellä"
 
@@ -20650,7 +20664,7 @@ msgstr "Osallistujan tietojen hakeminen ei onnistu"
 msgid "Unable to find seats. Check the connection and try again."
 msgstr "Paikkoja ei löytynyt. Tarkista yhteys ja yritä uudelleen."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:138
+#: src/components/modals/JoinWaitlistModal/index.tsx:136
 msgid "Unable to join waitlist"
 msgstr "Jonotuslistalle liittyminen ei onnistu"
 
@@ -20808,7 +20822,7 @@ msgstr "Nimeämätön sijainti"
 msgid "Unnamed venue"
 msgstr "Nimetön tapahtumapaikka"
 
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/modals/ManageOrderModal/index.tsx:162
 #: src/ee/box-office/components/layouts/BoxOffice/tabs/OrdersTab.tsx:26
 msgid "Unpaid"
@@ -21646,7 +21660,7 @@ msgid "Waiting for Stripe to confirm your payment…"
 msgstr "Odotetaan Stripen maksuvahvistusta…"
 
 #: src/components/forms/ProductForm/index.tsx:466
-#: src/components/layouts/AuthLayout/AuthShell.tsx:16
+#: src/components/layouts/AuthLayout/AuthShell.tsx:15
 #: src/components/layouts/Event/index.tsx:157
 #: src/components/routes/event/Settings/index.tsx:100
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:55
@@ -21843,11 +21857,11 @@ msgstr "Lähetämme sähköpostilla linkin tiliisi liittymistä varten."
 msgid "We'll email you the link too, and send your order confirmation as soon as they complete checkout."
 msgstr "Lähetämme linkin myös sinulle sähköpostilla ja lähetämme tilausvahvistuksesi heti, kun maksu on suoritettu."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:113
+#: src/components/modals/JoinWaitlistModal/index.tsx:111
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName} on {occurrenceDate}."
 msgstr "Ilmoitamme sinulle sähköpostitse, jos tuotteelle {productDisplayName} vapautuu paikka päivänä {occurrenceDate}."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:114
+#: src/components/modals/JoinWaitlistModal/index.tsx:112
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName}."
 msgstr "Ilmoitamme sinulle sähköpostitse, jos tuotteelle {productDisplayName} vapautuu paikka."
 
@@ -21890,7 +21904,7 @@ msgstr "Webhook luotiin onnistuneesti"
 msgid "Webhook deleted successfully"
 msgstr "Webhook poistettiin onnistuneesti"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:24
+#: src/components/layouts/AuthLayout/AuthShell.tsx:23
 msgid "Webhook integrations"
 msgstr "Webhook-integraatiot"
 
@@ -22286,7 +22300,7 @@ msgstr "Käsitellään"
 #: src/components/modals/EditProductCategoryModal/index.tsx:73
 #: src/components/modals/EditPromoCodeModal/index.tsx:87
 #: src/components/modals/EditQuestionModal/index.tsx:103
-#: src/components/modals/JoinWaitlistModal/index.tsx:207
+#: src/components/modals/JoinWaitlistModal/index.tsx:205
 #: src/components/routes/auth/Register/index.tsx:188
 msgid "Working..."
 msgstr "Käsitellään..."
@@ -22344,7 +22358,7 @@ msgstr "Kyllä"
 msgid "Yes - I have a valid EU VAT registration number"
 msgstr "Kyllä – minulla on voimassa oleva EU:n ALV-rekisteritunniste"
 
-#: src/components/layouts/Checkout/index.tsx:541
+#: src/components/layouts/Checkout/index.tsx:539
 msgid "Yes, cancel my order"
 msgstr "Kyllä, peru tilaukseni"
 
@@ -22507,7 +22521,7 @@ msgstr "Tapahtumallasi on maksullisia lippuja, mutta Stripea ei ole vielä yhdis
 msgid "You have reached your messaging limit."
 msgstr "Olet saavuttanut viestintärajasi."
 
-#: src/components/layouts/Checkout/index.tsx:493
+#: src/components/layouts/Checkout/index.tsx:491
 msgid "You have run out of time to complete your order."
 msgstr "Tilauksesi viimeistelyyn varattu aika on päättynyt."
 
@@ -22532,7 +22546,7 @@ msgstr "Sinun on vahvistettava, että tämä sähköposti ei ole markkinointivie
 msgid "You must acknowledge your responsibilities before saving"
 msgstr "Sinun on vahvistettava vastuusi ennen tallentamista"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:58
+#: src/components/modals/JoinWaitlistModal/index.tsx:56
 msgid "You must agree to receive messages"
 msgstr "Sinun on hyväksyttävä viestien vastaanottaminen"
 
@@ -22644,11 +22658,11 @@ msgstr "Olet muuttamassa istuntojen aikoja"
 msgid "You're going to {0}!"
 msgstr "Olet menossa tapahtumaan {0}!"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:174
+#: src/components/modals/JoinWaitlistModal/index.tsx:172
 msgid "You're joining the waitlist for {occurrenceDate}."
 msgstr "Liityt päivämäärän {occurrenceDate} jonotuslistalle."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:109
+#: src/components/modals/JoinWaitlistModal/index.tsx:107
 msgid "You're on the waitlist!"
 msgstr "Olet jonotuslistalla!"
 
@@ -22768,7 +22782,7 @@ msgstr "Kansikuvasi on vaakasuuntainen, joten se näyttää tässä pieneltä. F
 msgid "Your cover sits beside the details like a poster. Best with square or portrait artwork."
 msgstr "Kansikuvasi näkyy tietojen vieressä kuin juliste. Toimii parhaiten neliön muotoisilla tai pystysuuntaisilla kuvilla."
 
-#: src/components/layouts/Checkout/index.tsx:526
+#: src/components/layouts/Checkout/index.tsx:524
 msgid "Your current order will be lost."
 msgstr "Nykyinen tilauksesi menetetään."
 
@@ -22881,7 +22895,7 @@ msgstr "Tilauksesi tiedot on päivitetty. Vahvistussähköposti on lähetetty uu
 msgid "Your order has been cancelled"
 msgstr "Tilauksesi on peruttu"
 
-#: src/components/layouts/Checkout/index.tsx:266
+#: src/components/layouts/Checkout/index.tsx:264
 msgid "Your order has been cancelled."
 msgstr "Tilauksesi on peruttu."
 
@@ -22953,7 +22967,7 @@ msgstr "Maksusi on suojattu pankkitason salauksella"
 msgid "Your payment is still processing"
 msgstr "Maksuasi käsitellään vielä"
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "Your payment link has expired"
 msgstr "Maksulinkkisi on vanhentunut"
 

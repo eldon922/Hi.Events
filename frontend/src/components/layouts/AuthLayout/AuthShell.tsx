@@ -149,8 +149,8 @@ export const AuthShell = ({children, isStatic = false}: AuthShellProps) => {
                     <main className={classes.container}>
                         <div className={classes.logo} onClick={handleLogoClick} style={{cursor: 'pointer'}}>
                             <img
-                                src={getConfig("VITE_APP_LOGO_DARK", "/logos/hi-events-horizontal-light.svg")}
-                                alt={t`${getConfig("VITE_APP_NAME", "Hi.Events")} logo`}
+                                src={getConfig("VITE_APP_LOGO_DARK")}
+                                alt={t`${getConfig("VITE_APP_NAME")} logo`}
                             />
                         </div>
                         <div className={classes.formArea}>

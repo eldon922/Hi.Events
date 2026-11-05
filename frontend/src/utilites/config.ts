@@ -40,12 +40,23 @@ export const clientBuildEnv: { [K in ConfigKeys]: string } = {
     'VITE_GOOGLE_ADS_CONVERSION_LABELS': import.meta.env.VITE_GOOGLE_ADS_CONVERSION_LABELS,
 }
 
+const brandDefaults: Partial<Record<ConfigKeys, string>> = {
+    'VITE_APP_NAME': 'Ekklesia',
+    'VITE_APP_FAVICON': '/manifest-icons/favicon.svg',
+    'VITE_APP_LOGO_LIGHT': '/logos/ekklesia-on-dark.svg',
+    'VITE_APP_LOGO_DARK': '/logos/ekklesia-on-light.svg',
+    'VITE_APP_PRIMARY_COLOR': '#26306B',
+    'VITE_APP_SECONDARY_COLOR': '#33408A',
+}
+
 export const getConfig = (key: ConfigKeys, fallback?: string): string | undefined => {
+    const defaultValue = brandDefaults[key] ?? fallback;
+
     if (isSsr()) {
         const serverEnv = typeof process !== "undefined" && process.env ? process.env : {};
-        return serverEnv[key] as string | undefined || fallback;
+        return serverEnv[key] as string | undefined || defaultValue;
     }
 
     const clientEnv = typeof window !== "undefined" && window.hievents ? window.hievents : {};
-    return clientEnv[key] || clientBuildEnv[key] || fallback;
+    return clientEnv[key] || clientBuildEnv[key] || defaultValue;
 };

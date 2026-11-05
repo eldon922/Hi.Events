@@ -194,7 +194,7 @@ export const CompleteSignup = ({signup, flow, providerName, onSignedUp, onFailed
                     <Checkbox
                         mb="md"
                         {...form.getInputProps('marketing_opt_in', {type: 'checkbox'})}
-                        label={<Trans>Receive product updates from {getConfig("VITE_APP_NAME", "Hi.Events")}.</Trans>}
+                        label={<Trans>Receive product updates from {getConfig("VITE_APP_NAME")}.</Trans>}
                     />
                     <Button color="secondary.5" type="submit" fullWidth loading={signupMutation.isPending || sendCodeMutation.isPending} data-testid="sso-complete-signup-submit">
                         {t`Create account`}

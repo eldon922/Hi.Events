@@ -249,7 +249,7 @@ const Profile = () => {
                         </SettingsRow>
                         <SettingsRow
                             label={t`Product updates`}
-                            description={<Trans>Receive product updates from {getConfig("VITE_APP_NAME", "Hi.Events")}.</Trans>}
+                            description={<Trans>Receive product updates from {getConfig("VITE_APP_NAME")}.</Trans>}
                             htmlFor="profile-marketing"
                             inlineControl
                         >

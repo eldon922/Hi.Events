@@ -768,7 +768,7 @@ export const CollectInformation = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    {getConfig('VITE_APP_NAME', 'Hi.Events')} Terms of Service
+                                    {getConfig('VITE_APP_NAME')} Terms of Service
                                 </a>
                             </Trans>
                         </p>

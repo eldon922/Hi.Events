@@ -88,7 +88,7 @@ const SettingsLayout = () => {
     const pageTitle = [
         isApiReference ? t`API reference` : currentPage?.label,
         t`Settings`,
-        getConfig("VITE_APP_NAME", "Hi.Events"),
+        getConfig("VITE_APP_NAME"),
     ].filter(Boolean).join(' · ');
 
     if (isLoaded && currentPage?.showWhen && !currentPage.showWhen()) {

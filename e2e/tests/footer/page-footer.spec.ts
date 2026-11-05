@@ -18,7 +18,7 @@ async function expectFullFooter(page: Page) {
   }
   await expect(legal).toContainText('PT Contoh Uji, Jl. Contoh No. 1, Bandung');
   await expect(page.getByRole('link', { name: 'Powered by Ekklesia, based on Hi.Events' })).toHaveAttribute('href', /^https:\/\/hi\.events\/?\?/);
-  await expect(page.getByRole('link', { name: 'Source code' })).toHaveAttribute('href', 'https://github.com/eldon922/hi.events');
+  await expect(page.getByRole('link', { name: 'Source code' })).toHaveAttribute('href', 'https://github.com/eldon922/Hi.Events');
 }
 
 test.describe('Page footer', () => {

@@ -7,7 +7,7 @@ import {getConfig} from "../../../utilites/config.ts";
 import {useGetInstanceInfo} from "../../../ee/licensing/queries/useGetInstanceInfo.ts";
 import {LegalLinks} from "../LegalLinks";
 
-const SOURCE_CODE_URL = "https://github.com/eldon922/hi.events";
+const SOURCE_CODE_URL = "https://github.com/eldon922/Hi.Events";
 
 const configuredHost = (): string => {
     const frontendUrl = getConfig("VITE_FRONTEND_URL");

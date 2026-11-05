@@ -7,12 +7,10 @@ import {t} from "@lingui/macro";
 import {Button, Checkbox, Modal as MantineModal, Text, TextInput} from "@mantine/core";
 import {InputGroup} from "../../common/InputGroup";
 import {CheckoutThemeProvider} from "../../layouts/Checkout/CheckoutThemeProvider.tsx";
-import {detectMode} from "../../../utilites/themeUtils.ts";
+import {detectMode, getDefaultThemeSettings} from "../../../utilites/themeUtils.ts";
 import {BouncingEmoji} from "../../common/BouncingEmoji";
 import {formatDateWithLocale, getSafeLocale} from "../../../utilites/dates.ts";
 import {getClientLocale} from "../../../locales.ts";
-
-const DEFAULT_ACCENT = '#7c3aed';
 
 interface JoinWaitlistModalProps extends GenericModalProps {
     product: Product;
@@ -39,7 +37,7 @@ export const JoinWaitlistModal = ({onClose, product, event, productPriceId, even
         : null;
 
     const homepageSettings = event?.settings?.homepage_theme_settings;
-    const accentColor = homepageSettings?.accent || DEFAULT_ACCENT;
+    const accentColor = homepageSettings?.accent || getDefaultThemeSettings().accent;
     const mode = useMemo(
         () => homepageSettings?.mode || detectMode(homepageSettings?.background || '#ffffff'),
         [homepageSettings?.mode, homepageSettings?.background]

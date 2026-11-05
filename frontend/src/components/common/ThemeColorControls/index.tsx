@@ -1,7 +1,7 @@
 import {Button, ColorInput, Group, SegmentedControl, Stack, Text} from "@mantine/core";
 import {t} from "@lingui/macro";
 import {HomepageThemeSettings} from "../../../types.ts";
-import {detectMode, hasContrastIssues, validateThemeSettings} from "../../../utilites/themeUtils.ts";
+import {detectMode, getDefaultThemeSettings, hasContrastIssues, validateThemeSettings} from "../../../utilites/themeUtils.ts";
 import {IconAlertTriangle, IconMoon, IconSun} from "@tabler/icons-react";
 import {useEffect, useMemo} from "react";
 import classes from "./ThemeColorControls.module.scss";
@@ -14,7 +14,7 @@ interface ThemeColorControlsProps {
 }
 
 const ACCENT_SWATCHES = [
-    '#7c3aed',
+    '#26306B',
     '#6366f1',
     '#2563eb',
     '#0891b2',
@@ -28,7 +28,7 @@ const ACCENT_SWATCHES = [
 
 const BACKGROUND_SWATCHES = [
     '#ffffff',
-    '#f5f3ff',
+    '#FBF8F3',
     '#f0f9ff',
     '#f0fdf4',
     '#fefce8',
@@ -110,7 +110,7 @@ export const ThemeColorControls = ({
                 label={usesCoverImage ? t`Overlay Color` : t`Background Color`}
                 description={usesCoverImage ? t`Tints the blurred cover image behind your page` : undefined}
                 size="sm"
-                value={values.background || '#f5f3ff'}
+                value={values.background || getDefaultThemeSettings().background}
                 onChange={handleBackgroundChange}
                 swatches={BACKGROUND_SWATCHES}
                 swatchesPerRow={10}
@@ -122,7 +122,7 @@ export const ThemeColorControls = ({
                 label={t`Accent Color`}
                 description={t`Used for buttons, links and highlights`}
                 size="sm"
-                value={values.accent || '#7c3aed'}
+                value={values.accent || getDefaultThemeSettings().accent}
                 onChange={handleAccentChange}
                 swatches={ACCENT_SWATCHES}
                 swatchesPerRow={10}

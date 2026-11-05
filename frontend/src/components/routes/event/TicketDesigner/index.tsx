@@ -21,7 +21,7 @@ const FOOTER_MAX_LENGTH = 500;
 
 const ACCENT_SWATCHES = [
     '#333333',
-    '#7c3aed',
+    '#26306B',
     '#6366f1',
     '#2563eb',
     '#0891b2',

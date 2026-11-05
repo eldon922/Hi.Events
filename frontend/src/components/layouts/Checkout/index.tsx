@@ -22,14 +22,12 @@ import {dateToBrowserTz, formatDateWithLocale, isDateInFuture, utcDateToEpochMs}
 import {isSsr} from "../../../utilites/helpers.ts";
 import {claimOrderCompletionReport, getCheckoutSessionIdentifier, isCheckoutSessionStored} from "../../../utilites/checkoutSession.ts";
 import {PoweredByFooter} from "../../common/PoweredByFooter";
-import {detectMode} from "../../../utilites/themeUtils.ts";
+import {detectMode, getDefaultThemeSettings} from "../../../utilites/themeUtils.ts";
 import {CheckoutThemeProvider} from "./CheckoutThemeProvider.tsx";
 import {useOrganizerTrackingPixels} from "../../../hooks/useOrganizerTrackingPixels";
 import {trackPixelEvent, hasActivePixels} from "../../../utilites/trackingPixels";
 import {CookieSettingsLink} from "../../common/CookieSettingsLink";
 import {useGetEventPublic} from "../../../queries/useGetEventPublic.ts";
-
-const DEFAULT_ACCENT = '#7c3aed';
 
 const Checkout = () => {
     const {eventId, orderShortId} = useParams();
@@ -340,7 +338,7 @@ const Checkout = () => {
     }, [order?.status, order?.short_id, pixelsReady]);
 
     const homepageSettings = event?.settings?.homepage_theme_settings;
-    const accentColor = homepageSettings?.accent || DEFAULT_ACCENT;
+    const accentColor = homepageSettings?.accent || getDefaultThemeSettings().accent;
     const checkoutMode = homepageSettings?.mode || detectMode(homepageSettings?.background || '#ffffff');
 
     return (

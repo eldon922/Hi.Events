@@ -224,8 +224,8 @@ class CreateEventService
         $terminology = ProductTerminology::forCategory($event->getCategory());
 
         $homepageThemeSettings = [
-            'accent' => $organizerThemeSettings['accent'] ?? '#7c3aed',
-            'background' => $organizerThemeSettings['background'] ?? '#f5f3ff',
+            'accent' => $organizerThemeSettings['accent'] ?? '#26306B',
+            'background' => $organizerThemeSettings['background'] ?? '#FBF8F3',
             'mode' => $organizerThemeSettings['mode'] ?? 'light',
             'background_type' => $eventCoverCreated
                 ? HomepageBackgroundType::MIRROR_COVER_IMAGE->name

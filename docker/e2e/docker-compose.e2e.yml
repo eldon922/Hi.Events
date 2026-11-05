@@ -49,6 +49,12 @@ services:
             VITE_STRIPE_PUBLISHABLE_KEY: '${STRIPE_PUBLIC_KEY:-}'
             VITE_APP_NAME: 'Hi.Events'
             VITE_CHECKIN_APP_URL: 'https://checkin.example.test'
+            VITE_TOS_URL: 'https://legal.example.test/terms'
+            VITE_PRIVACY_URL: 'https://legal.example.test/privacy'
+            VITE_ORGANIZER_TERMS_URL: 'https://legal.example.test/organizer'
+            VITE_COMMUNITY_GUIDELINES_URL: 'https://legal.example.test/community'
+            VITE_CONTACT_URL: 'https://legal.example.test/contact'
+            VITE_COMPANY_INFO: 'PT Contoh Uji, Jl. Contoh No. 1, Bandung'
             VITE_COOKIE_CONSENT_ENABLED: 'true'
         depends_on:
             backend:

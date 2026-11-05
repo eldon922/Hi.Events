@@ -4628,6 +4628,10 @@ msgstr "Vesszővel elválasztott kulcsszavak, amelyek leírják az eseményt. Ez
 msgid "Commission"
 msgstr "Jutalék"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Közösségi irányelvek"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "Kapcsolat"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "Kapcsolatfelvétel {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "Kapcsolat és panaszok"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Fejlesztés"
 msgid "Development licence"
 msgstr "Fejlesztői licenc"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Fejlesztői licenc, éles használatra nem alkalmas"
 
@@ -13038,7 +13046,7 @@ msgstr "{photoNumber}. fotó megnyitása"
 msgid "Open settings"
 msgstr "Beállítások megnyitása"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Oldalsáv megnyitása"
@@ -13452,6 +13460,10 @@ msgstr "Szervező állapotának frissítése sikertelen. Kérjük, próbálja ú
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Szervező állapota frissítve"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Szervezői feltételek"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Leadva"
 msgid "Plan"
 msgstr "Csomag"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Eseményt tervez?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Fizetés utáni üzenet"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Üzemelteti"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "Nyomtatva {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Adatvédelmi irányelvek"
 
@@ -14946,7 +14957,7 @@ msgstr "Újraaktiválja ezt az időpontot? Újra megnyílik a jövőbeli érték
 msgid "Read and write"
 msgstr "Olvasás és írás"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Tovább olvasom"
@@ -17249,8 +17260,8 @@ msgstr "Alakzat"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Monogram megjelenítése helyette"
 msgid "Show keys"
 msgstr "Kulcsok megjelenítése"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Kevesebb"
@@ -17723,7 +17734,7 @@ msgstr "A 30 napos türelmi idő kihagyása. Ez nem vonható vissza."
 msgid "Skip this step"
 msgstr "Lépés kihagyása"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Ugrás a fő tartalomhoz"
 
@@ -17947,6 +17958,10 @@ msgstr "Hangpult, szponzori helyek…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Forrás"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Forráskód"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Fizetési mód"
 msgid "Term"
 msgstr "Kulcsszó"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Szolgáltatási feltételek"
 
@@ -20405,7 +20420,7 @@ msgstr "Újra"
 msgid "Try another email"
 msgstr "Próbáljon másik e-mailt"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Próbálja ki a Hi.Events-et ingyen"
 

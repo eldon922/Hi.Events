@@ -4628,6 +4628,10 @@ msgstr "Kommaseparerade nyckelord som beskriver evenemanget. Dessa används av s
 msgid "Commission"
 msgstr "Provision"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Riktlinjer för gemenskapen"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "Kontakt"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "Kontakta {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "Kontakt och klagomål"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Utveckling"
 msgid "Development licence"
 msgstr "Utvecklingslicens"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Utvecklingslicens, inte för produktion"
 
@@ -13038,7 +13046,7 @@ msgstr "Öppna foto {photoNumber}"
 msgid "Open settings"
 msgstr "Öppna inställningar"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Öppna sidomeny"
@@ -13452,6 +13460,10 @@ msgstr "Uppdatering av arrangörsstatus misslyckades. Försök igen senare"
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Arrangörsstatus uppdaterad"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Villkor för arrangörer"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Lagd"
 msgid "Plan"
 msgstr "Plan"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Planerar du ett evenemang?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Meddelande efter checkout"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Drivs av"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "Utskrivet {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Integritetspolicy"
 
@@ -14946,7 +14957,7 @@ msgstr "Återaktivera det här datumet? Det öppnas för försäljning igen."
 msgid "Read and write"
 msgstr "Läsa och skriva"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Läs mer"
@@ -17249,8 +17260,8 @@ msgstr "Form"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Visa initialer i stället"
 msgid "Show keys"
 msgstr "Visa nycklar"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Visa mindre"
@@ -17723,7 +17734,7 @@ msgstr "Hoppa över respitperioden på 30 dagar. Det går inte att ångra."
 msgid "Skip this step"
 msgstr "Hoppa över detta steg"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Hoppa till huvudinnehållet"
 
@@ -17947,6 +17958,10 @@ msgstr "Ljudbord, sponsorplatser …"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Källa"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Källkod"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Betalsätt"
 msgid "Term"
 msgstr "Sökord"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Användarvillkor"
 
@@ -20405,7 +20420,7 @@ msgstr "Försök igen"
 msgid "Try another email"
 msgstr "Prova en annan e-postadress"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Prova Hi.Events gratis"
 

@@ -101,7 +101,7 @@ export const CheckInInfoModal = ({
                     alt={t`${appName} logo`}
                     style={{height: 24, maxWidth: 160, objectFit: "contain", opacity: 0.85}}
                 />
-                <PoweredByFooter/>
+                <PoweredByFooter withLegalLinks={false}/>
             </div>
         </Modal>
     );

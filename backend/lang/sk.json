@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Referencia, ktorú majú kupujúci použiť pri offline platbe. Prázdna, ak sa číslo objednávky nepoužíva ako referencia platby.",
     "Order placed: payment needed": "Objednávka odoslaná: potrebná platba",
     "How to pay": "Ako zaplatiť",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Platba prebehla úspešne, ale objednávka už bola odoslaná s platbou neskôr. Objednávka: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Platba prebehla úspešne, ale objednávka už bola odoslaná s platbou neskôr. Objednávka: :id",
+    "Source code": "Zdrojový kód"
 }

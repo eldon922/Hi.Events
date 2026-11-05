@@ -4628,6 +4628,10 @@ msgstr "Các từ khóa mô tả sự kiện, được phân tách bằng dấu 
 msgid "Commission"
 msgstr "Hoa hồng"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Nguyên tắc cộng đồng"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "Liên hệ"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "Liên hệ {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "Liên hệ và khiếu nại"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Phát triển"
 msgid "Development licence"
 msgstr "Giấy phép phát triển"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Giấy phép phát triển, không dùng cho môi trường production"
 
@@ -13038,7 +13046,7 @@ msgstr "Mở ảnh {photoNumber}"
 msgid "Open settings"
 msgstr "Mở cài đặt"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Mở thanh bên"
@@ -13452,6 +13460,10 @@ msgstr "Cập nhật trạng thái nhà tổ chức thất bại. Vui lòng th�
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Trạng thái nhà tổ chức đã được cập nhật"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Điều khoản dành cho nhà tổ chức"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Đã đặt"
 msgid "Plan"
 msgstr "Gói"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Đang lên kế hoạch cho một sự kiện?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Tin nhắn sau phần thanh toán"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Được cung cấp bởi"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "In lúc {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Chính sách quyền riêng tư"
 
@@ -14946,7 +14957,7 @@ msgstr "Kích hoạt lại ngày này? Ngày này sẽ được mở bán lại.
 msgid "Read and write"
 msgstr "Đọc và ghi"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Xem thêm"
@@ -17249,8 +17260,8 @@ msgstr "Hình dạng"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Hiển thị chữ viết tắt thay thế"
 msgid "Show keys"
 msgstr "Hiển thị khóa"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Thu gọn"
@@ -17723,7 +17734,7 @@ msgstr "Bỏ qua thời gian ân hạn 30 ngày. Hành động này không thể
 msgid "Skip this step"
 msgstr "Bỏ qua bước này"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Chuyển đến nội dung chính"
 
@@ -17947,6 +17958,10 @@ msgstr "Bàn âm thanh, ghế nhà tài trợ…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Nguồn"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Mã nguồn"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Hình thức thanh toán"
 msgid "Term"
 msgstr "Từ khóa"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Điều khoản dịch vụ"
 
@@ -20405,7 +20420,7 @@ msgstr "Thử lại"
 msgid "Try another email"
 msgstr "Thử email khác"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Dùng thử Hi.Events miễn phí"
 

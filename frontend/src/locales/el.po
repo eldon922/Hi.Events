@@ -4628,6 +4628,10 @@ msgstr "Λέξεις-κλειδιά χωρισμένες με κόμμα που 
 msgid "Commission"
 msgstr "Προμήθεια"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Οδηγίες κοινότητας"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "Επικοινωνία"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "Επικοινωνία με {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "Επικοινωνία και παράπονα"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Ανάπτυξη"
 msgid "Development licence"
 msgstr "Άδεια ανάπτυξης"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Άδεια ανάπτυξης, όχι για παραγωγική χρήση"
 
@@ -13038,7 +13046,7 @@ msgstr "Άνοιγμα φωτογραφίας {photoNumber}"
 msgid "Open settings"
 msgstr "Άνοιγμα ρυθμίσεων"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Άνοιγμα πλαϊνής μπάρας"
@@ -13452,6 +13460,10 @@ msgstr "Η ενημέρωση κατάστασης διοργανωτή απέτ
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Η κατάσταση διοργανωτή ενημερώθηκε"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Όροι διοργανωτών"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Καταχωρήθηκε"
 msgid "Plan"
 msgstr "Πρόγραμμα"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Σχεδιάζετε εκδήλωση;"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Μήνυμα Μετά το Checkout"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Με την υποστήριξη του"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "Εκτυπώθηκε {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Πολιτική Απορρήτου"
 
@@ -14946,7 +14957,7 @@ msgstr "Επανενεργοποίηση αυτής της ημερομηνία�
 msgid "Read and write"
 msgstr "Ανάγνωση και εγγραφή"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Διαβάστε περισσότερα"
@@ -17249,8 +17260,8 @@ msgstr "Σχήμα"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Εμφάνιση αρχικών αντί αυτού"
 msgid "Show keys"
 msgstr "Εμφάνιση κλειδιών"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Εμφάνιση λιγότερων"
@@ -17723,7 +17734,7 @@ msgstr "Παράλειψη της περιόδου χάριτος 30 ημερώ�
 msgid "Skip this step"
 msgstr "Παράλειψη αυτού του βήματος"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Μετάβαση στο κύριο περιεχόμενο"
 
@@ -17947,6 +17958,10 @@ msgstr "Πίνακας ήχου, θέσεις χορηγών…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Πηγή"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Πηγαίος κώδικας"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Τρόπος πληρωμής"
 msgid "Term"
 msgstr "Όρος"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Όροι Χρήσης"
 
@@ -20405,7 +20420,7 @@ msgstr "Δοκιμάστε ξανά"
 msgid "Try another email"
 msgstr "Δοκιμάστε άλλο email"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Δοκιμάστε το Hi.Events Δωρεάν"
 

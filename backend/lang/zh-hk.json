@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "買家線下付款時應使用的參考編號。不使用訂單編號作為付款參考編號時為空白。",
     "Order placed: payment needed": "訂單已提交:需要付款",
     "How to pay": "如何付款",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "付款成功,但訂單已以稍後付款方式提交。訂單::id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "付款成功,但訂單已以稍後付款方式提交。訂單::id",
+    "Source code": "原始碼"
 }

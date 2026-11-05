@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "De referentie die kopers moeten gebruiken bij offline betalen. Leeg wanneer de bestelreferentie niet als betalingsreferentie wordt gebruikt.",
     "Order placed: payment needed": "Bestelling geplaatst: betaling nodig",
     "How to pay": "Zo betaal je",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "De betaling is gelukt, maar de bestelling was al geplaatst om later te betalen. Bestelling: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "De betaling is gelukt, maar de bestelling was al geplaatst om later te betalen. Bestelling: :id",
+    "Source code": "Broncode"
 }

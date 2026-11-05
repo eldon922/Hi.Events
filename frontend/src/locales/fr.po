@@ -4628,6 +4628,10 @@ msgstr "Mots-clés séparés par des virgules qui décrivent l'événement. Ceux
 msgid "Commission"
 msgstr "Commission"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Règles de la communauté"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "Contact"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "Contacter {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "Contact et réclamations"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Développement"
 msgid "Development licence"
 msgstr "Licence de développement"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Licence de développement, ne pas utiliser en production"
 
@@ -13038,7 +13046,7 @@ msgstr "Ouvrir la photo {photoNumber}"
 msgid "Open settings"
 msgstr "Ouvrir les paramètres"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Ouvrir la barre latérale"
@@ -13452,6 +13460,10 @@ msgstr "Échec de la mise à jour du statut de l'organisateur. Veuillez réessay
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Statut de l'organisateur mis à jour"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Conditions pour les organisateurs"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Passée"
 msgid "Plan"
 msgstr "Offre"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Planifier un événement ?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Message après le paiement"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Propulsé par"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "Imprimé {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
@@ -14946,7 +14957,7 @@ msgstr "Réactiver cette date ? Elle sera de nouveau ouverte à la vente."
 msgid "Read and write"
 msgstr "Lecture et écriture"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Lire la suite"
@@ -17249,8 +17260,8 @@ msgstr "Forme"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Afficher les initiales à la place"
 msgid "Show keys"
 msgstr "Afficher les clés"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Afficher moins"
@@ -17723,7 +17734,7 @@ msgstr "Ignorer la période de grâce de 30 jours. Cette action est irréversibl
 msgid "Skip this step"
 msgstr "Passer cette étape"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Aller au contenu principal"
 
@@ -17947,6 +17958,10 @@ msgstr "Régie son, places sponsors…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Source"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Code source"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Mode de paiement"
 msgid "Term"
 msgstr "Terme"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Conditions d'utilisation"
 
@@ -20405,7 +20420,7 @@ msgstr "Réessayer"
 msgid "Try another email"
 msgstr "Essayer un autre e-mail"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Essayer Hi.Events gratuitement"
 

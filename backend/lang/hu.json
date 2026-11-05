@@ -1256,5 +1256,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "A közlemény, amelyet a vásárlóknak offline fizetéskor használniuk kell. Üres, ha a rendelési azonosító nem szolgál közleményként.",
     "Order placed: payment needed": "Rendelés leadva: fizetés szükséges",
     "How to pay": "Így fizethet",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "A fizetés sikeres volt, de a rendelést már későbbi fizetéssel leadták. Rendelés: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "A fizetés sikeres volt, de a rendelést már későbbi fizetéssel leadták. Rendelés: :id",
+    "Source code": "Forráskód"
 }

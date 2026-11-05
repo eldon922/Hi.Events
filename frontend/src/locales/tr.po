@@ -4628,6 +4628,10 @@ msgstr "Etkinliği tanımlayan virgülle ayrılmış anahtar kelimeler. Bunlar a
 msgid "Commission"
 msgstr "Komisyon"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "Topluluk Kuralları"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "İletişim"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "{0} ile İletişime Geç"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "İletişim ve Şikayetler"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "Geliştirme"
 msgid "Development licence"
 msgstr "Geliştirme lisansı"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "Geliştirme lisansı, üretim ortamında kullanılamaz"
 
@@ -13038,7 +13046,7 @@ msgstr "{photoNumber}. fotoğrafı aç"
 msgid "Open settings"
 msgstr "Ayarları aç"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "Kenar çubuğunu aç"
@@ -13452,6 +13460,10 @@ msgstr "Organizatör durum güncellemesi başarısız oldu. Lütfen daha sonra t
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "Organizatör durumu güncellendi"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "Organizatör Şartları"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "Oluşturuldu"
 msgid "Plan"
 msgstr "Plan"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "Bir etkinlik mi planlıyorsunuz?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "Ödeme sonrası mesaj"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "Altyapı sağlayıcı"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "Yazdırıldı {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
@@ -14946,7 +14957,7 @@ msgstr "Bu tarih yeniden etkinleştirilsin mi? Gelecekteki satışlara yeniden a
 msgid "Read and write"
 msgstr "Okuma ve yazma"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "Devamını oku"
@@ -17249,8 +17260,8 @@ msgstr "Şekil"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "Bunun yerine baş harfleri göster"
 msgid "Show keys"
 msgstr "Anahtarları göster"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "Daha az göster"
@@ -17723,7 +17734,7 @@ msgstr "30 günlük bekleme süresini atla. Bu işlem geri alınamaz."
 msgid "Skip this step"
 msgstr "Bu adımı atla"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "Ana içeriğe atla"
 
@@ -17947,6 +17958,10 @@ msgstr "Ses masası, sponsor koltukları…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "Kaynak"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "Kaynak kodu"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "Ödeme şekli"
 msgid "Term"
 msgstr "Terim"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "Hizmet Koşulları"
 
@@ -20405,7 +20420,7 @@ msgstr "Tekrar dene"
 msgid "Try another email"
 msgstr "Başka bir e-posta deneyin"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Hi.Events'i Ücretsiz Deneyin"
 

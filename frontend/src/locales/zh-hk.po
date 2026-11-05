@@ -4628,6 +4628,10 @@ msgstr "以逗號分隔的描述活動的關鍵字。搜索引擎將使用這些
 msgid "Commission"
 msgstr "佣金"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "社群守則"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "聯絡"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "聯絡 {0}"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "聯絡與投訴"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "開發"
 msgid "Development licence"
 msgstr "開發授權"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "開發授權，不可用於正式環境"
 
@@ -13038,7 +13046,7 @@ msgstr "開啟相片 {photoNumber}"
 msgid "Open settings"
 msgstr "開啟設定"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "打開側邊欄"
@@ -13452,6 +13460,10 @@ msgstr "更新主辦單位狀態失敗。請稍後再試。"
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "主辦單位狀態已更新"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "主辦方條款"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "已落單"
 msgid "Plan"
 msgstr "方案"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "計劃舉辦活動？"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "結賬後信息"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "技術支援"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "列印於 {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "私隱政策"
 
@@ -14946,7 +14957,7 @@ msgstr "重新啟用此日期？它會重新開放售票。"
 msgid "Read and write"
 msgstr "讀寫"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "閱讀更多"
@@ -17249,8 +17260,8 @@ msgstr "形狀"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "改為顯示姓名縮寫"
 msgid "Show keys"
 msgstr "顯示金鑰"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "收起"
@@ -17723,7 +17734,7 @@ msgstr "略過 30 天寬限期。此操作無法撤銷。"
 msgid "Skip this step"
 msgstr "跳過此步驟"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "跳至主要內容"
 
@@ -17947,6 +17958,10 @@ msgstr "調音台、贊助商座位……"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "來源"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "原始碼"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "付款方式"
 msgid "Term"
 msgstr "關鍵字"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "服務條款"
 
@@ -20405,7 +20420,7 @@ msgstr "重試"
 msgid "Try another email"
 msgstr "嘗試其他郵箱"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "免費試用Hi.Events"
 

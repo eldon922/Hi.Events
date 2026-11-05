@@ -1193,5 +1193,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Назначение платежа, которое покупатели должны указывать при офлайн-оплате. Пусто, если номер заказа не используется как назначение платежа.",
     "Order placed: payment needed": "Заказ оформлен: требуется оплата",
     "How to pay": "Как оплатить",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Платёж прошёл успешно, но заказ уже был оформлен с оплатой позже. Заказ: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Платёж прошёл успешно, но заказ уже был оформлен с оплатой позже. Заказ: :id",
+    "Source code": "Исходный код"
 }

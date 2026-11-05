@@ -94,6 +94,8 @@ return [
     'email_logo_link_url' => env('APP_EMAIL_LOGO_LINK_URL', env('APP_FRONTEND_URL', 'http://localhost')),
     'email_footer_text' => env('APP_EMAIL_FOOTER_TEXT'),
 
+    'source_code_url' => 'https://github.com/eldon922/hi.events',
+
     /**
      * Default color theme for organizer homepages
      */

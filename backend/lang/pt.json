@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "A referência que os compradores devem usar ao pagar offline. Vazia quando a referência da encomenda não é usada como referência de pagamento.",
     "Order placed: payment needed": "Encomenda feita: pagamento necessário",
     "How to pay": "Como pagar",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "O pagamento foi efetuado, mas a encomenda já tinha sido feita para pagar mais tarde. Encomenda: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "O pagamento foi efetuado, mas a encomenda já tinha sido feita para pagar mais tarde. Encomenda: :id",
+    "Source code": "Código-fonte"
 }

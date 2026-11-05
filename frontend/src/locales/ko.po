@@ -4628,6 +4628,10 @@ msgstr "이벤트를 설명하는 쉼표로 구분된 키워드입니다. 검색
 msgid "Commission"
 msgstr "수수료"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "커뮤니티 가이드라인"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "연락처"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "{0}에게 문의"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "문의 및 불만 접수"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "개발"
 msgid "Development licence"
 msgstr "개발용 라이선스"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "개발용 라이선스, 운영 환경에서 사용 불가"
 
@@ -13038,7 +13046,7 @@ msgstr "사진 {photoNumber} 열기"
 msgid "Open settings"
 msgstr "설정 열기"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "사이드바 열기"
@@ -13452,6 +13460,10 @@ msgstr "주최자 상태 업데이트에 실패했습니다. 나중에 다시 �
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "주최자 상태가 업데이트되었습니다"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "주최자 약관"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "접수됨"
 msgid "Plan"
 msgstr "플랜"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "이벤트를 계획 중이신가요?"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "결제 완료 후 메시지"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "제공:"
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "{0} 인쇄"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "개인정보 처리방침"
 
@@ -14946,7 +14957,7 @@ msgstr "이 날짜를 재활성화하시겠습니까? 향후 판매를 위해 �
 msgid "Read and write"
 msgstr "읽기 및 쓰기"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "더 보기"
@@ -17249,8 +17260,8 @@ msgstr "도형"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "대신 이니셜 표시"
 msgid "Show keys"
 msgstr "키 표시"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "접기"
@@ -17723,7 +17734,7 @@ msgstr "30일 유예 기간을 건너뜁니다. 이 작업은 되돌릴 수 없�
 msgid "Skip this step"
 msgstr "이 단계 건너뛰기"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "본문으로 건너뛰기"
 
@@ -17947,6 +17958,10 @@ msgstr "음향 조정석, 스폰서석…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "소스"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "소스 코드"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "결제 수단"
 msgid "Term"
 msgstr "기간"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "서비스 약관"
 
@@ -20405,7 +20420,7 @@ msgstr "다시 시도"
 msgid "Try another email"
 msgstr "다른 이메일 시도"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Hi.Events 무료로 체험하기"
 

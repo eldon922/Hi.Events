@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "La référence que les acheteurs doivent utiliser pour un paiement hors ligne. Vide lorsque la référence de commande n'est pas utilisée comme référence de paiement.",
     "Order placed: payment needed": "Commande passée : paiement requis",
     "How to pay": "Comment payer",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Le paiement a réussi, mais la commande avait déjà été passée avec paiement ultérieur. Commande : :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Le paiement a réussi, mais la commande avait déjà été passée avec paiement ultérieur. Commande : :id",
+    "Source code": "Code source"
 }

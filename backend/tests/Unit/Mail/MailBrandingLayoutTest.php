@@ -62,6 +62,23 @@ class MailBrandingLayoutTest extends TestCase
         $this->assertStringContainsString('Powered by', $html);
     }
 
+    public function test_the_footer_names_ekklesia_and_links_hi_events_and_the_source_code(): void
+    {
+        $message = $this->send(new MailBrandingDTO(
+            hideHiEventsBranding: false,
+            showHiEventsPromo: false,
+            promoUrl: self::PROMO_URL,
+        ));
+
+        $html = $message->getOriginalMessage()->getHtmlBody();
+        $text = $message->getOriginalMessage()->getTextBody();
+
+        $this->assertMatchesRegularExpression('/<a href="https:\/\/hi\.events[^"]*"[^>]*>Powered by Ekklesia, based on Hi\.Events<\/a>/', $html);
+        $this->assertMatchesRegularExpression('/<a href="'.preg_quote(config('app.source_code_url'), '/').'"[^>]*>Source code<\/a>/', $html);
+        $this->assertStringContainsString('Powered by Ekklesia, based on Hi.Events (https://hi.events)', $text);
+        $this->assertStringContainsString('Source code: '.config('app.source_code_url'), $text);
+    }
+
     public function test_subscribed_organizers_replace_hi_events_branding_with_their_own(): void
     {
         $html = $this->render(new MailBrandingDTO(
@@ -79,6 +96,18 @@ class MailBrandingLayoutTest extends TestCase
         $this->assertStringNotContainsString('hi-events-stacked-light.png', $html);
         $this->assertStringNotContainsString('Powered by', $html);
         $this->assertStringNotContainsString('Planning an event of your own?', $html);
+    }
+
+    public function test_the_plain_text_part_of_a_subscribed_organizers_mail_has_no_notice(): void
+    {
+        $message = $this->send(new MailBrandingDTO(
+            hideHiEventsBranding: true,
+            showHiEventsPromo: false,
+            promoUrl: self::PROMO_URL,
+            organizerName: 'Acme Events',
+        ));
+
+        $this->assertStringNotContainsString('Powered by', $message->getOriginalMessage()->getTextBody());
     }
 
     public function test_subscribed_organizers_without_a_logo_or_website_show_their_name_unlinked(): void

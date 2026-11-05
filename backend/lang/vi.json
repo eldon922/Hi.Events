@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Mã người mua cần dùng khi thanh toán ngoại tuyến. Để trống khi mã đơn hàng không được dùng làm nội dung thanh toán.",
     "Order placed: payment needed": "Đã đặt hàng: cần thanh toán",
     "How to pay": "Cách thanh toán",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Thanh toán thành công, nhưng đơn hàng đã được đặt để thanh toán sau. Đơn hàng: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Thanh toán thành công, nhưng đơn hàng đã được đặt để thanh toán sau. Đơn hàng: :id",
+    "Source code": "Mã nguồn"
 }

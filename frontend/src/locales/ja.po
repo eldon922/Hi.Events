@@ -4628,6 +4628,10 @@ msgstr "イベントを説明するキーワードをカンマ区切りで入力
 msgid "Commission"
 msgstr "手数料"
 
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "コミュニティガイドライン"
+
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
 msgid "Comp"
@@ -4967,6 +4971,10 @@ msgstr "お問い合わせ"
 #: src/components/common/ContactOrganizerModal/index.tsx:66
 msgid "Contact {0}"
 msgstr "{0}に連絡"
+
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "お問い合わせと苦情"
 
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
@@ -6475,7 +6483,7 @@ msgstr "開発"
 msgid "Development licence"
 msgstr "開発用ライセンス"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "開発用ライセンスです。本番環境では使用できません"
 
@@ -13038,7 +13046,7 @@ msgstr "写真 {photoNumber} を開く"
 msgid "Open settings"
 msgstr "設定を開く"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "サイドバーを開く"
@@ -13452,6 +13460,10 @@ msgstr "主催者のステータスの更新に失敗しました。しばらく
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "主催者のステータスを更新しました"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "主催者規約"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -14195,7 +14207,7 @@ msgstr "注文日時"
 msgid "Plan"
 msgstr "プラン"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "イベントを計画中ですか？"
 
@@ -14399,7 +14411,6 @@ msgid "Post Checkout message"
 msgstr "チェックアウト後のメッセージ"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "提供："
 
@@ -14555,7 +14566,7 @@ msgid "Printed {0}"
 msgstr "{0}に印刷"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
@@ -14946,7 +14957,7 @@ msgstr "この日付を再有効化しますか？今後の販売のために再
 msgid "Read and write"
 msgstr "読み取りと書き込み"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "続きを読む"
@@ -17249,8 +17260,8 @@ msgstr "形状"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17346,7 +17357,7 @@ msgstr "代わりにイニシャルを表示"
 msgid "Show keys"
 msgstr "キーを表示"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "表示を減らす"
@@ -17723,7 +17734,7 @@ msgstr "30日間の猶予期間をスキップします。この操作は元に�
 msgid "Skip this step"
 msgstr "このステップをスキップ"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "メインコンテンツへスキップ"
 
@@ -17947,6 +17958,10 @@ msgstr "音響卓、スポンサー席…"
 #: src/components/routes/admin/Attribution/index.tsx:165
 msgid "Source"
 msgstr "ソース"
+
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "ソースコード"
 
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
@@ -18890,7 +18905,7 @@ msgstr "お預かり"
 msgid "Term"
 msgstr "期間"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "利用規約"
 
@@ -20405,7 +20420,7 @@ msgstr "もう一度試す"
 msgid "Try another email"
 msgstr "別のメールアドレスを試す"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Hi.Eventsを無料で試す"
 

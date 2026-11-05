@@ -32,6 +32,9 @@
 @endif
         <x-mail::footer>
             © {{ date('Y') }} {{ $mailBranding?->hideHiEventsBranding ? $mailBranding->organizerName : config('app.name') }}. @lang('All rights reserved.')
+@unless($mailBranding?->hideHiEventsBranding || app(\HiEvents\Enterprise\Licensing\LicenceService::class)->allows(\HiEvents\Enterprise\Licensing\LicensedFeature::WHITE_LABEL))
+            Powered by Ekklesia, based on Hi.Events (https://hi.events) | {{ __('Source code') }}: {{ config('app.source_code_url') }}
+@endunless
         </x-mail::footer>
     </x-slot:footer>
 </x-mail::layout>

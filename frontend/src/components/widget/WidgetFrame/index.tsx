@@ -74,7 +74,7 @@ const FrameContent = ({style, mode, children, testId, brandingRemoved, frame}: W
         >
             <div ref={contentRef} className={classes.content}>
                 {children}
-                <PoweredByFooter className={classes.poweredBy} brandingRemoved={brandingRemoved}/>
+                <PoweredByFooter className={classes.poweredBy} brandingRemoved={brandingRemoved} withLegalLinks={false}/>
             </div>
         </main>
     );

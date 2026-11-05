@@ -47,7 +47,7 @@ class MailBrandingLayoutTest extends TestCase
         $this->assertStringContainsString('Sell tickets and manage attendees with '.config('app.name').'.', $html);
         $this->assertStringContainsString('href="'.self::PROMO_URL.'"', $html);
         $this->assertStringContainsString('Powered by', $html);
-        $this->assertStringContainsString('hi-events-stacked-light.png', $html);
+        $this->assertStringContainsString('ekklesia-on-light.png', $html);
     }
 
     public function test_without_the_promo_only_the_powered_by_footer_shows(): void
@@ -93,7 +93,7 @@ class MailBrandingLayoutTest extends TestCase
         $this->assertStringContainsString('src="https://cdn.test/acme-logo.png"', $html);
         $this->assertStringContainsString('href="https://acme.test"', $html);
         $this->assertStringContainsString('© '.date('Y').' Acme Events', $html);
-        $this->assertStringNotContainsString('hi-events-stacked-light.png', $html);
+        $this->assertStringNotContainsString('ekklesia-on-light.png', $html);
         $this->assertStringNotContainsString('Powered by', $html);
         $this->assertStringNotContainsString('Planning an event of your own?', $html);
     }

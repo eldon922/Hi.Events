@@ -24,6 +24,7 @@ export const clientBuildEnv: { [K in ConfigKeys]: string } = {
     'VITE_STRIPE_PUBLISHABLE_KEY': import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY,
     'VITE_TURNSTILE_SITE_KEY': import.meta.env.VITE_TURNSTILE_SITE_KEY,
     'VITE_I_HAVE_PURCHASED_A_LICENCE': import.meta.env.VITE_I_HAVE_PURCHASED_A_LICENCE,
+    'VITE_CHECKIN_APP_URL': import.meta.env.VITE_CHECKIN_APP_URL,
     'VITE_FRONTEND_URL': import.meta.env.VITE_FRONTEND_URL,
     'VITE_DEFAULT_IMAGE_URL': import.meta.env.VITE_DEFAULT_IMAGE_URL,
     'VITE_API_URL_SERVER': import.meta.env.VITE_API_URL_SERVER,

@@ -14,12 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 "X-Generator: Poedit 3.6\n"
 
-#: src/components/layouts/Event/index.tsx:260
+#: src/components/layouts/Event/index.tsx:263
 #: src/components/layouts/OrganizerLayout/index.tsx:248
 msgid "- Click to Publish"
 msgstr "- Klik om te publiceren"
 
-#: src/components/layouts/Event/index.tsx:262
+#: src/components/layouts/Event/index.tsx:265
 #: src/components/layouts/OrganizerLayout/index.tsx:250
 msgid "- Click to Unpublish"
 msgstr "- Klik om te verwijderen"
@@ -1779,7 +1779,7 @@ msgstr "Affiliateverkopen worden niet bijgehouden. Dit deactiveert de affiliate.
 msgid "Affiliate updated successfully"
 msgstr "Affiliate succesvol bijgewerkt"
 
-#: src/components/layouts/Event/index.tsx:146
+#: src/components/layouts/Event/index.tsx:149
 #: src/components/modals/DuplicateEventModal/index.tsx:126
 #: src/components/routes/event/Affiliates/index.tsx:67
 msgid "Affiliates"
@@ -2544,7 +2544,7 @@ msgstr "Weet je zeker dat je deze webhook wilt verwijderen?"
 msgid "Are you sure you want to leave?"
 msgstr "Weet u zeker dat u wilt vertrekken?"
 
-#: src/components/layouts/Event/index.tsx:210
+#: src/components/layouts/Event/index.tsx:213
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "Weet je zeker dat je dit evenement concept wilt maken? Dit maakt het evenement onzichtbaar voor het publiek"
 
@@ -2654,7 +2654,7 @@ msgstr "Kunst"
 msgid "As your business is based in Ireland, Irish VAT at 23% applies automatically to all platform fees."
 msgstr "Aangezien uw bedrijf gevestigd is in Ierland, is Ierse BTW van 23% automatisch van toepassing op alle platformkosten."
 
-#: src/components/layouts/Event/index.tsx:231
+#: src/components/layouts/Event/index.tsx:234
 #: src/components/layouts/OrganizerLayout/index.tsx:221
 msgid "Ask an account admin to give you access, or open one of your own events."
 msgstr "Vraag een accountbeheerder om je toegang te geven, of open een van je eigen evenementen."
@@ -2836,7 +2836,7 @@ msgstr "deelnemers"
 #: src/components/common/ProductsTable/index.tsx:96
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:530
 #: src/components/common/StatBoxes/index.tsx:75
-#: src/components/layouts/Event/index.tsx:150
+#: src/components/layouts/Event/index.tsx:153
 #: src/components/modals/ManageOccurrenceModal/index.tsx:179
 #: src/components/modals/ManageOrderModal/index.tsx:336
 #: src/components/routes/admin/Dashboard/index.tsx:367
@@ -3268,7 +3268,7 @@ msgstr "kassa"
 msgid "Box office"
 msgstr "Kassa"
 
-#: src/components/layouts/Event/index.tsx:152
+#: src/components/layouts/Event/index.tsx:155
 #: src/components/routes/event/orders.tsx:86
 #: src/ee/box-office/components/common/BoxOfficeTable/index.tsx:74
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:50
@@ -3737,7 +3737,7 @@ msgstr "Capaciteitstoewijzingen"
 msgid "Capacity management"
 msgstr "Capaciteitsbeheer"
 
-#: src/components/layouts/Event/index.tsx:157
+#: src/components/layouts/Event/index.tsx:160
 msgid "Capacity Management"
 msgstr "Capaciteitsbeheer"
 
@@ -4096,7 +4096,7 @@ msgstr "Inchecklijsten"
 msgid "Check-in Lists"
 msgstr "Inchecklijsten"
 
-#: src/components/layouts/Event/index.tsx:151
+#: src/components/layouts/Event/index.tsx:154
 #: src/components/routes/event/CheckInLists/index.tsx:38
 msgid "Check-In Lists"
 msgstr "Inchecklijsten"
@@ -4837,7 +4837,7 @@ msgstr "Bevestig je e-mailadres"
 msgid "Confirm your email address"
 msgstr "Bevestig je e-mailadres"
 
-#: src/components/layouts/Event/index.tsx:337
+#: src/components/layouts/Event/index.tsx:344
 msgid "Confirm your email to access all features."
 msgstr "Bevestig je e-mailadres om toegang te krijgen tot alle functies."
 
@@ -5969,7 +5969,7 @@ msgid "Dark"
 msgstr "Donker"
 
 #: src/components/layouts/Admin/index.tsx:17
-#: src/components/layouts/Event/index.tsx:117
+#: src/components/layouts/Event/index.tsx:120
 #: src/components/routes/admin/Dashboard/index.tsx:179
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:60
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
@@ -6715,7 +6715,7 @@ msgid "Downloading Invoice"
 msgstr "Factuur downloaden"
 
 #: src/components/common/EventCard/index.tsx:99
-#: src/components/layouts/Event/index.tsx:259
+#: src/components/layouts/Event/index.tsx:262
 #: src/components/layouts/OrganizerLayout/index.tsx:247
 #: src/components/routes/admin/Announcements/index.tsx:183
 #: src/components/routes/admin/Announcements/index.tsx:472
@@ -7237,7 +7237,7 @@ msgstr "E-mailwijziging succesvol geannuleerd"
 msgid "Email change pending"
 msgstr "E-mailwijziging in behandeling"
 
-#: src/components/layouts/Event/index.tsx:98
+#: src/components/layouts/Event/index.tsx:101
 #: src/components/layouts/OrganizerLayout/index.tsx:142
 #: src/components/routes/settings/Profile/index.tsx:136
 msgid "Email confirmation resent successfully"
@@ -7824,7 +7824,7 @@ msgstr "Evenement niet beschikbaar"
 msgid "Event not live"
 msgstr "Evenement niet live"
 
-#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:333
 msgid "Event Page"
 msgstr "Evenementpagina"
 
@@ -7836,7 +7836,7 @@ msgstr "Evenementvoorbeeld"
 msgid "Event restored successfully"
 msgstr "Evenement succesvol hersteld"
 
-#: src/components/layouts/Event/index.tsx:134
+#: src/components/layouts/Event/index.tsx:137
 #: src/components/routes/event/Settings/index.tsx:183
 msgid "Event Settings"
 msgstr "Evenement instellingen"
@@ -7847,14 +7847,14 @@ msgstr "Evenement instellen"
 
 #: src/components/common/EventCard/index.tsx:82
 #: src/components/common/StatusToggle/index.tsx:62
-#: src/components/layouts/Event/index.tsx:221
+#: src/components/layouts/Event/index.tsx:224
 #: src/components/modals/PublishEventModal/index.tsx:129
 msgid "Event status update failed. Please try again later"
 msgstr "Update status evenement mislukt. Probeer het later opnieuw"
 
 #: src/components/common/EventCard/index.tsx:79
 #: src/components/common/StatusToggle/index.tsx:54
-#: src/components/layouts/Event/index.tsx:218
+#: src/components/layouts/Event/index.tsx:221
 msgid "Event status updated"
 msgstr "Evenementstatus bijgewerkt"
 
@@ -9179,7 +9179,7 @@ msgstr "Naar de planning"
 msgid "Go to seating settings"
 msgstr "Naar zitplaatsinstellingen"
 
-#: src/components/layouts/Event/index.tsx:232
+#: src/components/layouts/Event/index.tsx:235
 #: src/components/layouts/OrganizerLayout/index.tsx:222
 msgid "Go to your events"
 msgstr "Naar je evenementen"
@@ -9260,7 +9260,7 @@ msgstr "Groepen"
 msgid "Guest"
 msgstr "Gast"
 
-#: src/components/layouts/Event/index.tsx:149
+#: src/components/layouts/Event/index.tsx:152
 msgid "Guest Management"
 msgstr "Gastenbeheer"
 
@@ -9582,7 +9582,7 @@ msgstr "Plaatsen vasthouden voor"
 msgid "Homepage Design"
 msgstr "Homepage-ontwerp"
 
-#: src/components/layouts/Event/index.tsx:136
+#: src/components/layouts/Event/index.tsx:139
 #: src/components/layouts/OrganizerLayout/index.tsx:122
 msgid "Homepage Designer"
 msgstr "Homepage ontwerper"
@@ -9994,7 +9994,7 @@ msgstr "Directe Stripe-uitbetalingen"
 msgid "Instructions"
 msgstr "Instructies"
 
-#: src/components/layouts/Event/index.tsx:163
+#: src/components/layouts/Event/index.tsx:166
 #: src/components/layouts/OrganizerLayout/index.tsx:130
 #: src/components/modals/DuplicateEventModal/index.tsx:165
 msgid "Integrations"
@@ -10641,7 +10641,7 @@ msgstr "Line-up"
 msgid "Lineup & schedule"
 msgstr "Line-up & programma"
 
-#: src/components/layouts/Event/index.tsx:135
+#: src/components/layouts/Event/index.tsx:138
 #: src/components/routes/event/Lineup/index.tsx:58
 msgid "Lineup & Schedule"
 msgstr "Line-up & programma"
@@ -10718,7 +10718,7 @@ msgid "List your upcoming events on your own website. Visitors can buy tickets w
 msgstr "Toon je komende evenementen op je eigen website. Bezoekers kunnen tickets kopen zonder je pagina te verlaten."
 
 #: src/components/common/EventCard/index.tsx:102
-#: src/components/layouts/Event/index.tsx:261
+#: src/components/layouts/Event/index.tsx:264
 #: src/components/layouts/OrganizerLayout/index.tsx:249
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:115
 #: src/components/routes/event/Lineup/EventStatusBadge.tsx:8
@@ -11195,7 +11195,7 @@ msgid "Message Sent"
 msgstr "Bericht verzonden"
 
 #: src/components/layouts/Admin/index.tsx:22
-#: src/components/layouts/Event/index.tsx:153
+#: src/components/layouts/Event/index.tsx:156
 #: src/components/routes/event/messages.tsx:228
 msgid "Messages"
 msgstr "Berichten"
@@ -12596,7 +12596,7 @@ msgstr "Datum"
 msgid "Occurrence Cancelled"
 msgstr "Datum geannuleerd"
 
-#: src/components/layouts/Event/index.tsx:130
+#: src/components/layouts/Event/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/index.tsx:499
 msgid "Occurrence Schedule"
 msgstr "Datumplanning"
@@ -12997,6 +12997,10 @@ msgstr "Open Check-In"
 msgid "Open Check-In Page"
 msgstr "Open Check-In Pagina"
 
+#: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+msgid "Open Ekklesia Check-In"
+msgstr "Open Ekklesia Check-In"
+
 #: src/components/common/WidgetEditor/ContentFields.tsx:205
 #: src/components/routes/admin/SpamEvents/index.tsx:238
 #: src/components/routes/admin/SpamEvents/index.tsx:365
@@ -13313,7 +13317,7 @@ msgstr "bestellingen"
 #: src/components/common/OccurrenceAttendeesAndOrders/index.tsx:65
 #: src/components/common/WidgetEditor/WidgetStats.tsx:16
 #: src/components/layouts/Admin/index.tsx:21
-#: src/components/layouts/Event/index.tsx:144
+#: src/components/layouts/Event/index.tsx:147
 #: src/components/modals/ManageOccurrenceModal/index.tsx:183
 #: src/components/routes/admin/Attribution/index.tsx:200
 #: src/components/routes/admin/Dashboard/index.tsx:236
@@ -13383,7 +13387,7 @@ msgstr "Organisator"
 msgid "Organizer archived successfully"
 msgstr "Organisator succesvol gearchiveerd"
 
-#: src/components/layouts/Event/index.tsx:110
+#: src/components/layouts/Event/index.tsx:113
 #: src/components/layouts/OrganizerLayout/index.tsx:106
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
 msgid "Organizer Dashboard"
@@ -13506,7 +13510,7 @@ msgstr "Aanpassing verwijderd"
 msgid "Override the global default for this account."
 msgstr "Overschrijf de globale standaard voor dit account."
 
-#: src/components/layouts/Event/index.tsx:116
+#: src/components/layouts/Event/index.tsx:119
 msgid "Overview"
 msgstr "Overzicht"
 
@@ -13920,7 +13924,7 @@ msgid "Pending review"
 msgstr "In afwachting van beoordeling"
 
 #: src/components/common/EventCard/index.tsx:96
-#: src/components/layouts/Event/index.tsx:257
+#: src/components/layouts/Event/index.tsx:260
 #: src/components/routes/admin/Messages/index.tsx:124
 msgid "Pending Review"
 msgstr "In afwachting van beoordeling"
@@ -14426,8 +14430,8 @@ msgstr "Voorbeeld"
 msgid "Preview checkout form"
 msgstr "Voorbeeld afrekenformulier"
 
-#: src/components/layouts/Event/index.tsx:319
-#: src/components/layouts/Event/index.tsx:323
+#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:330
 msgid "Preview Event page"
 msgstr "Voorbeeld van de evenementpagina"
 
@@ -14720,7 +14724,7 @@ msgstr "kortingscodes"
 msgid "Promo codes"
 msgstr "Kortingscodes"
 
-#: src/components/layouts/Event/index.tsx:145
+#: src/components/layouts/Event/index.tsx:148
 #: src/components/routes/event/promo-codes.tsx:34
 msgid "Promo Codes"
 msgstr "Promo codes"
@@ -15205,7 +15209,7 @@ msgid "Register"
 msgstr "Registreer"
 
 #: src/components/common/QuestionsTable/index.tsx:424
-#: src/components/layouts/Event/index.tsx:139
+#: src/components/layouts/Event/index.tsx:142
 msgid "Registration Questions"
 msgstr "Registratievragen"
 
@@ -15471,7 +15475,7 @@ msgstr "Herhaling"
 msgid "Report not found"
 msgstr "Rapport niet gevonden"
 
-#: src/components/layouts/Event/index.tsx:120
+#: src/components/layouts/Event/index.tsx:123
 #: src/components/layouts/OrganizerLayout/index.tsx:112
 #: src/components/routes/event/Reports/index.tsx:54
 #: src/components/routes/organizer/Reports/index.tsx:55
@@ -15552,7 +15556,7 @@ msgstr "Bevestiging opnieuw verzenden"
 msgid "Resend Confirmation Email"
 msgstr "Bevestigingsmail opnieuw verzenden"
 
-#: src/components/layouts/Event/index.tsx:339
+#: src/components/layouts/Event/index.tsx:346
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:162
 msgid "Resend email"
 msgstr "E-mail opnieuw verzenden"
@@ -16555,7 +16559,7 @@ msgstr "Tussenruimte tussen stoelen"
 msgid "Seated"
 msgstr "Stoelkeuze"
 
-#: src/components/layouts/Event/index.tsx:138
+#: src/components/layouts/Event/index.tsx:141
 #: src/ee/seating/components/routes/event/Seating/AttachSeatMap.tsx:40
 #: src/ee/seating/components/routes/event/Seating/index.tsx:62
 #: src/ee/seating/components/routes/event/Seating/index.tsx:67
@@ -17201,7 +17205,7 @@ msgstr "Instelling bijgewerkt"
 msgid "Settings"
 msgstr "Instellingen"
 
-#: src/components/layouts/Event/index.tsx:127
+#: src/components/layouts/Event/index.tsx:130
 msgid "Setup & Design"
 msgstr "Instellingen & ontwerp"
 
@@ -17248,8 +17252,8 @@ msgstr "Deel"
 msgid "Share Affiliate Link"
 msgstr "Deel affiliatelink"
 
-#: src/components/layouts/Event/index.tsx:277
-#: src/components/layouts/Event/index.tsx:283
+#: src/components/layouts/Event/index.tsx:280
+#: src/components/layouts/Event/index.tsx:290
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:102
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:131
 msgid "Share Event"
@@ -17885,7 +17889,7 @@ msgid "Something went wrong. Please try again later."
 msgstr "Er is iets misgegaan. Probeer het later opnieuw."
 
 #: src/components/common/TwoFactor/TwoFactorSetupFlow.tsx:30
-#: src/components/layouts/Event/index.tsx:102
+#: src/components/layouts/Event/index.tsx:105
 #: src/components/layouts/OrganizerLayout/index.tsx:146
 #: src/components/routes/admin/DeletionRequests/index.tsx:64
 #: src/components/routes/admin/Users/index.tsx:33
@@ -18798,7 +18802,7 @@ msgstr "Belastingen en heffingen"
 msgid "Taxes and Fees"
 msgstr "Belastingen en heffingen"
 
-#: src/components/layouts/Event/index.tsx:166
+#: src/components/layouts/Event/index.tsx:169
 #: src/components/layouts/OrganizerLayout/index.tsx:133
 #: src/components/layouts/SettingsLayout/index.tsx:67
 #: src/components/routes/event/Team/index.tsx:13
@@ -18807,7 +18811,7 @@ msgstr "Belastingen en heffingen"
 msgid "Team"
 msgstr "Team"
 
-#: src/components/layouts/Event/index.tsx:167
+#: src/components/layouts/Event/index.tsx:170
 #: src/components/layouts/OrganizerLayout/index.tsx:134
 msgid "Team Access"
 msgstr "Teamtoegang"
@@ -19562,7 +19566,7 @@ msgstr "Dit evenement is nog niet gepubliceerd"
 msgid "This event is not published. Sales are still recorded."
 msgstr "Dit evenement is niet gepubliceerd. Verkopen worden toch geregistreerd."
 
-#: src/components/layouts/Event/index.tsx:201
+#: src/components/layouts/Event/index.tsx:204
 msgid "This event is pending manual review and cannot be published until the review is complete."
 msgstr "Dit evenement wacht op handmatige beoordeling en kan pas worden gepubliceerd nadat de beoordeling is afgerond."
 
@@ -19911,7 +19915,7 @@ msgstr "Ticketontwerp"
 msgid "Ticket design saved successfully"
 msgstr "Ticketontwerp succesvol opgeslagen"
 
-#: src/components/layouts/Event/index.tsx:137
+#: src/components/layouts/Event/index.tsx:140
 msgid "Ticket Designer"
 msgstr "Ticket ontwerper"
 
@@ -19977,7 +19981,7 @@ msgstr "Tickettype"
 msgid "Ticket Type"
 msgstr "Tickettype"
 
-#: src/components/layouts/Event/index.tsx:142
+#: src/components/layouts/Event/index.tsx:145
 msgid "Ticketing & Sales"
 msgstr "Ticketing & verkoop"
 
@@ -19997,7 +20001,7 @@ msgstr "tickets"
 msgid "Tickets"
 msgstr "Tickets"
 
-#: src/components/layouts/Event/index.tsx:143
+#: src/components/layouts/Event/index.tsx:146
 #: src/components/routes/event/products.tsx:68
 msgid "Tickets & Products"
 msgstr "Tickets en producten"
@@ -21342,7 +21346,7 @@ msgstr "Verifieer e-mail"
 msgid "Verify recovery code"
 msgstr "Herstelcode verifiëren"
 
-#: src/components/layouts/Event/index.tsx:336
+#: src/components/layouts/Event/index.tsx:343
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:156
 msgid "Verify your email"
 msgstr "Verifieer je e-mailadres"
@@ -21480,7 +21484,7 @@ msgstr "Bericht bekijken"
 msgid "View on event page"
 msgstr "Bekijken op evenementpagina"
 
-#: src/components/layouts/Event/index.tsx:247
+#: src/components/layouts/Event/index.tsx:250
 #: src/components/layouts/OrganizerLayout/index.tsx:237
 msgid "View only"
 msgstr "Alleen bekijken"
@@ -21615,7 +21619,7 @@ msgstr "Wachten tot Stripe je betaling bevestigt…"
 
 #: src/components/forms/ProductForm/index.tsx:466
 #: src/components/layouts/AuthLayout/AuthShell.tsx:16
-#: src/components/layouts/Event/index.tsx:154
+#: src/components/layouts/Event/index.tsx:157
 #: src/components/routes/event/Settings/index.tsx:100
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:55
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:73
@@ -21884,7 +21888,7 @@ msgstr "Webhook verzendt geen meldingen"
 msgid "Webhook will send notifications"
 msgstr "Webhook stuurt meldingen"
 
-#: src/components/layouts/Event/index.tsx:165
+#: src/components/layouts/Event/index.tsx:168
 #: src/components/layouts/OrganizerLayout/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:167
 #: src/components/routes/event/Webhooks/index.tsx:67
@@ -22208,7 +22212,7 @@ msgstr "Widget aangemaakt"
 msgid "Widget deleted"
 msgstr "Widget verwijderd"
 
-#: src/components/layouts/Event/index.tsx:164
+#: src/components/layouts/Event/index.tsx:167
 #: src/components/layouts/OrganizerLayout/index.tsx:123
 msgid "Widget Embed"
 msgstr "Widget insluiten"
@@ -22447,7 +22451,7 @@ msgstr "Je hebt de providergegevens gewijzigd, dus voer het client secret opnieu
 msgid "You confirmed it's you. Continue within a few minutes."
 msgstr "Je hebt bevestigd dat jij het bent. Ga binnen een paar minuten verder."
 
-#: src/components/layouts/Event/index.tsx:230
+#: src/components/layouts/Event/index.tsx:233
 msgid "You don't have access to this event"
 msgstr "Je hebt geen toegang tot dit evenement"
 

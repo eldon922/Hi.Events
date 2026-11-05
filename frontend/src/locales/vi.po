@@ -907,7 +907,7 @@ msgstr "Thông báo hủy đã được gửi đến"
 msgid "a change in duration"
 msgstr "thay đổi thời lượng"
 
-#: src/components/common/CheckInListTable/index.tsx:287
+#: src/components/common/CheckInListTable/index.tsx:317
 msgid "A check-in list lets staff scan tickets at the door on a phone, tablet, or USB scanner. Share the link with your team, no account needed."
 msgstr "Danh sách check-in cho phép nhân viên quét vé tại cửa bằng điện thoại, máy tính bảng hoặc máy quét USB. Chia sẻ liên kết với đội ngũ, không cần tài khoản."
 
@@ -1261,7 +1261,7 @@ msgstr "Ngày kích hoạt"
 #: src/components/common/AttendeeStatusBadge/index.tsx:27
 #: src/components/common/AttendeeTable/index.tsx:274
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:177
+#: src/components/common/CheckInListTable/index.tsx:183
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
@@ -1888,7 +1888,7 @@ msgstr "tất cả các ngày"
 msgid "All dates"
 msgstr "Tất cả các ngày"
 
-#: src/components/common/CheckInListTable/index.tsx:116
+#: src/components/common/CheckInListTable/index.tsx:122
 #: src/components/modals/ProductPurchasesModal/index.tsx:276
 #: src/components/routes/event/attendees.tsx:236
 #: src/components/routes/event/orders.tsx:226
@@ -2616,7 +2616,7 @@ msgid "Are you sure you would like to delete this Capacity Assignment?"
 msgstr "Bạn có chắc chắn muốn xóa phân bổ sức chứa này không?"
 
 #: src/components/common/CheckInListList/index.tsx:184
-#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/common/CheckInListTable/index.tsx:252
 msgid "Are you sure you would like to delete this Check-In List?"
 msgstr "Bạn có chắc là bạn muốn xóa danh sách tham dự này không?"
 
@@ -4058,7 +4058,7 @@ msgstr "Không thể check-in"
 msgid "Check-in list"
 msgstr "Danh sách check-in"
 
-#: src/components/common/CheckInListTable/index.tsx:69
+#: src/components/common/CheckInListTable/index.tsx:75
 msgid "Check-In List"
 msgstr "Danh sách check-in"
 
@@ -4067,7 +4067,7 @@ msgid "Check-In List Created"
 msgstr "Danh sách Check-In Đã Tạo!"
 
 #: src/components/common/CheckInListList/index.tsx:34
-#: src/components/common/CheckInListTable/index.tsx:56
+#: src/components/common/CheckInListTable/index.tsx:62
 msgid "Check-In List deleted successfully"
 msgstr "Danh sách check-in đã bị xóa thành công"
 
@@ -4128,11 +4128,11 @@ msgid "Check-in Summary"
 msgstr "Tóm tắt Check-in"
 
 #: src/components/common/CheckInListList/index.tsx:162
-#: src/components/common/CheckInListTable/index.tsx:41
+#: src/components/common/CheckInListTable/index.tsx:45
 msgid "Check-In URL copied to clipboard"
 msgstr "URL check-in đã được sao chép vào clipboard"
 
-#: src/components/common/CheckInListTable/index.tsx:139
+#: src/components/common/CheckInListTable/index.tsx:145
 #: src/components/modals/ManageAttendeeModal/index.tsx:184
 msgid "Check-Ins"
 msgstr "Check-In"
@@ -5090,6 +5090,7 @@ msgstr "Cài đặt cookie"
 #: src/components/common/WidgetEditor/index.tsx:221
 #: src/components/common/WidgetEditor/InstallPanel.tsx:52
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ShareModal/index.tsx:255
@@ -5126,6 +5127,7 @@ msgstr "Sao chép hướng dẫn từng bước để dán vào ChatGPT, Claude,
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ManageOrderModal/index.tsx:233
@@ -5167,7 +5169,7 @@ msgid "Copy check-in link"
 msgstr "Sao chép liên kết check-in"
 
 #: src/components/common/CheckInListList/index.tsx:156
-#: src/components/common/CheckInListTable/index.tsx:209
+#: src/components/common/CheckInListTable/index.tsx:215
 msgid "Copy Check-In URL"
 msgstr "Sao chép URL check-in"
 
@@ -5457,7 +5459,7 @@ msgstr "Ảnh bìa sẽ hiển thị ở đầu trang của nhà tổ chức"
 msgid "Covers"
 msgstr "Phạm vi"
 
-#: src/components/common/CheckInListTable/index.tsx:92
+#: src/components/common/CheckInListTable/index.tsx:98
 msgid "Covers every ticket"
 msgstr "Bao gồm mọi vé"
 
@@ -5583,7 +5585,7 @@ msgid "Create Category"
 msgstr "Tạo thể loại"
 
 #: src/components/common/CheckInListList/index.tsx:60
-#: src/components/common/CheckInListTable/index.tsx:295
+#: src/components/common/CheckInListTable/index.tsx:325
 #: src/components/modals/CreateCheckInListModal/index.tsx:89
 #: src/components/modals/CreateCheckInListModal/index.tsx:110
 #: src/components/routes/event/CheckInLists/index.tsx:76
@@ -5941,7 +5943,7 @@ msgstr "Sàn nhảy"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:155
 #: src/components/common/CheckInListList/index.tsx:176
-#: src/components/common/CheckInListTable/index.tsx:225
+#: src/components/common/CheckInListTable/index.tsx:244
 #: src/components/common/EntityActions/index.tsx:58
 #: src/components/common/LocationsTable/index.tsx:71
 #: src/components/common/OrganizerWebhookTable/index.tsx:121
@@ -5976,7 +5978,7 @@ msgid "Dashboard"
 msgstr "Dashboard"
 
 #: src/components/common/AdminOrdersTable/index.tsx:94
-#: src/components/common/CheckInListTable/index.tsx:107
+#: src/components/common/CheckInListTable/index.tsx:113
 #: src/components/common/OrderDetails/index.tsx:44
 #: src/components/common/WaitlistTable/index.tsx:187
 #: src/components/common/WidgetEditor/ContentFields.tsx:77
@@ -6132,7 +6134,7 @@ msgstr "Giảm"
 msgid "Decrease quantity"
 msgstr "Giảm số lượng"
 
-#: src/components/common/CheckInListTable/index.tsx:87
+#: src/components/common/CheckInListTable/index.tsx:93
 #: src/components/routes/admin/Accounts/AccountDetail/OrganizerAdminModal.tsx:117
 #: src/components/routes/event/OccurrencesTab/PriceOverrideForm/index.tsx:292
 #: src/components/routes/settings/TaxesAndFees/index.tsx:51
@@ -6261,7 +6263,7 @@ msgid "Delete category"
 msgstr "Xóa danh mục"
 
 #: src/components/common/CheckInListList/index.tsx:179
-#: src/components/common/CheckInListTable/index.tsx:228
+#: src/components/common/CheckInListTable/index.tsx:247
 msgid "Delete Check-In List"
 msgstr "Xóa danh sách check-in"
 
@@ -6656,6 +6658,10 @@ msgstr "Quyên góp"
 msgid "Done"
 msgstr "Xong"
 
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
+msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
+msgstr "Nhân viên ở cửa có thể mở liên kết này hoặc quét mã QR này bằng điện thoại. Hãy coi nó như một mật khẩu dùng chung."
+
 #: src/components/common/CheckIn/CheckInDescriptionModal.tsx:20
 msgid "Door staff instructions"
 msgstr "Hướng dẫn cho nhân viên cửa"
@@ -7018,7 +7024,7 @@ msgid "Edit category"
 msgstr "Chỉnh sửa danh mục"
 
 #: src/components/common/CheckInListList/index.tsx:147
-#: src/components/common/CheckInListTable/index.tsx:200
+#: src/components/common/CheckInListTable/index.tsx:206
 #: src/components/modals/EditCheckInListModal/index.tsx:77
 msgid "Edit Check-In List"
 msgstr "Chỉnh sửa danh sách check-in"
@@ -7158,6 +7164,11 @@ msgstr "Trình chỉnh sửa"
 #: src/constants/eventCategories.ts:28
 msgid "Education"
 msgstr "Giáo dục"
+
+#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:22
+msgid "Ekklesia Check-In link and QR code"
+msgstr "Liên kết và mã QR Check-In Ekklesia"
 
 #: src/components/routes/admin/Messages/index.tsx:325
 msgid "Eligibility Failures"
@@ -9872,7 +9883,7 @@ msgstr "Trong nhà cung cấp danh tính của bạn, hãy tạo một ứng d�
 
 #: src/components/common/AffiliateTable/index.tsx:132
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:182
+#: src/components/common/CheckInListTable/index.tsx:188
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
@@ -9930,12 +9941,12 @@ msgid "Included in your plan. Hi.Events branding is hidden on your event pages, 
 msgstr "Đã bao gồm trong gói của bạn. Thương hiệu Hi.Events được ẩn trên trang sự kiện, widget, vé và email của bạn."
 
 #: src/components/common/CheckInListList/index.tsx:102
-#: src/components/common/CheckInListTable/index.tsx:95
+#: src/components/common/CheckInListTable/index.tsx:101
 msgid "Includes {0} products"
 msgstr "Bao gồm các sản phẩm {0}"
 
 #: src/components/common/CheckInListList/index.tsx:103
-#: src/components/common/CheckInListTable/index.tsx:94
+#: src/components/common/CheckInListTable/index.tsx:100
 msgid "Includes 1 product"
 msgstr "Bao gồm 1 sản phẩm"
 
@@ -10933,7 +10944,7 @@ msgstr "Biến trang sự kiện, widget, vé và email thành của riêng bạ
 
 #: src/components/common/CapacityAssignmentList/index.tsx:141
 #: src/components/common/CheckInListList/index.tsx:144
-#: src/components/common/CheckInListTable/index.tsx:221
+#: src/components/common/CheckInListTable/index.tsx:240
 #: src/components/common/EntityActions/index.tsx:44
 #: src/components/common/LocationsTable/index.tsx:60
 #: src/components/common/OrganizerWebhookTable/index.tsx:98
@@ -11820,7 +11831,7 @@ msgid "No changes"
 msgstr "Không có thay đổi"
 
 #: src/components/common/CheckInListList/index.tsx:45
-#: src/components/common/CheckInListTable/index.tsx:282
+#: src/components/common/CheckInListTable/index.tsx:312
 msgid "No Check-In Lists"
 msgstr "Không có danh sách check-in"
 
@@ -12985,18 +12996,21 @@ msgstr "Mở quầy vé"
 msgid "Open check-in"
 msgstr "Mở check-in"
 
-#: src/components/common/CheckInListTable/index.tsx:256
+#: src/components/common/CheckInListTable/index.tsx:275
 #: src/components/routes/event/CheckInLists/index.tsx:58
 msgid "Open Check-In"
 msgstr "Mở Check-In"
 
 #: src/components/common/CheckInListList/index.tsx:167
-#: src/components/common/CheckInListTable/index.tsx:214
+#: src/components/common/CheckInListTable/index.tsx:220
 #: src/components/modals/CheckInListSuccessModal/index.tsx:56
 msgid "Open Check-In Page"
 msgstr "Mở Trang Check-In"
 
+#: src/components/common/CheckInListTable/index.tsx:227
+#: src/components/common/CheckInListTable/index.tsx:286
 #: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:59
 msgid "Open Ekklesia Check-In"
 msgstr "Mở Check-In Ekklesia"
 
@@ -18238,7 +18252,7 @@ msgstr "Thống kê"
 #: src/components/common/AdminOrdersTable/index.tsx:85
 #: src/components/common/AffiliateTable/index.tsx:84
 #: src/components/common/AttendeeTable/index.tsx:265
-#: src/components/common/CheckInListTable/index.tsx:167
+#: src/components/common/CheckInListTable/index.tsx:173
 #: src/components/common/OrderDetails/index.tsx:73
 #: src/components/common/OrdersTable/index.tsx:342
 #: src/components/common/OrganizerWebhookTable/index.tsx:244

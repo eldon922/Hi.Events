@@ -907,7 +907,7 @@ msgstr "취소 안내가 다음으로 발송되었습니다:"
 msgid "a change in duration"
 msgstr "소요 시간 변경"
 
-#: src/components/common/CheckInListTable/index.tsx:287
+#: src/components/common/CheckInListTable/index.tsx:317
 msgid "A check-in list lets staff scan tickets at the door on a phone, tablet, or USB scanner. Share the link with your team, no account needed."
 msgstr "체크인 목록을 사용하면 스태프가 현장에서 휴대폰, 태블릿 또는 USB 스캐너로 티켓을 스캔할 수 있습니다. 링크를 팀과 공유하세요. 계정이 필요하지 않습니다."
 
@@ -1261,7 +1261,7 @@ msgstr "활성화 날짜"
 #: src/components/common/AttendeeStatusBadge/index.tsx:27
 #: src/components/common/AttendeeTable/index.tsx:274
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:177
+#: src/components/common/CheckInListTable/index.tsx:183
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
@@ -1888,7 +1888,7 @@ msgstr "전체 날짜"
 msgid "All dates"
 msgstr "모든 날짜"
 
-#: src/components/common/CheckInListTable/index.tsx:116
+#: src/components/common/CheckInListTable/index.tsx:122
 #: src/components/modals/ProductPurchasesModal/index.tsx:276
 #: src/components/routes/event/attendees.tsx:236
 #: src/components/routes/event/orders.tsx:226
@@ -2616,7 +2616,7 @@ msgid "Are you sure you would like to delete this Capacity Assignment?"
 msgstr "이 정원 할당을 삭제하시겠습니까?"
 
 #: src/components/common/CheckInListList/index.tsx:184
-#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/common/CheckInListTable/index.tsx:252
 msgid "Are you sure you would like to delete this Check-In List?"
 msgstr "이 체크인 목록을 삭제하시겠습니까?"
 
@@ -4058,7 +4058,7 @@ msgstr "체크인을 이용할 수 없습니다"
 msgid "Check-in list"
 msgstr "체크인 목록"
 
-#: src/components/common/CheckInListTable/index.tsx:69
+#: src/components/common/CheckInListTable/index.tsx:75
 msgid "Check-In List"
 msgstr "체크인 목록"
 
@@ -4067,7 +4067,7 @@ msgid "Check-In List Created"
 msgstr "체크인 목록 생성됨"
 
 #: src/components/common/CheckInListList/index.tsx:34
-#: src/components/common/CheckInListTable/index.tsx:56
+#: src/components/common/CheckInListTable/index.tsx:62
 msgid "Check-In List deleted successfully"
 msgstr "체크인 목록이 성공적으로 삭제되었습니다"
 
@@ -4128,11 +4128,11 @@ msgid "Check-in Summary"
 msgstr "체크인 요약"
 
 #: src/components/common/CheckInListList/index.tsx:162
-#: src/components/common/CheckInListTable/index.tsx:41
+#: src/components/common/CheckInListTable/index.tsx:45
 msgid "Check-In URL copied to clipboard"
 msgstr "체크인 URL이 클립보드에 복사되었습니다"
 
-#: src/components/common/CheckInListTable/index.tsx:139
+#: src/components/common/CheckInListTable/index.tsx:145
 #: src/components/modals/ManageAttendeeModal/index.tsx:184
 msgid "Check-Ins"
 msgstr "체크인"
@@ -5090,6 +5090,7 @@ msgstr "쿠키 설정"
 #: src/components/common/WidgetEditor/index.tsx:221
 #: src/components/common/WidgetEditor/InstallPanel.tsx:52
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ShareModal/index.tsx:255
@@ -5126,6 +5127,7 @@ msgstr "ChatGPT, Claude, Cursor 또는 사이트 빌더의 AI 어시스턴트에
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ManageOrderModal/index.tsx:233
@@ -5167,7 +5169,7 @@ msgid "Copy check-in link"
 msgstr "체크인 링크 복사"
 
 #: src/components/common/CheckInListList/index.tsx:156
-#: src/components/common/CheckInListTable/index.tsx:209
+#: src/components/common/CheckInListTable/index.tsx:215
 msgid "Copy Check-In URL"
 msgstr "체크인 URL 복사"
 
@@ -5457,7 +5459,7 @@ msgstr "커버 이미지는 주최자 페이지 상단에 표시됩니다"
 msgid "Covers"
 msgstr "적용 범위"
 
-#: src/components/common/CheckInListTable/index.tsx:92
+#: src/components/common/CheckInListTable/index.tsx:98
 msgid "Covers every ticket"
 msgstr "모든 티켓에 적용"
 
@@ -5583,7 +5585,7 @@ msgid "Create Category"
 msgstr "카테고리 생성"
 
 #: src/components/common/CheckInListList/index.tsx:60
-#: src/components/common/CheckInListTable/index.tsx:295
+#: src/components/common/CheckInListTable/index.tsx:325
 #: src/components/modals/CreateCheckInListModal/index.tsx:89
 #: src/components/modals/CreateCheckInListModal/index.tsx:110
 #: src/components/routes/event/CheckInLists/index.tsx:76
@@ -5941,7 +5943,7 @@ msgstr "댄스 플로어"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:155
 #: src/components/common/CheckInListList/index.tsx:176
-#: src/components/common/CheckInListTable/index.tsx:225
+#: src/components/common/CheckInListTable/index.tsx:244
 #: src/components/common/EntityActions/index.tsx:58
 #: src/components/common/LocationsTable/index.tsx:71
 #: src/components/common/OrganizerWebhookTable/index.tsx:121
@@ -5976,7 +5978,7 @@ msgid "Dashboard"
 msgstr "대시보드"
 
 #: src/components/common/AdminOrdersTable/index.tsx:94
-#: src/components/common/CheckInListTable/index.tsx:107
+#: src/components/common/CheckInListTable/index.tsx:113
 #: src/components/common/OrderDetails/index.tsx:44
 #: src/components/common/WaitlistTable/index.tsx:187
 #: src/components/common/WidgetEditor/ContentFields.tsx:77
@@ -6132,7 +6134,7 @@ msgstr "감소"
 msgid "Decrease quantity"
 msgstr "수량 감소"
 
-#: src/components/common/CheckInListTable/index.tsx:87
+#: src/components/common/CheckInListTable/index.tsx:93
 #: src/components/routes/admin/Accounts/AccountDetail/OrganizerAdminModal.tsx:117
 #: src/components/routes/event/OccurrencesTab/PriceOverrideForm/index.tsx:292
 #: src/components/routes/settings/TaxesAndFees/index.tsx:51
@@ -6261,7 +6263,7 @@ msgid "Delete category"
 msgstr "카테고리 삭제"
 
 #: src/components/common/CheckInListList/index.tsx:179
-#: src/components/common/CheckInListTable/index.tsx:228
+#: src/components/common/CheckInListTable/index.tsx:247
 msgid "Delete Check-In List"
 msgstr "체크인 목록 삭제"
 
@@ -6656,6 +6658,10 @@ msgstr "기부"
 msgid "Done"
 msgstr "완료"
 
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
+msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
+msgstr "출입 담당 직원은 이 링크를 열거나 휴대폰으로 이 QR 코드를 스캔할 수 있습니다. 공용 비밀번호처럼 다뤄 주세요."
+
 #: src/components/common/CheckIn/CheckInDescriptionModal.tsx:20
 msgid "Door staff instructions"
 msgstr "현장 스태프 안내 사항"
@@ -7018,7 +7024,7 @@ msgid "Edit category"
 msgstr "카테고리 수정"
 
 #: src/components/common/CheckInListList/index.tsx:147
-#: src/components/common/CheckInListTable/index.tsx:200
+#: src/components/common/CheckInListTable/index.tsx:206
 #: src/components/modals/EditCheckInListModal/index.tsx:77
 msgid "Edit Check-In List"
 msgstr "체크인 목록 수정"
@@ -7158,6 +7164,11 @@ msgstr "편집기"
 #: src/constants/eventCategories.ts:28
 msgid "Education"
 msgstr "교육"
+
+#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:22
+msgid "Ekklesia Check-In link and QR code"
+msgstr "Ekklesia 체크인 링크 및 QR 코드"
 
 #: src/components/routes/admin/Messages/index.tsx:325
 msgid "Eligibility Failures"
@@ -9872,7 +9883,7 @@ msgstr "ID 공급자에서 인증 코드 흐름을 사용하는 기밀(confident
 
 #: src/components/common/AffiliateTable/index.tsx:132
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:182
+#: src/components/common/CheckInListTable/index.tsx:188
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
@@ -9930,12 +9941,12 @@ msgid "Included in your plan. Hi.Events branding is hidden on your event pages, 
 msgstr "플랜에 포함되어 있습니다. 이벤트 페이지, 위젯, 티켓, 이메일에서 Hi.Events 브랜딩이 숨겨집니다."
 
 #: src/components/common/CheckInListList/index.tsx:102
-#: src/components/common/CheckInListTable/index.tsx:95
+#: src/components/common/CheckInListTable/index.tsx:101
 msgid "Includes {0} products"
 msgstr "{0}개 상품 포함"
 
 #: src/components/common/CheckInListList/index.tsx:103
-#: src/components/common/CheckInListTable/index.tsx:94
+#: src/components/common/CheckInListTable/index.tsx:100
 msgid "Includes 1 product"
 msgstr "1개 상품 포함"
 
@@ -10933,7 +10944,7 @@ msgstr "이벤트 페이지, 위젯, 티켓, 이메일을 온전히 내 브랜�
 
 #: src/components/common/CapacityAssignmentList/index.tsx:141
 #: src/components/common/CheckInListList/index.tsx:144
-#: src/components/common/CheckInListTable/index.tsx:221
+#: src/components/common/CheckInListTable/index.tsx:240
 #: src/components/common/EntityActions/index.tsx:44
 #: src/components/common/LocationsTable/index.tsx:60
 #: src/components/common/OrganizerWebhookTable/index.tsx:98
@@ -11820,7 +11831,7 @@ msgid "No changes"
 msgstr "변경 사항 없음"
 
 #: src/components/common/CheckInListList/index.tsx:45
-#: src/components/common/CheckInListTable/index.tsx:282
+#: src/components/common/CheckInListTable/index.tsx:312
 msgid "No Check-In Lists"
 msgstr "체크인 목록 없음"
 
@@ -12985,18 +12996,21 @@ msgstr "매표소 열기"
 msgid "Open check-in"
 msgstr "체크인 열기"
 
-#: src/components/common/CheckInListTable/index.tsx:256
+#: src/components/common/CheckInListTable/index.tsx:275
 #: src/components/routes/event/CheckInLists/index.tsx:58
 msgid "Open Check-In"
 msgstr "체크인 열기"
 
 #: src/components/common/CheckInListList/index.tsx:167
-#: src/components/common/CheckInListTable/index.tsx:214
+#: src/components/common/CheckInListTable/index.tsx:220
 #: src/components/modals/CheckInListSuccessModal/index.tsx:56
 msgid "Open Check-In Page"
 msgstr "체크인 페이지 열기"
 
+#: src/components/common/CheckInListTable/index.tsx:227
+#: src/components/common/CheckInListTable/index.tsx:286
 #: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:59
 msgid "Open Ekklesia Check-In"
 msgstr "Ekklesia 체크인 열기"
 
@@ -18238,7 +18252,7 @@ msgstr "통계"
 #: src/components/common/AdminOrdersTable/index.tsx:85
 #: src/components/common/AffiliateTable/index.tsx:84
 #: src/components/common/AttendeeTable/index.tsx:265
-#: src/components/common/CheckInListTable/index.tsx:167
+#: src/components/common/CheckInListTable/index.tsx:173
 #: src/components/common/OrderDetails/index.tsx:73
 #: src/components/common/OrdersTable/index.tsx:342
 #: src/components/common/OrganizerWebhookTable/index.tsx:244

@@ -908,7 +908,7 @@ msgstr "Een annuleringsmelding is verzonden naar"
 msgid "a change in duration"
 msgstr "een wijziging in de duur"
 
-#: src/components/common/CheckInListTable/index.tsx:287
+#: src/components/common/CheckInListTable/index.tsx:317
 msgid "A check-in list lets staff scan tickets at the door on a phone, tablet, or USB scanner. Share the link with your team, no account needed."
 msgstr "Met een check-inlijst kan je team tickets aan de deur scannen met een telefoon, tablet of USB-scanner. Deel de link met je team, geen account nodig."
 
@@ -1262,7 +1262,7 @@ msgstr "Activeringsdatum"
 #: src/components/common/AttendeeStatusBadge/index.tsx:27
 #: src/components/common/AttendeeTable/index.tsx:274
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:177
+#: src/components/common/CheckInListTable/index.tsx:183
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
@@ -1889,7 +1889,7 @@ msgstr "alle datums"
 msgid "All dates"
 msgstr "Alle datums"
 
-#: src/components/common/CheckInListTable/index.tsx:116
+#: src/components/common/CheckInListTable/index.tsx:122
 #: src/components/modals/ProductPurchasesModal/index.tsx:276
 #: src/components/routes/event/attendees.tsx:236
 #: src/components/routes/event/orders.tsx:226
@@ -2617,7 +2617,7 @@ msgid "Are you sure you would like to delete this Capacity Assignment?"
 msgstr "Weet je zeker dat je deze Capaciteitstoewijzing wilt verwijderen?"
 
 #: src/components/common/CheckInListList/index.tsx:184
-#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/common/CheckInListTable/index.tsx:252
 msgid "Are you sure you would like to delete this Check-In List?"
 msgstr "Weet je zeker dat je deze Check-In lijst wilt verwijderen?"
 
@@ -4059,7 +4059,7 @@ msgstr "Inchecken is niet beschikbaar"
 msgid "Check-in list"
 msgstr "Inchecklijst"
 
-#: src/components/common/CheckInListTable/index.tsx:69
+#: src/components/common/CheckInListTable/index.tsx:75
 msgid "Check-In List"
 msgstr "Check-inlijst"
 
@@ -4068,7 +4068,7 @@ msgid "Check-In List Created"
 msgstr "Check-In Lijst Aangemaakt!"
 
 #: src/components/common/CheckInListList/index.tsx:34
-#: src/components/common/CheckInListTable/index.tsx:56
+#: src/components/common/CheckInListTable/index.tsx:62
 msgid "Check-In List deleted successfully"
 msgstr "Check-in lijst succesvol verwijderd"
 
@@ -4129,11 +4129,11 @@ msgid "Check-in Summary"
 msgstr "Incheckoverzicht"
 
 #: src/components/common/CheckInListList/index.tsx:162
-#: src/components/common/CheckInListTable/index.tsx:41
+#: src/components/common/CheckInListTable/index.tsx:45
 msgid "Check-In URL copied to clipboard"
 msgstr "Check-In URL gekopieerd naar klembord"
 
-#: src/components/common/CheckInListTable/index.tsx:139
+#: src/components/common/CheckInListTable/index.tsx:145
 #: src/components/modals/ManageAttendeeModal/index.tsx:184
 msgid "Check-Ins"
 msgstr "Check-Ins"
@@ -5091,6 +5091,7 @@ msgstr "Cookie-instellingen"
 #: src/components/common/WidgetEditor/index.tsx:221
 #: src/components/common/WidgetEditor/InstallPanel.tsx:52
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ShareModal/index.tsx:255
@@ -5127,6 +5128,7 @@ msgstr "Kopieert stapsgewijze instructies om in ChatGPT, Claude, Cursor of de AI
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ManageOrderModal/index.tsx:233
@@ -5168,7 +5170,7 @@ msgid "Copy check-in link"
 msgstr "Check-inlink kopiëren"
 
 #: src/components/common/CheckInListList/index.tsx:156
-#: src/components/common/CheckInListTable/index.tsx:209
+#: src/components/common/CheckInListTable/index.tsx:215
 msgid "Copy Check-In URL"
 msgstr "Check-in URL kopiëren"
 
@@ -5458,7 +5460,7 @@ msgstr "De omslagafbeelding wordt bovenaan je organisatorpagina weergegeven"
 msgid "Covers"
 msgstr "Dekt"
 
-#: src/components/common/CheckInListTable/index.tsx:92
+#: src/components/common/CheckInListTable/index.tsx:98
 msgid "Covers every ticket"
 msgstr "Geldt voor alle tickets"
 
@@ -5584,7 +5586,7 @@ msgid "Create Category"
 msgstr "Categorie maken"
 
 #: src/components/common/CheckInListList/index.tsx:60
-#: src/components/common/CheckInListTable/index.tsx:295
+#: src/components/common/CheckInListTable/index.tsx:325
 #: src/components/modals/CreateCheckInListModal/index.tsx:89
 #: src/components/modals/CreateCheckInListModal/index.tsx:110
 #: src/components/routes/event/CheckInLists/index.tsx:76
@@ -5942,7 +5944,7 @@ msgstr "Dansvloer"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:155
 #: src/components/common/CheckInListList/index.tsx:176
-#: src/components/common/CheckInListTable/index.tsx:225
+#: src/components/common/CheckInListTable/index.tsx:244
 #: src/components/common/EntityActions/index.tsx:58
 #: src/components/common/LocationsTable/index.tsx:71
 #: src/components/common/OrganizerWebhookTable/index.tsx:121
@@ -5977,7 +5979,7 @@ msgid "Dashboard"
 msgstr "Dashboard"
 
 #: src/components/common/AdminOrdersTable/index.tsx:94
-#: src/components/common/CheckInListTable/index.tsx:107
+#: src/components/common/CheckInListTable/index.tsx:113
 #: src/components/common/OrderDetails/index.tsx:44
 #: src/components/common/WaitlistTable/index.tsx:187
 #: src/components/common/WidgetEditor/ContentFields.tsx:77
@@ -6133,7 +6135,7 @@ msgstr "Verlagen"
 msgid "Decrease quantity"
 msgstr "Aantal verlagen"
 
-#: src/components/common/CheckInListTable/index.tsx:87
+#: src/components/common/CheckInListTable/index.tsx:93
 #: src/components/routes/admin/Accounts/AccountDetail/OrganizerAdminModal.tsx:117
 #: src/components/routes/event/OccurrencesTab/PriceOverrideForm/index.tsx:292
 #: src/components/routes/settings/TaxesAndFees/index.tsx:51
@@ -6262,7 +6264,7 @@ msgid "Delete category"
 msgstr "Categorie verwijderen"
 
 #: src/components/common/CheckInListList/index.tsx:179
-#: src/components/common/CheckInListTable/index.tsx:228
+#: src/components/common/CheckInListTable/index.tsx:247
 msgid "Delete Check-In List"
 msgstr "Check-in lijst verwijderen"
 
@@ -6657,6 +6659,10 @@ msgstr "Donatie"
 msgid "Done"
 msgstr "Klaar"
 
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
+msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
+msgstr "Het deurpersoneel kan deze link openen of deze QR-code met hun telefoon scannen. Behandel hem als een gedeeld wachtwoord."
+
 #: src/components/common/CheckIn/CheckInDescriptionModal.tsx:20
 msgid "Door staff instructions"
 msgstr "Instructies voor deurpersoneel"
@@ -7019,7 +7025,7 @@ msgid "Edit category"
 msgstr "Categorie bewerken"
 
 #: src/components/common/CheckInListList/index.tsx:147
-#: src/components/common/CheckInListTable/index.tsx:200
+#: src/components/common/CheckInListTable/index.tsx:206
 #: src/components/modals/EditCheckInListModal/index.tsx:77
 msgid "Edit Check-In List"
 msgstr "Check-in lijst bewerken"
@@ -7159,6 +7165,11 @@ msgstr "Editor"
 #: src/constants/eventCategories.ts:28
 msgid "Education"
 msgstr "Educatie"
+
+#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:22
+msgid "Ekklesia Check-In link and QR code"
+msgstr "Ekklesia Check-In-link en QR-code"
 
 #: src/components/routes/admin/Messages/index.tsx:325
 msgid "Eligibility Failures"
@@ -9873,7 +9884,7 @@ msgstr "Maak in je identity provider een vertrouwelijke OpenID Connect-client aa
 
 #: src/components/common/AffiliateTable/index.tsx:132
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:182
+#: src/components/common/CheckInListTable/index.tsx:188
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
@@ -9931,12 +9942,12 @@ msgid "Included in your plan. Hi.Events branding is hidden on your event pages, 
 msgstr "Inbegrepen in je abonnement. Hi.Events-branding is verborgen op je evenementpagina's, widgets, tickets en e-mails."
 
 #: src/components/common/CheckInListList/index.tsx:102
-#: src/components/common/CheckInListTable/index.tsx:95
+#: src/components/common/CheckInListTable/index.tsx:101
 msgid "Includes {0} products"
 msgstr "Inclusief {0} producten"
 
 #: src/components/common/CheckInListList/index.tsx:103
-#: src/components/common/CheckInListTable/index.tsx:94
+#: src/components/common/CheckInListTable/index.tsx:100
 msgid "Includes 1 product"
 msgstr "Omvat 1 product"
 
@@ -10934,7 +10945,7 @@ msgstr "Maak je evenementpagina's, widgets, tickets en e-mails helemaal van jeze
 
 #: src/components/common/CapacityAssignmentList/index.tsx:141
 #: src/components/common/CheckInListList/index.tsx:144
-#: src/components/common/CheckInListTable/index.tsx:221
+#: src/components/common/CheckInListTable/index.tsx:240
 #: src/components/common/EntityActions/index.tsx:44
 #: src/components/common/LocationsTable/index.tsx:60
 #: src/components/common/OrganizerWebhookTable/index.tsx:98
@@ -11821,7 +11832,7 @@ msgid "No changes"
 msgstr "Geen wijzigingen"
 
 #: src/components/common/CheckInListList/index.tsx:45
-#: src/components/common/CheckInListTable/index.tsx:282
+#: src/components/common/CheckInListTable/index.tsx:312
 msgid "No Check-In Lists"
 msgstr "Geen inchecklijsten"
 
@@ -12986,18 +12997,21 @@ msgstr "Kassa openen"
 msgid "Open check-in"
 msgstr "Check-in openen"
 
-#: src/components/common/CheckInListTable/index.tsx:256
+#: src/components/common/CheckInListTable/index.tsx:275
 #: src/components/routes/event/CheckInLists/index.tsx:58
 msgid "Open Check-In"
 msgstr "Open Check-In"
 
 #: src/components/common/CheckInListList/index.tsx:167
-#: src/components/common/CheckInListTable/index.tsx:214
+#: src/components/common/CheckInListTable/index.tsx:220
 #: src/components/modals/CheckInListSuccessModal/index.tsx:56
 msgid "Open Check-In Page"
 msgstr "Open Check-In Pagina"
 
+#: src/components/common/CheckInListTable/index.tsx:227
+#: src/components/common/CheckInListTable/index.tsx:286
 #: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:59
 msgid "Open Ekklesia Check-In"
 msgstr "Open Ekklesia Check-In"
 
@@ -18239,7 +18253,7 @@ msgstr "Statistieken"
 #: src/components/common/AdminOrdersTable/index.tsx:85
 #: src/components/common/AffiliateTable/index.tsx:84
 #: src/components/common/AttendeeTable/index.tsx:265
-#: src/components/common/CheckInListTable/index.tsx:167
+#: src/components/common/CheckInListTable/index.tsx:173
 #: src/components/common/OrderDetails/index.tsx:73
 #: src/components/common/OrdersTable/index.tsx:342
 #: src/components/common/OrganizerWebhookTable/index.tsx:244

@@ -64,7 +64,7 @@ export const App: FC<
                 theme={{
                     colors: props.themeColors,
                     primaryColor: "primary",
-                    fontFamily: "Outfit, sans-serif",
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     primaryShade: 8,
                     defaultRadius: "sm",
                 }}

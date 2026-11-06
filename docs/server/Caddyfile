@@ -1,0 +1,23 @@
+{
+	auto_https off
+	admin off
+}
+
+(proxy) {
+	reverse_proxy {args[0]} {
+		header_up X-Forwarded-Proto https
+		header_up X-Forwarded-For {header.CF-Connecting-IP}
+	}
+}
+
+http://dashboard.{$DOMAIN} {
+	import proxy dashboard:80
+}
+
+http://checkin.{$DOMAIN}, http://tiket.{$DOMAIN} {
+	import proxy checkin-fe:3000
+}
+
+http://checkin-api.{$DOMAIN} {
+	import proxy checkin-be:4000
+}

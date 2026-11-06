@@ -1,0 +1,162 @@
+name: ekklesia
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:?Set CLOUDFLARE_TUNNEL_TOKEN in .env}
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN:?Set DOMAIN in .env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+
+  dashboard:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.all-in-one
+    restart: unless-stopped
+    environment:
+      APP_KEY: ${APP_KEY:?Set APP_KEY in .env}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+      APP_URL: https://dashboard.${DOMAIN}
+      APP_FRONTEND_URL: https://dashboard.${DOMAIN}
+      APP_CDN_URL: https://dashboard.${DOMAIN}/storage
+      APP_DISABLE_REGISTRATION: ${APP_DISABLE_REGISTRATION:-false}
+      APP_SAAS_MODE_ENABLED: "false"
+      APP_TRUSTED_PROXIES: "*"
+      LOG_CHANNEL: stderr
+      QUEUE_CONNECTION: redis
+      VITE_FRONTEND_URL: https://dashboard.${DOMAIN}
+      VITE_API_URL_CLIENT: https://dashboard.${DOMAIN}/api
+      VITE_API_URL_SERVER: http://localhost:80/api
+      VITE_APP_NAME: ${VITE_APP_NAME:-Ekklesia}
+      VITE_CHECKIN_APP_URL: https://checkin.${DOMAIN}
+      VITE_TOS_URL: ${VITE_TOS_URL:-}
+      VITE_PRIVACY_URL: ${VITE_PRIVACY_URL:-}
+      VITE_ORGANIZER_TERMS_URL: ${VITE_ORGANIZER_TERMS_URL:-}
+      VITE_COMMUNITY_GUIDELINES_URL: ${VITE_COMMUNITY_GUIDELINES_URL:-}
+      VITE_CONTACT_URL: ${VITE_CONTACT_URL:-}
+      VITE_COMPANY_INFO: ${VITE_COMPANY_INFO:-}
+      MAIL_MAILER: smtp
+      MAIL_HOST: ${SES_SMTP_HOST:?Set SES_SMTP_HOST in .env}
+      MAIL_PORT: "587"
+      MAIL_ENCRYPTION: tls
+      MAIL_USERNAME: ${SES_SMTP_USER:?Set SES_SMTP_USER in .env}
+      MAIL_PASSWORD: ${SES_SMTP_PASSWORD:?Set SES_SMTP_PASSWORD in .env}
+      MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS:?Set MAIL_FROM_ADDRESS in .env}
+      MAIL_FROM_NAME: ${MAIL_FROM_NAME:-Ekklesia}
+      FILESYSTEM_PUBLIC_DISK: public
+      FILESYSTEM_PRIVATE_DISK: local
+      DB_CONNECTION: pgsql
+      DATABASE_URL: postgresql://dashboard:${DASHBOARD_DB_PASSWORD:?Set DASHBOARD_DB_PASSWORD in .env}@dashboard-db:5432/dashboard
+      REDIS_HOST: dashboard-redis
+      REDIS_PORT: "6379"
+      WEBHOOK_QUEUE_NAME: webhook-queue
+    volumes:
+      - dashboard-files:/app/backend/storage/app
+    depends_on:
+      dashboard-db:
+        condition: service_healthy
+      dashboard-redis:
+        condition: service_healthy
+
+  dashboard-db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: dashboard
+      POSTGRES_USER: dashboard
+      POSTGRES_PASSWORD: ${DASHBOARD_DB_PASSWORD:?Set DASHBOARD_DB_PASSWORD in .env}
+    volumes:
+      - dashboard-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dashboard -d dashboard"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  dashboard-redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - dashboard-redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  checkin-fe:
+    build:
+      context: ../../../checkin-fe
+    restart: unless-stopped
+    environment:
+      EKKLESIA_API_INTERNAL_URL: http://checkin-be:4000
+      PUBLIC_BASE_URL: https://tiket.${DOMAIN}
+      EDGE_KEY: ${EDGE_KEY:?Set EDGE_KEY in .env}
+      PRIVACY_POLICY_URL_ID: ${PRIVACY_POLICY_URL_ID:-}
+      PRIVACY_POLICY_URL_EN: ${PRIVACY_POLICY_URL_EN:-}
+    depends_on:
+      - checkin-be
+
+  checkin-be:
+    build:
+      context: ../../../checkin-be
+    restart: unless-stopped
+    environment:
+      PORT: "4000"
+      TRUST_PROXY: uniquelocal
+      FRONTEND_URL: https://checkin.${DOMAIN}
+      PUBLIC_BASE_URL: https://tiket.${DOMAIN}
+      PRIVACY_POLICY_URL_ID: ${PRIVACY_POLICY_URL_ID:-}
+      PRIVACY_POLICY_URL_EN: ${PRIVACY_POLICY_URL_EN:-}
+      DATABASE_URL: postgresql://ekklesia:${CHECKIN_DB_PASSWORD:?Set CHECKIN_DB_PASSWORD in .env}@checkin-db:5432/ekklesia
+      JWT_SECRET: ${CHECKIN_JWT_SECRET:?Set CHECKIN_JWT_SECRET in .env}
+      EDGE_KEY: ${EDGE_KEY:?Set EDGE_KEY in .env}
+      REG_IP_SALT: ${REG_IP_SALT:?Set REG_IP_SALT in .env}
+      BLAST_PASSWORD: ${BLAST_PASSWORD:-}
+      HI_EVENTS_API_URL: http://dashboard/api
+      SMTP_HOST: ${SES_SMTP_HOST:?Set SES_SMTP_HOST in .env}
+      SMTP_PORT: "587"
+      SMTP_SECURE: "false"
+      SMTP_USER: ${SES_SMTP_USER:?Set SES_SMTP_USER in .env}
+      SMTP_PASS: ${SES_SMTP_PASSWORD:?Set SES_SMTP_PASSWORD in .env}
+      MAIL_FROM: ${MAIL_FROM_NAME:-Ekklesia} <${MAIL_FROM_ADDRESS:?Set MAIL_FROM_ADDRESS in .env}>
+      MAIL_REPLY_TO: ${MAIL_REPLY_TO:-}
+    volumes:
+      - type: bind
+        source: ./service-account.json
+        target: /app/service-account.json
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      checkin-db:
+        condition: service_healthy
+
+  checkin-db:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ekklesia
+      POSTGRES_USER: ekklesia
+      POSTGRES_PASSWORD: ${CHECKIN_DB_PASSWORD:?Set CHECKIN_DB_PASSWORD in .env}
+    volumes:
+      - checkin-db:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ekklesia -d ekklesia"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  dashboard-db:
+  dashboard-redis:
+  dashboard-files:
+  checkin-db:

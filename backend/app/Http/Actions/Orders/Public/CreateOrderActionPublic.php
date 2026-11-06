@@ -17,12 +17,12 @@ use HiEvents\Resources\Order\OrderResourcePublic;
 use HiEvents\Services\Application\Handlers\Order\CreateOrderHandler;
 use HiEvents\Services\Application\Handlers\Order\DTO\CreateOrderPublicDTO;
 use HiEvents\Services\Application\Handlers\Order\DTO\ProductOrderDetailsDTO;
-use HiEvents\Services\Application\Locale\LocaleService;
 use HiEvents\Services\Domain\Auth\Access\AccountUserAccessService;
 use HiEvents\Services\Domain\Order\OrderCreateRequestValidationService;
 use HiEvents\Services\Domain\Order\PublicOrderQuantityLimiter;
 use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\App;
 use Illuminate\Validation\ValidationException;
 use Throwable;
 
@@ -32,7 +32,6 @@ class CreateOrderActionPublic extends BaseAction
         private readonly CreateOrderHandler $orderHandler,
         private readonly OrderCreateRequestValidationService $orderCreateRequestValidationService,
         private readonly CheckoutSessionManagementService $sessionIdentifierService,
-        private readonly LocaleService $localeService,
         private readonly EventRepositoryInterface $eventRepository,
         private readonly AccountUserAccessService $accessService,
         private readonly PublicOrderQuantityLimiter $quantityLimiter,
@@ -62,7 +61,7 @@ class CreateOrderActionPublic extends BaseAction
                 'widget_id' => $request->input('widget_id'),
                 'products' => ProductOrderDetailsDTO::collectionFromArray($validatedData['products']),
                 'session_identifier' => $sessionId,
-                'order_locale' => $this->localeService->getLocaleOrDefault($request->getPreferredLanguage()),
+                'order_locale' => App::getLocale(),
             ])
         );
 

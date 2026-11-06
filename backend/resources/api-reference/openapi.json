@@ -24389,8 +24389,7 @@
                     "type": "object",
                     "properties": {
                       "locale": {
-                        "type": "string",
-                        "default": "en"
+                        "type": "string"
                       }
                     }
                   }

@@ -10,6 +10,7 @@ use HiEvents\Resources\Waitlist\WaitlistEntryResource;
 use HiEvents\Services\Application\Handlers\Waitlist\CreateWaitlistEntryHandler;
 use HiEvents\Services\Application\Handlers\Waitlist\DTO\CreateWaitlistEntryDTO;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\App;
 use Symfony\Component\HttpFoundation\Response;
 
 class CreateWaitlistEntryActionPublic extends BaseAction
@@ -27,7 +28,7 @@ class CreateWaitlistEntryActionPublic extends BaseAction
                 email: $request->validated('email'),
                 first_name: $request->validated('first_name'),
                 last_name: $request->validated('last_name'),
-                locale: $request->input('locale', 'en'),
+                locale: $request->input('locale', App::getLocale()),
                 event_occurrence_id: $request->validated('event_occurrence_id'),
                 promo_code: $request->validated('promo_code'),
             ));

@@ -7,7 +7,7 @@ import {dehydrate, QueryClient} from "@tanstack/react-query";
 import {router} from "./router";
 import {App} from "./App";
 import {createStaticHandler, createStaticRouter, StaticRouterProvider} from "react-router";
-import {dynamicActivateLocale, getSupportedLocale, toIntlLocale} from "./locales.ts";
+import {defaultLocale, dynamicActivateLocale, getSupportedLocale, toIntlLocale} from "./locales.ts";
 import {embedLocaleForPath} from "./utilites/embedLocale.ts";
 import {SsrRequestContext, setSsrRequestContextProvider} from "./utilites/ssrRequestContext.ts";
 import {generateThemeColors} from "./utilites/themeColors.ts";
@@ -26,12 +26,7 @@ const getLocale = (req: express.Request): string => {
         return embedLocale;
     }
 
-    if (req.cookies.locale) {
-        return getSupportedLocale(req.cookies.locale);
-    }
-
-    const acceptLanguage = req.headers['accept-language'];
-    return acceptLanguage ? getSupportedLocale(acceptLanguage.split(',')[0].split(';')[0].trim()) : 'en';
+    return req.cookies.locale ? getSupportedLocale(req.cookies.locale) : defaultLocale;
 }
 
 interface RenderParams {

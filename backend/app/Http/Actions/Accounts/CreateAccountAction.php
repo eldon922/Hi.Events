@@ -16,12 +16,12 @@ use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountConfigurati
 use HiEvents\Services\Application\Handlers\Account\Exceptions\AccountRegistrationDisabledException;
 use HiEvents\Services\Application\Handlers\Auth\DTO\LoginCredentialsDTO;
 use HiEvents\Services\Application\Handlers\Auth\LoginHandler;
-use HiEvents\Services\Application\Locale\LocaleService;
 use HiEvents\Services\Domain\Account\AttributionDataSanitizer;
 use HiEvents\Services\Domain\Auth\PasswordLoginPolicy;
 use HiEvents\Services\Infrastructure\Turnstile\TurnstileVerifier;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\App;
 use Illuminate\Validation\ValidationException;
 use Throwable;
 
@@ -30,7 +30,6 @@ class CreateAccountAction extends BaseAuthAction
     public function __construct(
         private readonly CreateAccountHandler $createAccountHandler,
         private readonly LoginHandler $loginHandler,
-        private readonly LocaleService $localeService,
         private readonly TurnstileVerifier $turnstileVerifier,
         private readonly AttributionDataSanitizer $attributionDataSanitizer,
         private readonly PasswordLoginPolicy $passwordLoginPolicy,
@@ -65,7 +64,7 @@ class CreateAccountAction extends BaseAuthAction
                 'currency_code' => $request->validated('currency_code'),
                 'locale' => $request->has('locale')
                     ? $request->validated('locale')
-                    : $this->localeService->getLocaleOrDefault($request->getPreferredLanguage()),
+                    : App::getLocale(),
                 'invite_token' => $request->validated('invite_token'),
                 'marketing_opt_in' => (bool) $request->validated('marketing_opt_in'),
                 ...$this->attributionDataSanitizer->fromValidated($request->validated()),

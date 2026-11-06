@@ -16,7 +16,6 @@ class SetUserLocaleMiddleware
     public function handle(Request $request, Closure $next)
     {
         $this->setLocale($request);
-        App::setFallbackLocale(config('app.locale'));
 
         return $next($request);
     }
@@ -27,11 +26,7 @@ class SetUserLocaleMiddleware
             return;
         }
 
-        if ($this->setLocaleFromUser()) {
-            return;
-        }
-
-        $this->setLocaleFromAcceptLanguage($request);
+        $this->setLocaleFromUser();
     }
 
     protected function setLocaleFromCookie(Request $request): bool
@@ -45,27 +40,12 @@ class SetUserLocaleMiddleware
         return false;
     }
 
-    protected function setLocaleFromUser(): bool
+    protected function setLocaleFromUser(): void
     {
         if (Auth::check()) {
             /** @var UserDomainObject $user */
             $user = UserDomainObject::hydrateFromModel(Auth::user());
             App::setLocale($user->getLocale());
-
-            return true;
         }
-
-        return false;
-    }
-
-    protected function setLocaleFromAcceptLanguage(Request $request): bool
-    {
-        if ($request->hasHeader('Accept-Language')) {
-            App::setLocale($this->localeService->getLocaleOrDefault($request->getPreferredLanguage()));
-
-            return true;
-        }
-
-        return false;
     }
 }

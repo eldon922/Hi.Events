@@ -12,7 +12,7 @@ import {
 } from "../../utilites/widgetTheme.ts";
 import {ensureHomepageFontLoaded} from "../../utilites/fontLoader.ts";
 import {embedLocaleForPath, embedLocaleParam} from "../../utilites/embedLocale.ts";
-import {dynamicActivateLocale, getSupportedLocale} from "../../locales.ts";
+import {defaultLocale, dynamicActivateLocale} from "../../locales.ts";
 
 export const PREVIEW_SETTINGS_MESSAGE = 'hievents:preview-settings';
 export const PREVIEW_READY_MESSAGE = 'hievents:preview-ready';
@@ -42,7 +42,7 @@ const usePreviewSettings = (isPreview: boolean) => {
         if (!isPreview || !hasSettings) {
             return;
         }
-        dynamicActivateLocale(previewLocale ?? getSupportedLocale(window.navigator.language))
+        dynamicActivateLocale(previewLocale ?? defaultLocale)
             .catch(() => undefined);
     }, [isPreview, hasSettings, previewLocale]);
 

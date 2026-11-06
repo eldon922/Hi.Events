@@ -28050,7 +28050,8 @@
               "sk",
               "el",
               "ko",
-              "ja"
+              "ja",
+              "id"
             ]
           },
           "override_capacity": {
@@ -37596,6 +37597,7 @@
                   "el",
                   "ko",
                   "ja",
+                  "id",
                   null
                 ]
               },
@@ -38235,6 +38237,7 @@
                   "el",
                   "ko",
                   "ja",
+                  "id",
                   null
                 ]
               },

@@ -127,7 +127,7 @@ Docker ignores the `ufw` firewall for ports it publishes. This set-up publishes 
 ```bash
 sudo mkdir -p /opt/ekklesia/backups && sudo chown -R ekklesia: /opt/ekklesia
 cd /opt/ekklesia
-git clone --branch develop https://github.com/eldon922/hi.events.git dashboard
+git clone --branch develop https://github.com/eldon922/Hi.Events.git dashboard
 git clone https://github.com/eldon922/ekklesia-be.git checkin-be
 git clone https://github.com/eldon922/ekklesia-fe.git checkin-fe
 ```
@@ -247,7 +247,7 @@ What gets saved, and where:
 |---|---|---|
 | Both databases and the dashboard's uploaded images | Nightly script on the server | 14 days on the server, 30 days off the server |
 | The whole server disk | Your provider's automatic backups or snapshots | As the provider sets it |
-| `.env` (all secrets) | You, in your password manager | Always |
+| `.env` (all secrets) and `service-account.json` | You, in your password manager | Always |
 
 **Nightly script.** The script is `docs/server/backup.sh`. Run it once by hand, then put it on a schedule:
 
@@ -288,7 +288,7 @@ docker compose exec -T checkin-db pg_restore -U ekklesia -d ekklesia --clean --i
 docker compose start checkin-be
 ```
 
-To rebuild after losing the whole server: do steps 3 to 7 on a new server with the `.env` from your password manager, then restore as above, then move the tunnel to the new server by putting its token in the new `.env`.
+To rebuild after losing the whole server: do steps 3 to 7 on a new server with the `.env` and `service-account.json` from your password manager (the same tunnel token works on the new server), copy the backup files back (`rclone copy r2:ekklesia-backups /opt/ekklesia/backups`), then restore as above.
 
 **Practise once.** Before the first real event, restore last night's files on a spare server or a spare folder and open the result. A backup you never tried is only a hope.
 
@@ -329,11 +329,11 @@ docker compose up -d
 docker image prune -f
 ```
 
-Replace `vX.Y.Z` with the new tag. To go back after a bad update, check out the previous tag (or commit) and run the last four commands again. Database changes are not undone that way; restore a backup if one went wrong.
+Replace `vX.Y.Z` with the new tag. To go back after a bad update, check out the previous tag (or commit) in the folder that changed and run the lines from `cd /opt/ekklesia/dashboard/docs/server` down again. Database changes are not undone that way; restore a backup if one went wrong.
 
 ## Rules to keep
 
-- **The source code stays public.** Ekklesia's dashboard is a changed copy of Hi.Events, which is AGPL-3.0. Anyone who uses it may ask for the source, and the footer links to it (`Kode sumber`). Keep `eldon922/hi.events` public, and push every change to it before it runs on the server. Never change the code on the server by hand.
+- **The source code stays public.** Ekklesia's dashboard is a changed copy of Hi.Events, which is AGPL-3.0. Anyone who uses it may ask for the source, and the footer links to it (`Kode sumber`). Keep `eldon922/Hi.Events` public, and push every change to it before it runs on the server. Never change the code on the server by hand.
 - **The footer notice stays.** The Hi.Events licence requires the "Powered by" notice on every page and email. Removing it needs a commercial licence from https://hi.events/licensing. The source link stays too.
 - **Paid features need a licence.** The files in `ee/` (reserved seating, box office, enterprise sign-on) need one for production use. This set-up does not turn them on.
 - **GitHub Actions must be on for the fork.** Open the fork's **Actions** tab and press **I understand my workflows, go ahead and enable them**. Without it the tests never run on pull requests.
@@ -373,6 +373,7 @@ To change a setting: edit `.env`, then run `docker compose up -d` in `docs/serve
 | A Cloudflare error page (1033, 502, 530) | The tunnel is not running. `docker compose logs cloudflared`. Check the token in `.env`. |
 | Error 502 or an empty page on one address | That app is not running. `docker compose ps`, then `docker compose logs --tail 100 NAME`. |
 | `docker compose up` stops with "bind source path does not exist" | `service-account.json` is missing from `docs/server`. See step 5. |
+| `docker compose up` stops at `COPY .env` while building the check-in frontend | The three lines in `/opt/ekklesia/checkin-fe/.env` are missing. See step 5. |
 | The first start stops with "out of memory" while building | Add swap (step 3d), or run `docker compose build` for one app at a time. |
 | Emails do not arrive | Amazon's sandbox is still on (verify the recipient, or wait for production access). Or the SMTP login is wrong: `docker compose logs dashboard \| grep -i mail`. |
 | Emails land in spam, or SPF/DKIM/DMARC fail | The DNS records from step 2 are missing or still waiting. DKIM records must be **DNS only** (grey cloud). |

@@ -132,7 +132,6 @@ git clone https://github.com/eldon922/ekklesia-be.git checkin-be
 git clone https://github.com/eldon922/ekklesia-fe.git checkin-fe
 ```
 
-- Until the dashboard pull request is merged into `develop`, use `--branch m2-dashboard` for the first command.
 - Run only versions you have tagged. In each check-in folder:
 
   ```bash

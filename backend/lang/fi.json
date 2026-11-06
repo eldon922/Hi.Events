@@ -1439,5 +1439,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Viite, jota ostajien tulee käyttää offline-maksuissa. Tyhjä, kun tilausviitettä ei käytetä maksuviitteenä.",
     "Order placed: payment needed": "Tilaus tehty: maksu tarvitaan",
     "How to pay": "Näin maksat",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Maksu onnistui, mutta tilaus oli jo tehty myöhemmin maksettavaksi. Tilaus: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Maksu onnistui, mutta tilaus oli jo tehty myöhemmin maksettavaksi. Tilaus: :id",
+    "Source code": "Lähdekoodi"
 }

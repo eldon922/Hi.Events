@@ -1439,5 +1439,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "オフライン支払い時に購入者が使用する参照番号。注文番号を支払い参照番号として使用しない場合は空になります。",
     "Order placed: payment needed": "注文完了: お支払いが必要です",
     "How to pay": "お支払い方法",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "支払いは完了しましたが、注文はすでに後払いで確定していました。注文: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "支払いは完了しましたが、注文はすでに後払いで確定していました。注文: :id",
+    "Source code": "ソースコード"
 }

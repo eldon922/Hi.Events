@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { checkContrast, getContrastColor } from '../../../frontend/src/utilites/themeUtils';
+import { checkContrast, getContrastColor, getDefaultThemeSettings } from '../../../frontend/src/utilites/themeUtils';
 
 test.describe('theme button text colour', () => {
   for (const accent of ['#ef4444', '#3b82f6', '#ec4899', '#22c55e', '#f59e0b', '#7c3aed', '#1e40af', '#000000', '#ffffff']) {
@@ -25,6 +25,17 @@ test.describe('theme button text colour', () => {
 
   test('the default accent keeps white text', () => {
     expect(getContrastColor('#8b5cf6')).toBe('#ffffff');
+  });
+
+  test('the Ekklesia preset has readable text on its accent and its background', () => {
+    const { accent, background } = getDefaultThemeSettings();
+
+    expect(accent).toBe('#26306B');
+    expect(background).toBe('#FBF8F3');
+    expect(getContrastColor(accent)).toBe('#ffffff');
+    expect(checkContrast('#ffffff', accent).passesAA).toBe(true);
+    expect(getContrastColor(background)).toBe('#1a1a1a');
+    expect(checkContrast('#1a1a1a', background).passesAA).toBe(true);
   });
 
   test('an unparsable colour keeps white text', () => {

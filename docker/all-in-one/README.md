@@ -7,6 +7,8 @@ The provided docker-compose.yml file is meant for development and testing purpos
 the [Docker image](https://hub.docker.com/r/daveearley/hi.events-all-in-one), or create your own Docker compose file with the 
 necessary [configurations for production](https://hi.events/docs/getting-started/deploying#configuring-environment-variables).
 
+Setting up Ekklesia's own server? Follow [docs/server-setup.md](../../docs/server-setup.md) instead.
+
 ## Quick Start with Docker
 
 ### Step 1: Clone the Repository

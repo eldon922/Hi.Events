@@ -30,6 +30,10 @@ export class CheckInListPage {
     return this.row(name).getByTestId('check-in-list-open-button');
   }
 
+  openEkklesiaCheckInButton(name: string): Locator {
+    return this.row(name).getByTestId('ekklesia-check-in-list-open-button');
+  }
+
   editNameInput(): Locator {
     return this.page.getByRole('dialog').getByLabel(/^Name/);
   }

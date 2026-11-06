@@ -106,8 +106,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@hi.events'),
-        'name' => env('MAIL_FROM_NAME', 'Hi.Events'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@ekklesia.web.id'),
+        'name' => env('MAIL_FROM_NAME', 'Ekklesia'),
     ],
 
     'lifecycle' => [

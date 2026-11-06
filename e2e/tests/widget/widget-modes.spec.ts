@@ -14,6 +14,7 @@ import {
   createPastEventWithCoverImage,
   enableOfflinePayments,
 } from '../../api/factory';
+import { localeCookie } from '../../utils/locale';
 import { uniqueCode, uniqueEmail, uniqueName } from '../../utils/unique';
 import { WidgetApi } from './widget-api';
 
@@ -308,7 +309,8 @@ test.describe('widget modes', () => {
 
   test('a language attribute translates the widget, and old snippets keep following the visitor', async ({ browser, api, account, baseURL }) => {
     const event = await createLiveEventWithFreeTicket(api, account.organizerId);
-    const context = await browser.newContext({ locale: 'de-DE', ignoreHTTPSErrors: true });
+    const context = await browser.newContext({ ignoreHTTPSErrors: true });
+    await context.addCookies([localeCookie('de')]);
     const page = await context.newPage();
 
     await openEmbedHost(page, baseURL!, widgetMarkup({ id: String(event.eventId), locale: 'en', 'widget-version': '1.0' }));

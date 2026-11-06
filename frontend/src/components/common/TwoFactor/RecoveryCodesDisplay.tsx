@@ -13,7 +13,7 @@ interface RecoveryCodesDisplayProps {
 }
 
 const buildRecoveryCodesText = (codes: string[], email?: string) => {
-    const appName = getConfig("VITE_APP_NAME", "Hi.Events");
+    const appName = getConfig("VITE_APP_NAME");
 
     return [
         t`${appName} recovery codes`,
@@ -34,7 +34,7 @@ export const RecoveryCodesDisplay = ({codes, email, acknowledged, onAcknowledged
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = `${(getConfig("VITE_APP_NAME", "Hi.Events") ?? "hi-events").toLowerCase().replace(/[^a-z0-9]+/g, '-')}-recovery-codes.txt`;
+        link.download = `${(getConfig("VITE_APP_NAME") as string).toLowerCase().replace(/[^a-z0-9]+/g, '-')}-recovery-codes.txt`;
         link.click();
         URL.revokeObjectURL(url);
     };

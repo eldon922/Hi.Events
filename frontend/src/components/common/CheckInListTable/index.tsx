@@ -5,6 +5,7 @@ import {
     IconCalendarEvent,
     IconCheck,
     IconCopy,
+    IconLink,
     IconPencil,
     IconPlus,
     IconQrcode,
@@ -18,6 +19,7 @@ import {useParams} from "react-router";
 import {t, Trans} from "@lingui/macro";
 import {NoResultsSplash} from "../NoResultsSplash";
 import {EditCheckInListModal} from "../../modals/EditCheckInListModal";
+import {EkklesiaCheckInLinkModal} from "../../modals/EkklesiaCheckInLinkModal";
 import {useDeleteCheckInList} from "../../../mutations/useDeleteCheckInList";
 import {showError, showSuccess} from "../../../utilites/notifications.tsx";
 import {confirmationDialog} from "../../../utilites/confirmationDialog.tsx";
@@ -26,6 +28,8 @@ import {ActionMenu} from '../ActionMenu';
 import {CellContext} from "@tanstack/react-table";
 import Truncate from "../Truncate";
 import {formatDateWithLocale} from "../../../utilites/dates.ts";
+import {getConfig} from "../../../utilites/config.ts";
+import {openEkklesiaCheckIn} from "../../../utilites/ekklesiaCheckIn.ts";
 import classes from './CheckInListTable.module.scss';
 
 interface CheckInListTableProps {
@@ -45,8 +49,10 @@ export const copyCheckInListLink = (shortId: string) => {
 export const CheckInListTable = ({checkInLists, openCreateModal, event}: CheckInListTableProps) => {
     const [editModalOpen, {open: openEditModal, close: closeEditModal}] = useDisclosure(false);
     const [selectedCheckInListId, setSelectedCheckInListId] = useState<IdParam>();
+    const [ekklesiaLinkShortId, setEkklesiaLinkShortId] = useState<string>();
     const deleteMutation = useDeleteCheckInList();
     const {eventId} = useParams();
+    const checkInAppUrl = getConfig('VITE_CHECKIN_APP_URL');
     const isRecurring = event?.type === EventType.RECURRING;
     const isMobile = useMediaQuery('(max-width: 768px)');
 
@@ -216,6 +222,19 @@ export const CheckInListTable = ({checkInLists, openCreateModal, event}: CheckIn
                                 onClick: () => window.open(checkInListUrl(list.short_id), '_blank'),
                                 visible: isMobile,
                             },
+                            ...(checkInAppUrl ? [
+                                {
+                                    label: t`Open Ekklesia Check-In`,
+                                    icon: <IconQrcode size={14}/>,
+                                    onClick: () => openEkklesiaCheckIn(checkInAppUrl, list.short_id),
+                                    visible: isMobile,
+                                },
+                                {
+                                    label: t`Ekklesia Check-In link and QR code`,
+                                    icon: <IconLink size={14}/>,
+                                    onClick: () => setEkklesiaLinkShortId(list.short_id),
+                                },
+                            ] : []),
                         ];
                         const groups: {label: string; items: any[]}[] = [
                             {label: t`Manage`, items: manageItems},
@@ -256,6 +275,17 @@ export const CheckInListTable = ({checkInLists, openCreateModal, event}: CheckIn
                                         {t`Open Check-In`}
                                     </Button>
                                 )}
+                                {!isMobile && checkInAppUrl && (
+                                    <Button
+                                        size="xs"
+                                        variant="light"
+                                        leftSection={<IconQrcode size={14}/>}
+                                        onClick={() => openEkklesiaCheckIn(checkInAppUrl, list.short_id)}
+                                        data-testid="ekklesia-check-in-list-open-button"
+                                    >
+                                        {t`Open Ekklesia Check-In`}
+                                    </Button>
+                                )}
                                 <ActionMenu itemsGroups={groups} dataTestId="check-in-list-actions-menu"/>
                             </div>
                         );
@@ -273,7 +303,7 @@ export const CheckInListTable = ({checkInLists, openCreateModal, event}: CheckIn
                 return true;
             });
         },
-        [eventId, isRecurring, event?.timezone, isMobile]
+        [eventId, isRecurring, event?.timezone, isMobile, checkInAppUrl]
     );
 
     if (checkInLists.length === 0) {
@@ -310,6 +340,10 @@ export const CheckInListTable = ({checkInLists, openCreateModal, event}: CheckIn
             {(editModalOpen && selectedCheckInListId)
                 && <EditCheckInListModal onClose={closeEditModal}
                                          checkInListId={selectedCheckInListId}/>}
+            {(ekklesiaLinkShortId && checkInAppUrl)
+                && <EkklesiaCheckInLinkModal onClose={() => setEkklesiaLinkShortId(undefined)}
+                                             checkInAppUrl={checkInAppUrl}
+                                             checkInListShortId={ekklesiaLinkShortId}/>}
         </>
     );
 };

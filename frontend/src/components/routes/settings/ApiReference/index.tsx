@@ -52,7 +52,7 @@ const ApiReference = () => {
         const info = (spec.info ?? {}) as Record<string, unknown>;
 
         return {
-            content: {...spec, info: {...info, title: t`${getConfig('VITE_APP_NAME', 'Hi.Events')} API`}},
+            content: {...spec, info: {...info, title: t`${getConfig('VITE_APP_NAME')} API`}},
             servers: [{url: apiBaseUrl}],
             theme: 'none',
             customCss: SCALAR_THEME_CSS,

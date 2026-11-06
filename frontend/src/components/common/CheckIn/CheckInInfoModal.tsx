@@ -21,8 +21,8 @@ export const CheckInInfoModal = ({
     const total = checkInList.total_attendees;
     const checkedIn = checkInList.checked_in_attendees;
     const percent = total > 0 ? (checkedIn / total) * 100 : 0;
-    const appName = getConfig("VITE_APP_NAME", "Hi.Events");
-    const logoSrc = getConfig("VITE_APP_LOGO_LIGHT", "/logos/hi-events-text-light.svg");
+    const appName = getConfig("VITE_APP_NAME");
+    const logoSrc = getConfig("VITE_APP_LOGO_DARK");
 
     return (
         <Modal
@@ -101,7 +101,7 @@ export const CheckInInfoModal = ({
                     alt={t`${appName} logo`}
                     style={{height: 24, maxWidth: 160, objectFit: "contain", opacity: 0.85}}
                 />
-                <PoweredByFooter/>
+                <PoweredByFooter withLegalLinks={false}/>
             </div>
         </Modal>
     );

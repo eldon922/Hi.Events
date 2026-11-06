@@ -61,10 +61,13 @@ import {useGetEventOccurrence} from "../../../queries/useGetEventOccurrence.ts";
 import {useLicensedFeature} from "../../../ee/licensing/hooks/useLicensedFeature.ts";
 import {prettyDate} from "../../../utilites/dates.ts";
 import {GenericErrorPage} from "../../common/GenericErrorPage";
+import {OpenEkklesiaCheckInButton} from "../../common/OpenEkklesiaCheckInButton";
+import {getConfig} from "../../../utilites/config.ts";
 
 const EventLayout = () => {
     const location = useLocation();
     const {eventId} = useParams();
+    const checkInAppUrl = getConfig('VITE_CHECKIN_APP_URL');
 
     const [opened, {open, close}] = useDisclosure(false);
     const [celebrationOpened, {open: openCelebration, close: closeCelebration}] = useDisclosure(false);
@@ -276,6 +279,10 @@ const EventLayout = () => {
                                 >
                                     {t`Share Event`}
                                 </Button>
+
+                                {checkInAppUrl && (
+                                    <OpenEkklesiaCheckInButton eventId={eventId} checkInAppUrl={checkInAppUrl}/>
+                                )}
 
                                 <ShareModal
                                     url={eventHomepageUrl(event)}

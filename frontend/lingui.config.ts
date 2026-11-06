@@ -22,7 +22,7 @@ const config: LinguiConfig = {
         "el", // Greek
         "ja", // Japanese
         "ko", // Korean
-        // "id", // Indonesian
+        "id", // Indonesian
         "zh-hk", // Cantonese Chinese (Hong Kong)
         // "cs", // Czech
         // "ga", // Irish

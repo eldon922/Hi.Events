@@ -15,7 +15,7 @@
             @if($appLogo = config('app.email_logo_url'))
                 <img src="{{ $appLogo }}" class="logo" alt="{{ config('app.name') }}">
             @else
-                <img src="{{ config('app.frontend_url') }}/logos/hi-events-stacked-light.png" class="logo" alt="{{ config('app.name') }}">
+                <img src="{{ config('app.frontend_url') }}/logos/ekklesia-on-light.png" class="logo" alt="{{ config('app.name') }}">
             @endif
         </x-mail::header>
 @endif
@@ -62,7 +62,7 @@
                 {{-- obscure this notice without a licence. If you hear from us or them, it will start as a friendly --}}
                 {{-- conversation, and you'll have 30 days to get a licence or restore the notice. --}}
 
-                © {{ date('Y') }} {{ config('app.name') }} | Powered by <a title="Manage events and sell tickets online with Hi.Events" href="https://hi.events?utm_source=app-email-footer">Hi.Events</a>
+                © {{ date('Y') }} {{ config('app.name') }} | <a href="https://hi.events?utm_source=app-email-footer">Powered by Ekklesia, based on Hi.Events</a> | <a href="{{ config('app.source_code_url') }}">{{ __('Source code') }}</a>
             @endif
         </x-mail::footer>
     </x-slot:footer>

@@ -1,5 +1,6 @@
 import type { BrowserContextOptions } from '@playwright/test';
 import { cookieDomain } from './env';
+import { localeCookie } from './locale';
 
 type StorageState = Exclude<BrowserContextOptions['storageState'], string | undefined>;
 type StorageCookie = StorageState['cookies'][number];
@@ -17,4 +18,4 @@ export const grantedConsentCookie = (): StorageCookie => ({
   sameSite: 'Lax',
 });
 
-export const noStoredConsent: StorageState = { cookies: [], origins: [] };
+export const noStoredConsent: StorageState = { cookies: [localeCookie('en')], origins: [] };

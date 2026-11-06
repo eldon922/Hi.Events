@@ -2,6 +2,7 @@ import {expect, test} from '../../fixtures';
 import type {Page} from '@playwright/test';
 import {createLiveEventWithProduct, type SeededEvent} from '../../api/factory';
 import type {ApiClient} from '../../api/api-client';
+import {localeCookie} from '../../utils/locale';
 
 const nineInTheEveningUtc = (): string => {
   const date = new Date();
@@ -45,10 +46,11 @@ test.describe('server-rendered dates and prices follow the visitor locale', () =
       const event = await createPaidEvent(api, account.organizerId);
       const path = `/event/${event.eventId}/${event.slug}`;
 
-      const html = await (await request.get(path, {headers: {'Accept-Language': 'de-DE,de;q=0.9'}})).text();
+      const html = await (await request.get(path, {headers: {Cookie: 'locale=de'}})).text();
       expect(html).toMatch(/[\s>]21:00</);
       expect(html).not.toContain('9:00 PM');
 
+      await page.context().addCookies([localeCookie('de')]);
       const errors = hydrationErrorsOn(page);
       await page.goto(path);
       await expectCleanHydration(page, errors);
@@ -59,9 +61,10 @@ test.describe('server-rendered dates and prices follow the visitor locale', () =
       const event = await createPaidEvent(api, account.organizerId);
       const path = `/widget/${event.eventId}`;
 
-      const html = await (await request.get(path, {headers: {'Accept-Language': 'de-DE,de;q=0.9'}})).text();
+      const html = await (await request.get(path, {headers: {Cookie: 'locale=de'}})).text();
       expect(html).toMatch(/\d+,\d{2}\s\$/);
 
+      await page.context().addCookies([localeCookie('de')]);
       const errors = hydrationErrorsOn(page);
       await page.goto(path);
       await expectCleanHydration(page, errors);
@@ -76,11 +79,12 @@ test.describe('server-rendered dates and prices follow the visitor locale', () =
       const event = await createPaidEvent(api, account.organizerId, startDate);
       const path = `/event/${event.eventId}/${event.slug}`;
 
-      const html = await (await request.get(path, {headers: {'Accept-Language': 'sv-SE,sv;q=0.9'}})).text();
+      const html = await (await request.get(path, {headers: {Cookie: 'locale=se'}})).text();
       expect(html).toContain('<html lang="sv"');
       expect(html).toContain(`>${monthOf(startDate, SWEDISH_MONTHS)}<`);
       expect(html).toMatch(/[\s>]21:00</);
 
+      await page.context().addCookies([localeCookie('se')]);
       const errors = hydrationErrorsOn(page);
       await page.goto(path);
       await expectCleanHydration(page, errors);

@@ -274,7 +274,6 @@ const EventHomepage = ({...loaderData}: EventHomepageProps) => {
             <HomepageFrame
                 themeSettings={themeSettings}
                 mirrorImageUrl={cover?.url}
-                footerSource="app-event-footer"
                 footerRef={setFooterNode}
                 brandingRemoved={organizer.branding_removed}
                 width={sheetWidth}

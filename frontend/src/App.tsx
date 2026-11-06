@@ -64,7 +64,7 @@ export const App: FC<
                 theme={{
                     colors: props.themeColors,
                     primaryColor: "primary",
-                    fontFamily: "Outfit, sans-serif",
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     primaryShade: 8,
                     defaultRadius: "sm",
                 }}
@@ -78,10 +78,10 @@ export const App: FC<
                                 <ThirdPartyScripts/>
                                 <ModalsProvider>
                                     <Helmet>
-                                        <title>{getConfig("VITE_APP_NAME", "Hi.Events")}</title>
+                                        <title>{getConfig("VITE_APP_NAME")}</title>
                                         <link rel="icon"
                                               type="image/svg+xml"
-                                              href={getConfig("VITE_APP_FAVICON", "/favicon.svg")}
+                                              href={getConfig("VITE_APP_FAVICON")}
                                         />
                                     </Helmet>
                                     {props.children}

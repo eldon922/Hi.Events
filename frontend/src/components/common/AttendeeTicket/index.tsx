@@ -11,10 +11,9 @@ import {imageUrl} from "../../../utilites/urlHelper.ts";
 import {resolveEventLocation} from "../../../utilites/effectiveLocation.ts";
 import {formatAddress} from "../../../utilites/addressUtilities.ts";
 import {PoweredByFooter} from "../PoweredByFooter";
+import {getDefaultThemeSettings} from "../../../utilites/themeUtils.ts";
 import {EventDateRange} from "../EventDateRange";
 import {ReactNode} from "react";
-
-const DEFAULT_ACCENT_COLOR = '#6B46C1';
 
 interface TicketFieldProps {
     label: string;
@@ -63,7 +62,7 @@ export const AttendeeTicket = ({
     const isOnline = eventLocation?.type === LocationType.Online;
 
     const ticketDesignSettings = event?.settings?.ticket_design_settings;
-    const accentColor = ticketDesignSettings?.accent_color || DEFAULT_ACCENT_COLOR;
+    const accentColor = ticketDesignSettings?.accent_color || getDefaultThemeSettings().accent;
     const footerText = ticketDesignSettings?.footer_text;
     const dateDisplayMode = ticketDesignSettings?.date_display_mode || 'START_DATE_TIME';
     const logoUrl = imageUrl('TICKET_LOGO', event?.images);
@@ -198,7 +197,7 @@ export const AttendeeTicket = ({
 
             {showPoweredBy && (
                 <div className={classes.poweredBy}>
-                    <PoweredByFooter brandingRemoved={event.organizer?.branding_removed}/>
+                    <PoweredByFooter brandingRemoved={event.organizer?.branding_removed} withLegalLinks={false}/>
                 </div>
             )}
         </div>

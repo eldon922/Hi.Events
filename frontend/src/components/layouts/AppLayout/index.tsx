@@ -10,6 +10,7 @@ import {t} from "@lingui/macro";
 import ImpersonationBanner from "../../common/ImpersonationBanner";
 import PendingDeletionBanner from "../../common/PendingDeletionBanner";
 import AnnouncementDisplay from "../../common/AnnouncementDisplay";
+import {PoweredByFooter} from "../../common/PoweredByFooter";
 
 interface AppLayoutProps {
     navItems: NavItem[];
@@ -107,6 +108,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({
 
             <main className={classes.main} id={'app-manage-main'} tabIndex={-1}>
                 <Outlet/>
+                <PoweredByFooter/>
             </main>
 
             {sidebarOpen && (

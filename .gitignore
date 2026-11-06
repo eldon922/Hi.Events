@@ -6,6 +6,8 @@
 frontend/.env
 backend/.env
 docker/all-in-one/.env
+docs/server/.env
+docs/server/service-account.json
 docker-compose.override.yml
 todo.md
 /prompts/**

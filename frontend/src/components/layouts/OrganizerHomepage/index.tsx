@@ -255,7 +255,6 @@ export const OrganizerHomepage = ({
             <HomepageFrame
                 themeSettings={themeSettings}
                 mirrorImageUrl={cover?.url}
-                footerSource="app-organizer-footer"
                 width="medium"
                 brandingRemoved={organizer.branding_removed}
                 outside={(

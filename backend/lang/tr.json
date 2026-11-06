@@ -1266,5 +1266,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Alıcıların çevrimdışı ödeme yaparken kullanması gereken referans. Sipariş referansı ödeme referansı olarak kullanılmadığında boştur.",
     "Order placed: payment needed": "Sipariş verildi: ödeme gerekli",
     "How to pay": "Nasıl ödenir",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Ödeme başarılı oldu ancak sipariş zaten sonra ödenmek üzere verilmişti. Sipariş: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Ödeme başarılı oldu ancak sipariş zaten sonra ödenmek üzere verilmişti. Sipariş: :id",
+    "Source code": "Kaynak kodu"
 }

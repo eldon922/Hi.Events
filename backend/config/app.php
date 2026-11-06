@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
 return [
-    'name' => env('APP_NAME', 'Hi.Events'),
+    'name' => env('APP_NAME', 'Ekklesia'),
 
     'reset_password_token_expiry_in_min' => 15,
     'frontend_url' => env('APP_FRONTEND_URL', 'http://localhost'),
@@ -93,6 +93,8 @@ return [
     'email_logo_url' => env('APP_EMAIL_LOGO_URL'),
     'email_logo_link_url' => env('APP_EMAIL_LOGO_LINK_URL', env('APP_FRONTEND_URL', 'http://localhost')),
     'email_footer_text' => env('APP_EMAIL_FOOTER_TEXT'),
+
+    'source_code_url' => 'https://github.com/eldon922/Hi.Events',
 
     /**
      * Default color theme for organizer homepages
@@ -178,7 +180,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE', 'id'),
 
     /*
     |--------------------------------------------------------------------------

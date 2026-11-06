@@ -10,7 +10,6 @@ import {showInfo} from "../../../utilites/notifications.tsx";
 
 const getTickerFeatures = () => [
     t`Recurring events`,
-    t`Instant Stripe payouts`,
     t`Custom branding`,
     t`QR code check-in`,
     t`Waitlist`,
@@ -38,8 +37,8 @@ const FeaturePanel = () => {
 
             <div className={classes.panelInner}>
                 <h1 className={classes.heroTitle}>
-                    <span className={classes.heroBold}>{t`Sell out your event.`}</span>
-                    <span className={classes.heroLight}>{t`Keep the profit.`}</span>
+                    <span className={classes.heroBold}>{t`A free promotion tool for your event.`}</span>
+                    <span className={classes.heroLight}>{t`Registration, invitations and QR check-in.`}</span>
                 </h1>
 
                 <div className={classes.ticketScene} aria-hidden="true">
@@ -48,29 +47,29 @@ const FeaturePanel = () => {
                         <div className={classes.ticketInner}>
                             <div className={classes.ticketMain}>
                                 <div className={classes.ticketTop}>
-                                    <span>Admit One</span>
+                                    <span>{t`Admit One`}</span>
                                     <span>№ 000482</span>
                                 </div>
-                                <div className={classes.ticketTitle}>Dublin Jazz Festival</div>
-                                <div className={classes.ticketMeta}>Sat, Aug 16 · 8:00 PM · Dublin</div>
+                                <div className={classes.ticketTitle}>{t`Prayer Night`}</div>
+                                <div className={classes.ticketMeta}>15 Nov 2026 · 19:00 WIB · Bandung</div>
                                 <div className={classes.ticketFields}>
                                     <div className={classes.ticketField}>
-                                        <span>Door</span>
+                                        <span>{t`Door`}</span>
                                         <strong>3</strong>
                                     </div>
                                     <div className={classes.ticketField}>
-                                        <span>Seat</span>
-                                        <strong>GA</strong>
+                                        <span>{t`Seat`}</span>
+                                        <strong>A12</strong>
                                     </div>
                                     <div className={classes.ticketField}>
-                                        <span>Price</span>
-                                        <strong>€89.00</strong>
+                                        <span>{t`Price`}</span>
+                                        <strong>{t`Free`}</strong>
                                     </div>
                                 </div>
                                 <div className={classes.barcode}/>
                             </div>
                             <div className={classes.ticketStub}>
-                                <span className={classes.stubLabel}>Admit One</span>
+                                <span className={classes.stubLabel}>{t`Admit One`}</span>
                                 <svg className={classes.stubQr} viewBox="0 0 25 25">
                                     <path fillRule="evenodd" d="M0 0h7v7H0zm1 1v5h5V1z"/>
                                     <rect x="2" y="2" width="3" height="3"/>
@@ -100,11 +99,11 @@ const FeaturePanel = () => {
                                     <rect x="10" y="22" width="3" height="2"/>
                                     <rect x="16" y="22" width="2" height="2"/>
                                 </svg>
-                                <span className={classes.stubSeat}>GA — €89</span>
+                                <span className={classes.stubSeat}>A12 — {t`Free`}</span>
                             </div>
                         </div>
                     </div>
-                    <div className={classes.stamp}>Sold Out</div>
+                    <div className={classes.stamp}>{t`Sold Out`}</div>
                 </div>
             </div>
 
@@ -149,8 +148,8 @@ export const AuthShell = ({children, isStatic = false}: AuthShellProps) => {
                     <main className={classes.container}>
                         <div className={classes.logo} onClick={handleLogoClick} style={{cursor: 'pointer'}}>
                             <img
-                                src={getConfig("VITE_APP_LOGO_DARK", "/logos/hi-events-horizontal-light.svg")}
-                                alt={t`${getConfig("VITE_APP_NAME", "Hi.Events")} logo`}
+                                src={getConfig("VITE_APP_LOGO_DARK")}
+                                alt={t`${getConfig("VITE_APP_NAME")} logo`}
                             />
                         </div>
                         <div className={classes.formArea}>

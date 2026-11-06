@@ -228,8 +228,8 @@ export function homepageThemeStyle(settings: HomepageThemeSettings): CSSProperti
 
 export function getDefaultThemeSettings(): HomepageThemeSettings {
     return {
-        accent: '#7c3aed',
-        background: '#f5f3ff',
+        accent: '#26306B',
+        background: '#FBF8F3',
         mode: 'light',
         background_type: 'COLOR',
         font_family: DEFAULT_HOMEPAGE_FONT,

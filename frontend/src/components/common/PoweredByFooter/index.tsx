@@ -5,6 +5,9 @@ import React, {useEffect, useState} from "react";
 import {iHavePurchasedALicence, isHiEvents} from "../../../utilites/helpers.ts";
 import {getConfig} from "../../../utilites/config.ts";
 import {useGetInstanceInfo} from "../../../ee/licensing/queries/useGetInstanceInfo.ts";
+import {LegalLinks} from "../LegalLinks";
+
+const SOURCE_CODE_URL = "https://github.com/eldon922/Hi.Events";
 
 const configuredHost = (): string => {
     const frontendUrl = getConfig("VITE_FRONTEND_URL");
@@ -49,9 +52,10 @@ const poweredByLink = (host: string, medium: string): string => {
  */
 type PoweredByFooterProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     brandingRemoved?: boolean;
+    withLegalLinks?: boolean;
 };
 
-export const PoweredByFooter = ({brandingRemoved, ...props}: PoweredByFooterProps) => {
+export const PoweredByFooter = ({brandingRemoved, withLegalLinks = true, ...props}: PoweredByFooterProps) => {
     const {data: instance, isPending, isError} = useGetInstanceInfo();
 
     const [link, setLink] = useState(() => poweredByLink(configuredHost(), "app"));
@@ -60,7 +64,9 @@ export const PoweredByFooter = ({brandingRemoved, ...props}: PoweredByFooterProp
         setLink(poweredByLink(window.location.hostname, window.location.pathname.includes("/widget") ? "widget" : "app"));
     }, []);
 
-    if (brandingRemoved || iHavePurchasedALicence() || isPending || (!isError && instance?.white_label)) {
+    const noticeHidden = brandingRemoved || iHavePurchasedALicence() || isPending || (!isError && instance?.white_label);
+
+    if (noticeHidden && !withLegalLinks) {
         return <></>;
     }
 
@@ -78,27 +84,30 @@ export const PoweredByFooter = ({brandingRemoved, ...props}: PoweredByFooterProp
         </>
     ) : (
         <>
-            {t`Powered by`}{" "}
-            <a
-                href={link}
-                target="_blank"
-                title={"Effortlessly manage events and sell tickets online with Hi.Events"}
-            >
-                Hi.Events
-            </a>{" "}
-            🚀
+            <a href={link} target="_blank">
+                Powered by Ekklesia, based on Hi.Events
+            </a>
+            {" · "}
+            <a href={SOURCE_CODE_URL} target="_blank" rel="noopener noreferrer">
+                {t`Source code`}
+            </a>
         </>
     );
 
     return (
         <div {...props} className={classNames(classes.poweredBy, props.className)}>
-            <div className={classes.poweredByText}>
-                {footerContent}
-            </div>
-            {instance?.dev_mode && (
-                <div className={classes.devLicence}>
-                    {t`Development licence, not for production use`}
-                </div>
+            {withLegalLinks && <LegalLinks/>}
+            {!noticeHidden && (
+                <>
+                    <div className={classes.poweredByText}>
+                        {footerContent}
+                    </div>
+                    {instance?.dev_mode && (
+                        <div className={classes.devLicence}>
+                            {t`Development licence, not for production use`}
+                        </div>
+                    )}
+                </>
             )}
         </div>
     );

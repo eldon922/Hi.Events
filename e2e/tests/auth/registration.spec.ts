@@ -22,8 +22,8 @@ test.describe('registration', () => {
       return;
     }
 
-    const welcomeEmail = await mailpit.waitForMessage(email, { subjectContains: 'Welcome to Hi.Events' });
-    expect(welcomeEmail.Subject).toContain('Welcome to Hi.Events');
+    const welcomeEmail = await mailpit.waitForMessage(email, { subjectContains: 'Welcome to Ekklesia' });
+    expect(welcomeEmail.Subject).toContain('Welcome to Ekklesia');
   });
 
   test('a name containing a phone number or link is refused', async ({ page, mailpit }) => {

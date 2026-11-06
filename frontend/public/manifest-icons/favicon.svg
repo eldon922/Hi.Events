@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-    <rect width="48" height="48" rx="8" fill="#18181b"/>
-    <text x="24" y="33"
-          font-family="system-ui, -apple-system, sans-serif"
-          font-size="26"
-          font-weight="700"
-          fill="#ffffff"
-          text-anchor="middle">HI<tspan fill="#cd58dd">.</tspan></text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14.1" fill="#11163A"/><circle cx="32.00" cy="12.80" r="5.44" fill="#FFC94D"/><circle cx="47.01" cy="20.03" r="4.48" fill="none" stroke="#FFC94D" stroke-width="1.92"/><circle cx="50.72" cy="36.27" r="5.44" fill="#FFC94D"/><circle cx="40.33" cy="49.30" r="5.44" fill="#FFC94D"/><circle cx="23.67" cy="49.30" r="5.44" fill="#FFC94D"/><circle cx="13.28" cy="36.27" r="5.44" fill="#FFC94D"/><circle cx="16.99" cy="20.03" r="5.44" fill="#FFC94D"/></svg>

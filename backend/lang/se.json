@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Referensen som köpare ska använda vid offlinebetalning. Tom när orderreferensen inte används som betalningsreferens.",
     "Order placed: payment needed": "Order lagd: betalning krävs",
     "How to pay": "Så betalar du",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Betalningen lyckades, men ordern hade redan lagts med betalning senare. Order: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Betalningen lyckades, men ordern hade redan lagts med betalning senare. Order: :id",
+    "Source code": "Källkod"
 }

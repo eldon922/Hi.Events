@@ -1251,5 +1251,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "Η αιτιολογία που πρέπει να χρησιμοποιούν οι αγοραστές στις πληρωμές εκτός σύνδεσης. Κενή όταν ο κωδικός παραγγελίας δεν χρησιμοποιείται ως αιτιολογία πληρωμής.",
     "Order placed: payment needed": "Η παραγγελία υποβλήθηκε: απαιτείται πληρωμή",
     "How to pay": "Πώς να πληρώσετε",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Η πληρωμή ολοκληρώθηκε, αλλά η παραγγελία είχε ήδη υποβληθεί για πληρωμή αργότερα. Παραγγελία: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "Η πληρωμή ολοκληρώθηκε, αλλά η παραγγελία είχε ήδη υποβληθεί για πληρωμή αργότερα. Παραγγελία: :id",
+    "Source code": "Πηγαίος κώδικας"
 }

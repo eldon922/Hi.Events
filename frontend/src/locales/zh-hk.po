@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/layouts/Event/index.tsx:260
+#: src/components/layouts/Event/index.tsx:263
 #: src/components/layouts/OrganizerLayout/index.tsx:248
 msgid "- Click to Publish"
 msgstr "- 點擊發布"
 
-#: src/components/layouts/Event/index.tsx:262
+#: src/components/layouts/Event/index.tsx:265
 #: src/components/layouts/OrganizerLayout/index.tsx:250
 msgid "- Click to Unpublish"
 msgstr "- 點擊取消發布"
@@ -145,7 +145,7 @@ msgid "{0} left"
 msgstr "剩餘 {0}"
 
 #: src/components/layouts/AppLayout/Sidebar/index.tsx:100
-#: src/components/layouts/AuthLayout/AuthShell.tsx:153
+#: src/components/layouts/AuthLayout/AuthShell.tsx:152
 msgid "{0} logo"
 msgstr "{0} 標誌"
 
@@ -907,7 +907,7 @@ msgstr "取消通知已發送至"
 msgid "a change in duration"
 msgstr "時長變更"
 
-#: src/components/common/CheckInListTable/index.tsx:287
+#: src/components/common/CheckInListTable/index.tsx:317
 msgid "A check-in list lets staff scan tickets at the door on a phone, tablet, or USB scanner. Share the link with your team, no account needed."
 msgstr "簽到列表讓工作人員可在現場以手機、平板或 USB 掃描器掃描門票。把連結分享給團隊即可，無需帳戶。"
 
@@ -930,6 +930,10 @@ msgstr "只需幾個簡單步驟，你就可以開始售票。"
 #: src/components/routes/event/HomepageDesigner/LayoutPicker/index.tsx:26
 msgid "A focused reading column. Tickets appear wherever you place them in Sections."
 msgstr "專注的單欄閱讀版面。門票會顯示在你於區塊中放置的位置。"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:40
+msgid "A free promotion tool for your event."
+msgstr "為您的活動提供免費的推廣工具。"
 
 #: src/components/routes/event/HomepageDesigner/SectionsEditor/SectionContentEditor.tsx:238
 msgid "A gallery can have up to {MAX_GALLERY_PHOTOS} photos."
@@ -1261,7 +1265,7 @@ msgstr "激活日期"
 #: src/components/common/AttendeeStatusBadge/index.tsx:27
 #: src/components/common/AttendeeTable/index.tsx:274
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:177
+#: src/components/common/CheckInListTable/index.tsx:183
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
@@ -1738,6 +1742,11 @@ msgstr "管理儀表板"
 msgid "Admins"
 msgstr "管理員"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:50
+#: src/components/layouts/AuthLayout/AuthShell.tsx:72
+msgid "Admit One"
+msgstr "限一人入場"
+
 #: src/components/forms/ProductForm/index.tsx:228
 msgid "Admits attendees to your event"
 msgstr "讓參加者可以進場"
@@ -1762,7 +1771,7 @@ msgstr "推廣夥伴建立成功"
 msgid "Affiliate deleted successfully"
 msgstr "推廣夥伴刪除成功"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:21
+#: src/components/layouts/AuthLayout/AuthShell.tsx:20
 msgid "Affiliate program"
 msgstr "聯盟推廣計劃"
 
@@ -1778,7 +1787,7 @@ msgstr "唔會追蹤推廣夥伴銷售。呢個會停用該推廣夥伴。"
 msgid "Affiliate updated successfully"
 msgstr "推廣夥伴更新成功"
 
-#: src/components/layouts/Event/index.tsx:146
+#: src/components/layouts/Event/index.tsx:149
 #: src/components/modals/DuplicateEventModal/index.tsx:126
 #: src/components/routes/event/Affiliates/index.tsx:67
 msgid "Affiliates"
@@ -1888,7 +1897,7 @@ msgstr "所有日期"
 msgid "All dates"
 msgstr "所有日期"
 
-#: src/components/common/CheckInListTable/index.tsx:116
+#: src/components/common/CheckInListTable/index.tsx:122
 #: src/components/modals/ProductPurchasesModal/index.tsx:276
 #: src/components/routes/event/attendees.tsx:236
 #: src/components/routes/event/orders.tsx:226
@@ -2539,11 +2548,11 @@ msgstr "確定要刪除此範本嗎？此操作無法復原，郵件將回退到
 msgid "Are you sure you want to delete this webhook?"
 msgstr "您確定要刪除此 Webhook 嗎？"
 
-#: src/components/layouts/Checkout/index.tsx:523
+#: src/components/layouts/Checkout/index.tsx:521
 msgid "Are you sure you want to leave?"
 msgstr "您確定要離開嗎？"
 
-#: src/components/layouts/Event/index.tsx:210
+#: src/components/layouts/Event/index.tsx:213
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "您確定要將此活動設為草稿嗎？這將使公眾無法看到該活動"
 
@@ -2616,7 +2625,7 @@ msgid "Are you sure you would like to delete this Capacity Assignment?"
 msgstr "您確定要刪除此容量分配嗎？"
 
 #: src/components/common/CheckInListList/index.tsx:184
-#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/common/CheckInListTable/index.tsx:252
 msgid "Are you sure you would like to delete this Check-In List?"
 msgstr "您確定要刪除此簽到列表嗎？"
 
@@ -2653,7 +2662,7 @@ msgstr "藝術"
 msgid "As your business is based in Ireland, Irish VAT at 23% applies automatically to all platform fees."
 msgstr "由於您的業務位於愛爾蘭，愛爾蘭增值稅（23%）將自動套用於所有平台費用。"
 
-#: src/components/layouts/Event/index.tsx:231
+#: src/components/layouts/Event/index.tsx:234
 #: src/components/layouts/OrganizerLayout/index.tsx:221
 msgid "Ask an account admin to give you access, or open one of your own events."
 msgstr "請聯絡帳戶管理員為您開通存取權限，或開啟您自己的活動。"
@@ -2744,7 +2753,7 @@ msgstr "所有活動的出席率和簽到率"
 msgid "attendee"
 msgstr "位參加者"
 
-#: src/components/common/AttendeeTicket/index.tsx:101
+#: src/components/common/AttendeeTicket/index.tsx:100
 #: src/components/common/QuestionsTable/index.tsx:473
 #: src/components/routes/product-widget/CollectInformation/index.tsx:670
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:365
@@ -2835,7 +2844,7 @@ msgstr "位參加者"
 #: src/components/common/ProductsTable/index.tsx:96
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:530
 #: src/components/common/StatBoxes/index.tsx:75
-#: src/components/layouts/Event/index.tsx:150
+#: src/components/layouts/Event/index.tsx:153
 #: src/components/modals/ManageOccurrenceModal/index.tsx:179
 #: src/components/modals/ManageOrderModal/index.tsx:336
 #: src/components/routes/admin/Dashboard/index.tsx:367
@@ -2927,7 +2936,7 @@ msgstr "可用"
 msgid "Available"
 msgstr "可用"
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "Available once payment completes"
 msgstr "付款完成後可使用"
 
@@ -2963,7 +2972,7 @@ msgstr "待付款"
 
 #: src/components/layouts/CheckIn/AttendeeDetailSheet.tsx:117
 #: src/components/layouts/CheckIn/tabs/SearchTab.tsx:225
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/modals/ProductPurchasesModal/index.tsx:79
 #: src/components/modals/ProductPurchasesModal/index.tsx:209
 #: src/components/modals/ProductPurchasesModal/index.tsx:247
@@ -3012,8 +3021,8 @@ msgstr "返回帳戶"
 msgid "Back to Event"
 msgstr "返回活動"
 
-#: src/components/layouts/Checkout/index.tsx:362
-#: src/components/layouts/Checkout/index.tsx:363
+#: src/components/layouts/Checkout/index.tsx:360
+#: src/components/layouts/Checkout/index.tsx:361
 msgid "Back to event page"
 msgstr "返回活動頁面"
 
@@ -3267,7 +3276,7 @@ msgstr "售票處"
 msgid "Box office"
 msgstr "售票處"
 
-#: src/components/layouts/Event/index.tsx:152
+#: src/components/layouts/Event/index.tsx:155
 #: src/components/routes/event/orders.tsx:86
 #: src/ee/box-office/components/common/BoxOfficeTable/index.tsx:74
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:50
@@ -3330,7 +3339,7 @@ msgstr "品牌"
 msgid "Branding & emails"
 msgstr "品牌與電郵"
 
-#: src/locales.ts:74
+#: src/locales.ts:76
 msgid "Brazilian Portuguese"
 msgstr "巴西葡萄牙語"
 
@@ -3676,7 +3685,7 @@ msgstr "取消將取消與此訂單關聯的所有參與者，並將門票釋放
 
 #: src/components/common/AttendeeStatusBadge/index.tsx:28
 #: src/components/common/AttendeeTable/index.tsx:286
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/common/OrdersTable/index.tsx:378
 #: src/components/common/OrderStatusBadge/index.tsx:9
 #: src/components/common/WaitlistTable/index.tsx:29
@@ -3732,11 +3741,11 @@ msgstr "容量分配刪除成功"
 msgid "Capacity assignments"
 msgstr "容量分配"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:27
+#: src/components/layouts/AuthLayout/AuthShell.tsx:26
 msgid "Capacity management"
 msgstr "容量管理"
 
-#: src/components/layouts/Event/index.tsx:157
+#: src/components/layouts/Event/index.tsx:160
 msgid "Capacity Management"
 msgstr "容量管理"
 
@@ -3997,7 +4006,7 @@ msgstr "取消簽到"
 msgid "Check out this event: {0}"
 msgstr "看看這個活動：{0}"
 
-#: src/components/layouts/Checkout/index.tsx:428
+#: src/components/layouts/Checkout/index.tsx:426
 msgid "Check out this event!"
 msgstr "看看這個活動吧！"
 
@@ -4058,7 +4067,7 @@ msgstr "報到不可用"
 msgid "Check-in list"
 msgstr "報到清單"
 
-#: src/components/common/CheckInListTable/index.tsx:69
+#: src/components/common/CheckInListTable/index.tsx:75
 msgid "Check-In List"
 msgstr "簽到名單"
 
@@ -4067,7 +4076,7 @@ msgid "Check-In List Created"
 msgstr "簽到名單已建立！"
 
 #: src/components/common/CheckInListList/index.tsx:34
-#: src/components/common/CheckInListTable/index.tsx:56
+#: src/components/common/CheckInListTable/index.tsx:62
 msgid "Check-In List deleted successfully"
 msgstr "簽到列表刪除成功"
 
@@ -4095,7 +4104,7 @@ msgstr "簽到名單"
 msgid "Check-in Lists"
 msgstr "簽到列表"
 
-#: src/components/layouts/Event/index.tsx:151
+#: src/components/layouts/Event/index.tsx:154
 #: src/components/routes/event/CheckInLists/index.tsx:38
 msgid "Check-In Lists"
 msgstr "簽到列表"
@@ -4128,11 +4137,11 @@ msgid "Check-in Summary"
 msgstr "簽到摘要"
 
 #: src/components/common/CheckInListList/index.tsx:162
-#: src/components/common/CheckInListTable/index.tsx:41
+#: src/components/common/CheckInListTable/index.tsx:45
 msgid "Check-In URL copied to clipboard"
 msgstr "簽到鏈接已複製到剪貼板"
 
-#: src/components/common/CheckInListTable/index.tsx:139
+#: src/components/common/CheckInListTable/index.tsx:145
 #: src/components/modals/ManageAttendeeModal/index.tsx:184
 msgid "Check-Ins"
 msgstr "簽到"
@@ -4180,7 +4189,7 @@ msgstr "正在檢查…"
 msgid "Checkout"
 msgstr "結賬"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Checkout · step {stepNumber} of {stepCount}"
 msgstr "結帳 · 第 {stepNumber} 步，共 {stepCount} 步"
 
@@ -4205,11 +4214,11 @@ msgstr "結賬設置"
 msgid "Checkout, payments, homepage design and SEO"
 msgstr "結帳、付款、頁面設計及 SEO"
 
-#: src/locales.ts:70
+#: src/locales.ts:72
 msgid "Chinese (Simplified)"
 msgstr "簡體中文"
 
-#: src/locales.ts:72
+#: src/locales.ts:74
 msgid "Chinese (Traditional)"
 msgstr "中文（繁體）"
 
@@ -4501,8 +4510,8 @@ msgstr "關閉"
 #: src/components/layouts/EventHomepage/Lineup/SessionModal.tsx:86
 #: src/components/layouts/EventHomepage/Sections/GallerySection.tsx:122
 #: src/components/modals/CreateEventModal/index.tsx:288
-#: src/components/modals/JoinWaitlistModal/index.tsx:117
-#: src/components/modals/JoinWaitlistModal/index.tsx:144
+#: src/components/modals/JoinWaitlistModal/index.tsx:115
+#: src/components/modals/JoinWaitlistModal/index.tsx:142
 #: src/components/modals/RefundOrderModal/index.tsx:172
 #: src/components/routes/event/OccurrencesTab/RecurrenceScheduleDrawer/index.tsx:892
 #: src/components/routes/product-widget/SelectProducts/index.tsx:1245
@@ -4627,6 +4636,10 @@ msgstr "以逗號分隔的描述活動的關鍵字。搜索引擎將使用這些
 #: src/components/routes/admin/Dashboard/index.tsx:332
 msgid "Commission"
 msgstr "佣金"
+
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "社群守則"
 
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
@@ -4836,7 +4849,7 @@ msgstr "確認您的電郵"
 msgid "Confirm your email address"
 msgstr "確認您的電郵地址"
 
-#: src/components/layouts/Event/index.tsx:337
+#: src/components/layouts/Event/index.tsx:344
 msgid "Confirm your email to access all features."
 msgstr "請確認您的電郵地址以使用所有功能。"
 
@@ -4968,6 +4981,10 @@ msgstr "聯絡"
 msgid "Contact {0}"
 msgstr "聯絡 {0}"
 
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "聯絡與投訴"
+
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
 msgstr "聯絡電郵"
@@ -5083,13 +5100,14 @@ msgstr "轉化率"
 msgid "Cookie settings"
 msgstr "Cookie 設定"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/common/TwoFactor/RecoveryCodesDisplay.tsx:84
 #: src/components/common/WidgetEditor/index.tsx:221
 #: src/components/common/WidgetEditor/InstallPanel.tsx:52
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ShareModal/index.tsx:255
@@ -5126,6 +5144,7 @@ msgstr "複製逐步說明，可貼到 ChatGPT、Claude、Cursor 或網站建立
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ManageOrderModal/index.tsx:233
@@ -5167,7 +5186,7 @@ msgid "Copy check-in link"
 msgstr "複製簽到連結"
 
 #: src/components/common/CheckInListList/index.tsx:156
-#: src/components/common/CheckInListTable/index.tsx:209
+#: src/components/common/CheckInListTable/index.tsx:215
 msgid "Copy Check-In URL"
 msgstr "複製簽到鏈接"
 
@@ -5210,7 +5229,7 @@ msgstr "複製金鑰"
 msgid "Copy link"
 msgstr "複製連結"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/modals/ShareModal/index.tsx:171
 msgid "Copy Link"
 msgstr "複製鏈接"
@@ -5457,7 +5476,7 @@ msgstr "封面圖片將顯示在您的主辦單位頁面頂部"
 msgid "Covers"
 msgstr "涵蓋"
 
-#: src/components/common/CheckInListTable/index.tsx:92
+#: src/components/common/CheckInListTable/index.tsx:98
 msgid "Covers every ticket"
 msgstr "涵蓋所有門票"
 
@@ -5583,7 +5602,7 @@ msgid "Create Category"
 msgstr "創建類別"
 
 #: src/components/common/CheckInListList/index.tsx:60
-#: src/components/common/CheckInListTable/index.tsx:295
+#: src/components/common/CheckInListTable/index.tsx:325
 #: src/components/modals/CreateCheckInListModal/index.tsx:89
 #: src/components/modals/CreateCheckInListModal/index.tsx:110
 #: src/components/routes/event/CheckInLists/index.tsx:76
@@ -5811,7 +5830,7 @@ msgstr "弧形排列和樓座。"
 msgid "Custom"
 msgstr "自訂"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:14
+#: src/components/layouts/AuthLayout/AuthShell.tsx:13
 msgid "Custom branding"
 msgstr "自訂品牌形象"
 
@@ -5835,7 +5854,7 @@ msgstr "自定義地圖 URL"
 msgid "Custom order and ticket emails for this event"
 msgstr "此活動的自訂訂單及門票電郵"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:23
+#: src/components/layouts/AuthLayout/AuthShell.tsx:22
 msgid "Custom questions"
 msgstr "自訂問題"
 
@@ -5941,7 +5960,7 @@ msgstr "舞池"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:155
 #: src/components/common/CheckInListList/index.tsx:176
-#: src/components/common/CheckInListTable/index.tsx:225
+#: src/components/common/CheckInListTable/index.tsx:244
 #: src/components/common/EntityActions/index.tsx:58
 #: src/components/common/LocationsTable/index.tsx:71
 #: src/components/common/OrganizerWebhookTable/index.tsx:121
@@ -5968,7 +5987,7 @@ msgid "Dark"
 msgstr "深色"
 
 #: src/components/layouts/Admin/index.tsx:17
-#: src/components/layouts/Event/index.tsx:117
+#: src/components/layouts/Event/index.tsx:120
 #: src/components/routes/admin/Dashboard/index.tsx:179
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:60
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
@@ -5976,7 +5995,7 @@ msgid "Dashboard"
 msgstr "Dashboard"
 
 #: src/components/common/AdminOrdersTable/index.tsx:94
-#: src/components/common/CheckInListTable/index.tsx:107
+#: src/components/common/CheckInListTable/index.tsx:113
 #: src/components/common/OrderDetails/index.tsx:44
 #: src/components/common/WaitlistTable/index.tsx:187
 #: src/components/common/WidgetEditor/ContentFields.tsx:77
@@ -5999,7 +6018,7 @@ msgctxt "Lineup spreadsheet column"
 msgid "Date"
 msgstr "日期"
 
-#: src/components/common/AttendeeTicket/index.tsx:110
+#: src/components/common/AttendeeTicket/index.tsx:109
 #: src/components/routes/event/OccurrencesTab/OccurrenceEditModal/index.tsx:443
 msgid "Date & Time"
 msgstr "日期和時間"
@@ -6132,7 +6151,7 @@ msgstr "減少"
 msgid "Decrease quantity"
 msgstr "減少數量"
 
-#: src/components/common/CheckInListTable/index.tsx:87
+#: src/components/common/CheckInListTable/index.tsx:93
 #: src/components/routes/admin/Accounts/AccountDetail/OrganizerAdminModal.tsx:117
 #: src/components/routes/event/OccurrencesTab/PriceOverrideForm/index.tsx:292
 #: src/components/routes/settings/TaxesAndFees/index.tsx:51
@@ -6261,7 +6280,7 @@ msgid "Delete category"
 msgstr "刪除類別"
 
 #: src/components/common/CheckInListList/index.tsx:179
-#: src/components/common/CheckInListTable/index.tsx:228
+#: src/components/common/CheckInListTable/index.tsx:247
 msgid "Delete Check-In List"
 msgstr "刪除簽到列表"
 
@@ -6473,7 +6492,7 @@ msgstr "開發"
 msgid "Development licence"
 msgstr "開發授權"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "開發授權，不可用於正式環境"
 
@@ -6656,6 +6675,14 @@ msgstr "捐款"
 msgid "Done"
 msgstr "完成"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:57
+msgid "Door"
+msgstr "門"
+
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
+msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
+msgstr "入場工作人員可以在手機上開啟此鏈接或掃描此 QR 碼。請把它當作共享密碼。"
+
 #: src/components/common/CheckIn/CheckInDescriptionModal.tsx:20
 msgid "Door staff instructions"
 msgstr "入場工作人員須知"
@@ -6692,7 +6719,7 @@ msgstr "下載 CSV"
 msgid "Download invoice"
 msgstr "下載發票"
 
-#: src/components/layouts/Checkout/index.tsx:450
+#: src/components/layouts/Checkout/index.tsx:448
 msgid "Download Invoice"
 msgstr "下載發票"
 
@@ -6708,13 +6735,13 @@ msgstr "下載所有已完成訂單的銷售、參與者和財務報告。"
 msgid "Download spreadsheet (.xlsx)"
 msgstr "下載試算表 (.xlsx)"
 
-#: src/components/layouts/Checkout/index.tsx:240
+#: src/components/layouts/Checkout/index.tsx:238
 #: src/hooks/useOrderActions.tsx:80
 msgid "Downloading Invoice"
 msgstr "正在下載發票"
 
 #: src/components/common/EventCard/index.tsx:99
-#: src/components/layouts/Event/index.tsx:259
+#: src/components/layouts/Event/index.tsx:262
 #: src/components/layouts/OrganizerLayout/index.tsx:247
 #: src/components/routes/admin/Announcements/index.tsx:183
 #: src/components/routes/admin/Announcements/index.tsx:472
@@ -6838,7 +6865,7 @@ msgstr "時長（分鐘）"
 msgid "Duration must be at least 1 minute."
 msgstr "時長最少為 1 分鐘。"
 
-#: src/locales.ts:64
+#: src/locales.ts:66
 msgid "Dutch"
 msgstr "荷蘭語"
 
@@ -7018,7 +7045,7 @@ msgid "Edit category"
 msgstr "編輯類別"
 
 #: src/components/common/CheckInListList/index.tsx:147
-#: src/components/common/CheckInListTable/index.tsx:200
+#: src/components/common/CheckInListTable/index.tsx:206
 #: src/components/modals/EditCheckInListModal/index.tsx:77
 msgid "Edit Check-In List"
 msgstr "編輯簽到列表"
@@ -7159,6 +7186,11 @@ msgstr "編輯器"
 msgid "Education"
 msgstr "教育"
 
+#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:22
+msgid "Ekklesia Check-In link and QR code"
+msgstr "Ekklesia 簽到鏈接和 QR 碼"
+
 #: src/components/routes/admin/Messages/index.tsx:325
 msgid "Eligibility Failures"
 msgstr "資格失敗"
@@ -7171,7 +7203,7 @@ msgstr "符合條件的簽到列表"
 #: src/components/common/QuestionsTable/index.tsx:264
 #: src/components/forms/AffiliateForm/index.tsx:89
 #: src/components/modals/InviteUserModal/index.tsx:61
-#: src/components/modals/JoinWaitlistModal/index.tsx:190
+#: src/components/modals/JoinWaitlistModal/index.tsx:188
 #: src/components/modals/ManageAttendeeModal/index.tsx:174
 #: src/components/modals/ManageOrderModal/index.tsx:141
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:165
@@ -7193,7 +7225,7 @@ msgstr "電子郵件"
 msgid "Email & Notification Settings"
 msgstr "電子郵件和通知設置"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:19
+#: src/components/layouts/AuthLayout/AuthShell.tsx:18
 msgid "Email & scheduled messages"
 msgstr "電郵與排程訊息"
 
@@ -7236,7 +7268,7 @@ msgstr "電子郵件更改已成功取消"
 msgid "Email change pending"
 msgstr "電子郵件更改待定"
 
-#: src/components/layouts/Event/index.tsx:98
+#: src/components/layouts/Event/index.tsx:101
 #: src/components/layouts/OrganizerLayout/index.tsx:142
 #: src/components/routes/settings/Profile/index.tsx:136
 msgid "Email confirmation resent successfully"
@@ -7332,7 +7364,7 @@ msgstr "電郵以您的主辦單位名稱發送，按鈕和連結採用您活動
 msgid "Embed Widget"
 msgstr "嵌入小工具"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:20
+#: src/components/layouts/AuthLayout/AuthShell.tsx:19
 msgid "Embeddable widget"
 msgstr "可嵌入小工具"
 
@@ -7460,7 +7492,7 @@ msgstr "翌日結束"
 
 #: src/components/common/LanguageSwitcher/index.tsx:22
 #: src/components/modals/CreateAttendeeModal/index.tsx:241
-#: src/locales.ts:56
+#: src/locales.ts:58
 msgid "English"
 msgstr "英語"
 
@@ -7647,7 +7679,7 @@ msgid "Entries will appear here when customers join the waitlist for sold out pr
 msgstr "當客戶加入已售罄產品的候補名單時，條目將顯示在此處。"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:248
+#: src/components/layouts/Checkout/index.tsx:246
 #: src/hooks/useOrderActions.tsx:88
 msgid "Error"
 msgstr "錯誤"
@@ -7823,7 +7855,7 @@ msgstr "活動不可用"
 msgid "Event not live"
 msgstr "活動未上線"
 
-#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:333
 msgid "Event Page"
 msgstr "活動頁面"
 
@@ -7835,7 +7867,7 @@ msgstr "活動預覽"
 msgid "Event restored successfully"
 msgstr "活動已成功還原"
 
-#: src/components/layouts/Event/index.tsx:134
+#: src/components/layouts/Event/index.tsx:137
 #: src/components/routes/event/Settings/index.tsx:183
 msgid "Event Settings"
 msgstr "活動設定"
@@ -7846,14 +7878,14 @@ msgstr "活動設定"
 
 #: src/components/common/EventCard/index.tsx:82
 #: src/components/common/StatusToggle/index.tsx:62
-#: src/components/layouts/Event/index.tsx:221
+#: src/components/layouts/Event/index.tsx:224
 #: src/components/modals/PublishEventModal/index.tsx:129
 msgid "Event status update failed. Please try again later"
 msgstr "活動狀態更新失敗。請稍後再試"
 
 #: src/components/common/EventCard/index.tsx:79
 #: src/components/common/StatusToggle/index.tsx:54
-#: src/components/layouts/Event/index.tsx:218
+#: src/components/layouts/Event/index.tsx:221
 msgid "Event status updated"
 msgstr "事件狀態已更新"
 
@@ -8185,7 +8217,7 @@ msgstr "失敗的工作"
 msgid "Failed Jobs"
 msgstr "失敗任務"
 
-#: src/components/layouts/Checkout/index.tsx:263
+#: src/components/layouts/Checkout/index.tsx:261
 msgid "Failed to abandon order. Please try again."
 msgstr "放棄訂單失敗。請重試。"
 
@@ -8314,7 +8346,7 @@ msgstr "刪除問題失敗"
 msgid "Failed to delete template"
 msgstr "刪除範本失敗"
 
-#: src/components/layouts/Checkout/index.tsx:249
+#: src/components/layouts/Checkout/index.tsx:247
 #: src/hooks/useOrderActions.tsx:89
 msgid "Failed to download invoice. Please try again."
 msgstr "下載發票失敗。請重試。"
@@ -8700,7 +8732,7 @@ msgstr "完成設定"
 msgid "Finish signing in to {providerName} in the window that opened."
 msgstr "請在已開啟的視窗中完成 {providerName} 的登入。"
 
-#: src/locales.ts:94
+#: src/locales.ts:98
 msgid "Finnish"
 msgstr "芬蘭語"
 
@@ -8747,7 +8779,7 @@ msgstr "姓名"
 #: src/components/common/QuestionsTable/index.tsx:262
 #: src/components/modals/EditUserModal/index.tsx:87
 #: src/components/modals/InviteUserModal/index.tsx:54
-#: src/components/modals/JoinWaitlistModal/index.tsx:180
+#: src/components/modals/JoinWaitlistModal/index.tsx:178
 #: src/components/routes/auth/AcceptInvitation/index.tsx:226
 #: src/components/routes/auth/Register/index.tsx:139
 #: src/components/routes/product-widget/CollectInformation/index.tsx:478
@@ -8757,7 +8789,7 @@ msgstr "姓名"
 msgid "First Name"
 msgstr "姓名"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:56
+#: src/components/modals/JoinWaitlistModal/index.tsx:54
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:31
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:31
 msgid "First name is required"
@@ -8902,7 +8934,7 @@ msgstr "第四個"
 msgid "Foyer"
 msgstr "大堂"
 
-#: src/components/common/AttendeeTicket/index.tsx:138
+#: src/components/common/AttendeeTicket/index.tsx:137
 #: src/components/common/Currency/index.tsx:88
 #: src/components/common/Currency/index.tsx:128
 #: src/components/common/OrderSummary/index.tsx:58
@@ -8910,6 +8942,8 @@ msgstr "大堂"
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:160
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:170
 #: src/components/forms/ProductForm/index.tsx:296
+#: src/components/layouts/AuthLayout/AuthShell.tsx:66
+#: src/components/layouts/AuthLayout/AuthShell.tsx:102
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:157
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:229
 #: src/ee/box-office/components/layouts/BoxOffice/AmountSheet.tsx:37
@@ -8929,7 +8963,7 @@ msgstr "免費訂單，無需付款"
 msgid "Free, open source, with end-to-end encrypted backups"
 msgstr "免費、開源,支援端對端加密備份"
 
-#: src/locales.ts:60
+#: src/locales.ts:62
 msgid "French"
 msgstr "法語"
 
@@ -8999,7 +9033,7 @@ msgstr "前區右側"
 msgid "Full access to every event, the team, payments and account settings."
 msgstr "完全存取所有活動、團隊、付款及帳戶設定。"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:25
+#: src/components/layouts/AuthLayout/AuthShell.tsx:24
 msgid "Full data ownership"
 msgstr "資料完全屬於你"
 
@@ -9062,7 +9096,7 @@ msgstr "產生新的復原碼"
 msgid "Generated {0}"
 msgstr "產生於 {0}"
 
-#: src/locales.ts:58
+#: src/locales.ts:60
 msgid "German"
 msgstr "德國"
 
@@ -9178,7 +9212,7 @@ msgstr "前往排程"
 msgid "Go to seating settings"
 msgstr "前往座位設定"
 
-#: src/components/layouts/Event/index.tsx:232
+#: src/components/layouts/Event/index.tsx:235
 #: src/components/layouts/OrganizerLayout/index.tsx:222
 msgid "Go to your events"
 msgstr "前往您的活動"
@@ -9209,7 +9243,7 @@ msgstr "寬限期"
 msgid "Grace period ends"
 msgstr "寬限期結束"
 
-#: src/locales.ts:88
+#: src/locales.ts:90
 msgid "Greek"
 msgstr "希臘語"
 
@@ -9259,7 +9293,7 @@ msgstr "群組"
 msgid "Guest"
 msgstr "嘉賓"
 
-#: src/components/layouts/Event/index.tsx:149
+#: src/components/layouts/Event/index.tsx:152
 msgid "Guest Management"
 msgstr "賓客管理"
 
@@ -9581,7 +9615,7 @@ msgstr "保留名額時長"
 msgid "Homepage Design"
 msgstr "主頁設計"
 
-#: src/components/layouts/Event/index.tsx:136
+#: src/components/layouts/Event/index.tsx:139
 #: src/components/layouts/OrganizerLayout/index.tsx:122
 msgid "Homepage Designer"
 msgstr "首頁設計器"
@@ -9693,7 +9727,7 @@ msgstr "https://example-maps-service.com/..."
 msgid "https://webhook-domain.com/webhook"
 msgstr "https://webhook-domain.com/webhook"
 
-#: src/locales.ts:80
+#: src/locales.ts:82
 msgid "Hungarian"
 msgstr "匈牙利語"
 
@@ -9701,7 +9735,7 @@ msgstr "匈牙利語"
 msgid "I acknowledge my responsibilities as a data controller"
 msgstr "我確認我作為數據控制者的責任"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:196
+#: src/components/modals/JoinWaitlistModal/index.tsx:194
 msgid "I agree to receive email notifications related to this event"
 msgstr "我同意接收與此活動相關的電子郵件通知"
 
@@ -9872,7 +9906,7 @@ msgstr "在你的身份提供者中，建立一個使用授權碼流程的機密
 
 #: src/components/common/AffiliateTable/index.tsx:132
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:182
+#: src/components/common/CheckInListTable/index.tsx:188
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
@@ -9930,12 +9964,12 @@ msgid "Included in your plan. Hi.Events branding is hidden on your event pages, 
 msgstr "已包含在您的方案中。您的活動頁面、小工具、門票和電郵均已隱藏 Hi.Events 品牌。"
 
 #: src/components/common/CheckInListList/index.tsx:102
-#: src/components/common/CheckInListTable/index.tsx:95
+#: src/components/common/CheckInListTable/index.tsx:101
 msgid "Includes {0} products"
 msgstr "包括{0}個產品"
 
 #: src/components/common/CheckInListList/index.tsx:103
-#: src/components/common/CheckInListTable/index.tsx:94
+#: src/components/common/CheckInListTable/index.tsx:100
 msgid "Includes 1 product"
 msgstr "包括1個產品"
 
@@ -9954,6 +9988,10 @@ msgstr "增加數量"
 #: src/components/common/MessageList/index.tsx:28
 msgid "Individual attendees"
 msgstr "個人與會者"
+
+#: src/locales.ts:96
+msgid "Indonesian"
+msgstr "印尼語"
 
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:258
 msgid "Ink saver"
@@ -9984,16 +10022,12 @@ msgstr "透過工具列中的大括號按鈕插入個人化變數。"
 msgid "Instagram"
 msgstr "Instagram"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:13
-msgid "Instant Stripe payouts"
-msgstr "Stripe 即時撥款"
-
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:165
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:180
 msgid "Instructions"
 msgstr "說明"
 
-#: src/components/layouts/Event/index.tsx:163
+#: src/components/layouts/Event/index.tsx:166
 #: src/components/layouts/OrganizerLayout/index.tsx:130
 #: src/components/modals/DuplicateEventModal/index.tsx:165
 msgid "Integrations"
@@ -10073,7 +10107,7 @@ msgstr "已邀請"
 msgid "Invoice"
 msgstr "發票"
 
-#: src/components/layouts/Checkout/index.tsx:245
+#: src/components/layouts/Checkout/index.tsx:243
 #: src/hooks/useOrderActions.tsx:85
 msgid "Invoice downloaded successfully"
 msgstr "發票下載成功"
@@ -10123,7 +10157,7 @@ msgstr "它已連接到另一位用戶。請使用其他 {providerName} 帳戶�
 msgid "It's shown above your instructions so you can match every payment to its order. Turn this off if you give buyers your own reference, or if none applies, such as cash at the door."
 msgstr "它顯示在你的說明上方,方便你將每筆付款與訂單對應。如果你給買家提供自己的參考編號,或不需要參考編號(例如現場現金付款),請關閉此選項。"
 
-#: src/locales.ts:62
+#: src/locales.ts:64
 msgid "Italian"
 msgstr "意大利語"
 
@@ -10144,7 +10178,7 @@ msgstr "項目"
 msgid "January"
 msgstr "1 月"
 
-#: src/locales.ts:92
+#: src/locales.ts:94
 msgid "Japanese"
 msgstr "日語"
 
@@ -10188,11 +10222,11 @@ msgid "Join from anywhere"
 msgstr "隨時隨地加入"
 
 #: src/components/common/JoinWaitlistButton/index.tsx:38
-#: src/components/modals/JoinWaitlistModal/index.tsx:208
+#: src/components/modals/JoinWaitlistModal/index.tsx:206
 msgid "Join Waitlist"
 msgstr "加入候補名單"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:157
+#: src/components/modals/JoinWaitlistModal/index.tsx:155
 msgid "Join Waitlist for {productDisplayName}"
 msgstr "加入{productDisplayName}的候補名單"
 
@@ -10241,10 +10275,6 @@ msgstr "請保持簡短 — 橫幅只顯示一行。{0}/200"
 msgid "Keep me updated on news and events from {0}"
 msgstr "讓我隨時了解來自 {0} 的新聞和活動"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:42
-msgid "Keep the profit."
-msgstr "利潤全歸你。"
-
 #: src/components/routes/event/Lineup/ProfileDrawer.tsx:263
 msgid "Keep them off the public lineup and schedule until you're ready to announce"
 msgstr "在準備好公佈之前，不在公開陣容和時間表中顯示"
@@ -10281,7 +10311,7 @@ msgstr "金鑰無法登入，也無法管理您的團隊、付款、個人資料
 msgid "Keys that never expire stay valid until you revoke them. Only use this for servers you control."
 msgstr "永不過期的金鑰在您撤銷之前會一直有效。請只在您控制的伺服器上使用此選項。"
 
-#: src/locales.ts:90
+#: src/locales.ts:92
 msgid "Korean"
 msgstr "韓語"
 
@@ -10393,7 +10423,7 @@ msgstr "姓氏"
 #: src/components/common/QuestionsTable/index.tsx:263
 #: src/components/modals/EditUserModal/index.tsx:88
 #: src/components/modals/InviteUserModal/index.tsx:55
-#: src/components/modals/JoinWaitlistModal/index.tsx:185
+#: src/components/modals/JoinWaitlistModal/index.tsx:183
 #: src/components/routes/auth/AcceptInvitation/index.tsx:232
 #: src/components/routes/auth/Register/index.tsx:145
 #: src/components/routes/product-widget/CollectInformation/index.tsx:485
@@ -10640,7 +10670,7 @@ msgstr "陣容"
 msgid "Lineup & schedule"
 msgstr "陣容與時間表"
 
-#: src/components/layouts/Event/index.tsx:135
+#: src/components/layouts/Event/index.tsx:138
 #: src/components/routes/event/Lineup/index.tsx:58
 msgid "Lineup & Schedule"
 msgstr "陣容與時間表"
@@ -10717,7 +10747,7 @@ msgid "List your upcoming events on your own website. Visitors can buy tickets w
 msgstr "在你自己的網站上展示即將舉行的活動。訪客無需離開你的頁面即可購票。"
 
 #: src/components/common/EventCard/index.tsx:102
-#: src/components/layouts/Event/index.tsx:261
+#: src/components/layouts/Event/index.tsx:264
 #: src/components/layouts/OrganizerLayout/index.tsx:249
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:115
 #: src/components/routes/event/Lineup/EventStatusBadge.tsx:8
@@ -10798,8 +10828,8 @@ msgstr "載入中…"
 msgid "Loads content from {service}"
 msgstr "從 {service} 載入內容"
 
-#: src/components/common/AttendeeTicket/index.tsx:120
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:119
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/common/LocationPicker/index.tsx:173
 #: src/components/common/LocationPicker/index.tsx:221
 #: src/components/common/LocationPicker/index.tsx:294
@@ -10933,7 +10963,7 @@ msgstr "讓您的活動頁面、小工具、門票和電郵完全屬於您。適
 
 #: src/components/common/CapacityAssignmentList/index.tsx:141
 #: src/components/common/CheckInListList/index.tsx:144
-#: src/components/common/CheckInListTable/index.tsx:221
+#: src/components/common/CheckInListTable/index.tsx:240
 #: src/components/common/EntityActions/index.tsx:44
 #: src/components/common/LocationsTable/index.tsx:60
 #: src/components/common/OrganizerWebhookTable/index.tsx:98
@@ -11194,7 +11224,7 @@ msgid "Message Sent"
 msgstr "發送的信息"
 
 #: src/components/layouts/Admin/index.tsx:22
-#: src/components/layouts/Event/index.tsx:153
+#: src/components/layouts/Event/index.tsx:156
 #: src/components/routes/event/messages.tsx:228
 msgid "Messages"
 msgstr "信息"
@@ -11435,7 +11465,7 @@ msgstr "多個日期，截至 {lastOccurrenceDate}"
 msgid "Multiple locations"
 msgstr "多個地點"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:26
+#: src/components/layouts/AuthLayout/AuthShell.tsx:25
 msgid "Multiple ticket types"
 msgstr "多種門票類型"
 
@@ -11820,7 +11850,7 @@ msgid "No changes"
 msgstr "沒有變更"
 
 #: src/components/common/CheckInListList/index.tsx:45
-#: src/components/common/CheckInListTable/index.tsx:282
+#: src/components/common/CheckInListTable/index.tsx:312
 msgid "No Check-In Lists"
 msgstr "沒有簽到列表"
 
@@ -12305,7 +12335,7 @@ msgstr "此端點尚未記錄任何 Webhook 事件。事件觸發後將顯示在
 msgid "No Webhooks"
 msgstr "沒有 Webhooks"
 
-#: src/components/layouts/Checkout/index.tsx:533
+#: src/components/layouts/Checkout/index.tsx:531
 msgid "No, keep me here"
 msgstr "否，保留在此"
 
@@ -12595,7 +12625,7 @@ msgstr "場次"
 msgid "Occurrence Cancelled"
 msgstr "場次已取消"
 
-#: src/components/layouts/Event/index.tsx:130
+#: src/components/layouts/Event/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/index.tsx:499
 msgid "Occurrence Schedule"
 msgstr "場次排程"
@@ -12839,7 +12869,7 @@ msgstr "網上及實體"
 msgid "Online & in-person — see schedule"
 msgstr "網上及實體 — 詳見排程"
 
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/modals/ManageOccurrenceModal/index.tsx:151
 #: src/components/widget/WidgetSections/index.tsx:59
 msgid "Online event"
@@ -12985,16 +13015,23 @@ msgstr "開啟售票處"
 msgid "Open check-in"
 msgstr "開啟簽到"
 
-#: src/components/common/CheckInListTable/index.tsx:256
+#: src/components/common/CheckInListTable/index.tsx:275
 #: src/components/routes/event/CheckInLists/index.tsx:58
 msgid "Open Check-In"
 msgstr "開啟簽到"
 
 #: src/components/common/CheckInListList/index.tsx:167
-#: src/components/common/CheckInListTable/index.tsx:214
+#: src/components/common/CheckInListTable/index.tsx:220
 #: src/components/modals/CheckInListSuccessModal/index.tsx:56
 msgid "Open Check-In Page"
 msgstr "開啟簽到頁面"
+
+#: src/components/common/CheckInListTable/index.tsx:227
+#: src/components/common/CheckInListTable/index.tsx:286
+#: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:59
+msgid "Open Ekklesia Check-In"
+msgstr "開啟 Ekklesia 簽到"
 
 #: src/components/common/WidgetEditor/ContentFields.tsx:205
 #: src/components/routes/admin/SpamEvents/index.tsx:238
@@ -13020,7 +13057,7 @@ msgstr "開啟相片 {photoNumber}"
 msgid "Open settings"
 msgstr "開啟設定"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "打開側邊欄"
@@ -13162,7 +13199,7 @@ msgstr "訂單已取消"
 msgid "Order Cancelled"
 msgstr "取消訂單"
 
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/routes/product-widget/CollectInformation/index.tsx:384
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:430
 msgid "Order complete"
@@ -13312,7 +13349,7 @@ msgstr "張訂單"
 #: src/components/common/OccurrenceAttendeesAndOrders/index.tsx:65
 #: src/components/common/WidgetEditor/WidgetStats.tsx:16
 #: src/components/layouts/Admin/index.tsx:21
-#: src/components/layouts/Event/index.tsx:144
+#: src/components/layouts/Event/index.tsx:147
 #: src/components/modals/ManageOccurrenceModal/index.tsx:183
 #: src/components/routes/admin/Attribution/index.tsx:200
 #: src/components/routes/admin/Dashboard/index.tsx:236
@@ -13382,7 +13419,7 @@ msgstr "主辦方"
 msgid "Organizer archived successfully"
 msgstr "主辦方已成功封存"
 
-#: src/components/layouts/Event/index.tsx:110
+#: src/components/layouts/Event/index.tsx:113
 #: src/components/layouts/OrganizerLayout/index.tsx:106
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
 msgid "Organizer Dashboard"
@@ -13434,6 +13471,10 @@ msgstr "更新主辦單位狀態失敗。請稍後再試。"
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "主辦單位狀態已更新"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "主辦方條款"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -13505,7 +13546,7 @@ msgstr "個別設定已移除"
 msgid "Override the global default for this account."
 msgstr "為此帳戶覆寫全域預設值。"
 
-#: src/components/layouts/Event/index.tsx:116
+#: src/components/layouts/Event/index.tsx:119
 msgid "Overview"
 msgstr "總覽"
 
@@ -13741,11 +13782,11 @@ msgstr "已暫停"
 msgid "Pay"
 msgstr "付款"
 
-#: src/components/layouts/Checkout/index.tsx:392
+#: src/components/layouts/Checkout/index.tsx:390
 msgid "Pay by"
 msgstr "付款期限"
 
-#: src/components/layouts/Checkout/index.tsx:393
+#: src/components/layouts/Checkout/index.tsx:391
 msgid "Pay by {0}"
 msgstr "請於 {0} 前付款"
 
@@ -13865,7 +13906,7 @@ msgstr "已報告付款"
 msgid "Payment reported by buyer"
 msgstr "買家已報告付款"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Payment request"
 msgstr "付款請求"
 
@@ -13919,7 +13960,7 @@ msgid "Pending review"
 msgstr "等待審核"
 
 #: src/components/common/EventCard/index.tsx:96
-#: src/components/layouts/Event/index.tsx:257
+#: src/components/layouts/Event/index.tsx:260
 #: src/components/routes/admin/Messages/index.tsx:124
 msgid "Pending Review"
 msgstr "待審核"
@@ -14177,7 +14218,7 @@ msgstr "已落單"
 msgid "Plan"
 msgstr "方案"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "計劃舉辦活動？"
 
@@ -14260,7 +14301,7 @@ msgstr "請創建一張票"
 msgid "Please don't leave a single empty seat: {0}"
 msgstr "請勿留下單個空座位:{0}"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:57
+#: src/components/modals/JoinWaitlistModal/index.tsx:55
 msgid "Please enter a valid email address"
 msgstr "請輸入有效的電子郵件地址"
 
@@ -14301,7 +14342,7 @@ msgstr "請提供圖片。"
 msgid "Please restart the checkout process."
 msgstr "請重新開始結賬流程。"
 
-#: src/components/layouts/Checkout/index.tsx:502
+#: src/components/layouts/Checkout/index.tsx:500
 msgid "Please return to the event page to start over."
 msgstr "請返回活動頁面重新開始。"
 
@@ -14339,7 +14380,7 @@ msgstr "請稍候，我哋準備緊匯出你嘅推廣夥伴..."
 msgid "Please wait while we prepare your attendees for export..."
 msgstr "請稍候，我們正在準備導出您的與會者..."
 
-#: src/components/layouts/Checkout/index.tsx:241
+#: src/components/layouts/Checkout/index.tsx:239
 #: src/hooks/useOrderActions.tsx:81
 msgid "Please wait while we prepare your invoice..."
 msgstr "請稍候，我們正在準備您的發票..."
@@ -14348,7 +14389,7 @@ msgstr "請稍候，我們正在準備您的發票..."
 msgid "Please wait while we prepare your orders for export..."
 msgstr "請稍候，我們正在準備導出您的訂單..."
 
-#: src/locales.ts:82
+#: src/locales.ts:84
 msgid "Polish"
 msgstr "波蘭語"
 
@@ -14368,7 +14409,7 @@ msgstr "在你的網站上以彈出視窗顯示"
 msgid "Portrait"
 msgstr "直向"
 
-#: src/locales.ts:66
+#: src/locales.ts:68
 msgid "Portuguese"
 msgstr "葡萄牙語"
 
@@ -14381,9 +14422,12 @@ msgid "Post Checkout message"
 msgstr "結賬後信息"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "技術支援"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:53
+msgid "Prayer Night"
+msgstr "禱告之夜"
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
 msgid "Pre Checkout message"
@@ -14425,8 +14469,8 @@ msgstr "預覽"
 msgid "Preview checkout form"
 msgstr "預覽結帳表單"
 
-#: src/components/layouts/Event/index.tsx:319
-#: src/components/layouts/Event/index.tsx:323
+#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:330
 msgid "Preview Event page"
 msgstr "預覽活動頁面"
 
@@ -14446,10 +14490,11 @@ msgstr "上個月"
 msgid "Previous photo"
 msgstr "上一張相片"
 
-#: src/components/common/AttendeeTicket/index.tsx:137
+#: src/components/common/AttendeeTicket/index.tsx:136
 #: src/components/common/ProductsTable/index.tsx:93
 #: src/components/forms/ProductForm/index.tsx:319
 #: src/components/forms/ProductForm/ProductPriceTierForm.tsx:173
+#: src/components/layouts/AuthLayout/AuthShell.tsx:65
 msgid "Price"
 msgstr "價格"
 
@@ -14519,12 +14564,12 @@ msgstr "列印預覽使用您上次儲存的設計"
 msgid "Print Ticket"
 msgstr "列印門票"
 
-#: src/components/layouts/Checkout/index.tsx:438
+#: src/components/layouts/Checkout/index.tsx:436
 #: src/components/routes/my-tickets/index.tsx:136
 msgid "Print Tickets"
 msgstr "打印票"
 
-#: src/components/common/AttendeeTicket/index.tsx:181
+#: src/components/common/AttendeeTicket/index.tsx:180
 msgid "Print to PDF"
 msgstr "列印為PDF"
 
@@ -14537,7 +14582,7 @@ msgid "Printed {0}"
 msgstr "列印於 {0}"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "私隱政策"
 
@@ -14714,12 +14759,12 @@ msgstr "促銷碼使用情況及折扣明細"
 msgid "promo codes"
 msgstr "優惠碼"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:17
+#: src/components/layouts/AuthLayout/AuthShell.tsx:16
 #: src/components/modals/DuplicateEventModal/index.tsx:124
 msgid "Promo codes"
 msgstr "優惠碼"
 
-#: src/components/layouts/Event/index.tsx:145
+#: src/components/layouts/Event/index.tsx:148
 #: src/components/routes/event/promo-codes.tsx:34
 msgid "Promo Codes"
 msgstr "促銷代碼"
@@ -14821,7 +14866,7 @@ msgstr "將新金鑰填入 <0>APP_LICENCE_KEY</0> 並重新部署後端。"
 msgid "QR Code"
 msgstr "二維碼"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:15
+#: src/components/layouts/AuthLayout/AuthShell.tsx:14
 msgid "QR code check-in"
 msgstr "二維碼簽到"
 
@@ -14928,7 +14973,7 @@ msgstr "重新啟用此日期？它會重新開放售票。"
 msgid "Read and write"
 msgstr "讀寫"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "閱讀更多"
@@ -14950,7 +14995,7 @@ msgstr "可加入陣容"
 msgid "Ready to go live?"
 msgstr "準備好發布了嗎？"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:18
+#: src/components/layouts/AuthLayout/AuthShell.tsx:17
 msgid "Real-time analytics"
 msgstr "即時數據分析"
 
@@ -15204,9 +15249,13 @@ msgid "Register"
 msgstr "註冊"
 
 #: src/components/common/QuestionsTable/index.tsx:424
-#: src/components/layouts/Event/index.tsx:139
+#: src/components/layouts/Event/index.tsx:142
 msgid "Registration Questions"
 msgstr "註冊問題"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:41
+msgid "Registration, invitations and QR check-in."
+msgstr "報名、邀請函和二維碼簽到。"
 
 #: src/components/common/CookieConsentBanner/index.tsx:135
 msgid "Reject all"
@@ -15470,7 +15519,7 @@ msgstr "重複"
 msgid "Report not found"
 msgstr "未找到報告"
 
-#: src/components/layouts/Event/index.tsx:120
+#: src/components/layouts/Event/index.tsx:123
 #: src/components/layouts/OrganizerLayout/index.tsx:112
 #: src/components/routes/event/Reports/index.tsx:54
 #: src/components/routes/organizer/Reports/index.tsx:55
@@ -15551,7 +15600,7 @@ msgstr "重新發送確認"
 msgid "Resend Confirmation Email"
 msgstr "重新發送確認電郵"
 
-#: src/components/layouts/Event/index.tsx:339
+#: src/components/layouts/Event/index.tsx:346
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:162
 msgid "Resend email"
 msgstr "重新發送電郵"
@@ -15716,7 +15765,7 @@ msgstr "重試任務"
 msgid "Return to Event"
 msgstr "返回活動"
 
-#: src/components/layouts/Checkout/index.tsx:509
+#: src/components/layouts/Checkout/index.tsx:507
 msgid "Return to Event Page"
 msgstr "返回活動頁面"
 
@@ -16468,7 +16517,8 @@ msgstr "搜尋中..."
 msgid "Seasonal"
 msgstr "季節性"
 
-#: src/components/common/AttendeeTicket/index.tsx:133
+#: src/components/common/AttendeeTicket/index.tsx:132
+#: src/components/layouts/AuthLayout/AuthShell.tsx:61
 #: src/components/modals/ManageAttendeeModal/index.tsx:170
 #: src/ee/seating/components/ManualSeatField/index.tsx:42
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:339
@@ -16554,7 +16604,7 @@ msgstr "座位間距"
 msgid "Seated"
 msgstr "對號入座"
 
-#: src/components/layouts/Event/index.tsx:138
+#: src/components/layouts/Event/index.tsx:141
 #: src/ee/seating/components/routes/event/Seating/AttachSeatMap.tsx:40
 #: src/ee/seating/components/routes/event/Seating/index.tsx:62
 #: src/ee/seating/components/routes/event/Seating/index.tsx:67
@@ -16850,10 +16900,6 @@ msgstr "現場售票"
 #: src/ee/box-office/components/layouts/BoxOffice/ReaderSwitchSheet.tsx:64
 msgid "Sell cash only"
 msgstr "僅收現金"
-
-#: src/components/layouts/AuthLayout/AuthShell.tsx:41
-msgid "Sell out your event."
-msgstr "令你的活動座無虛席。"
 
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:48
 msgid "Sell tickets at the door with cash, comps, or a card reader."
@@ -17200,7 +17246,7 @@ msgstr "設定已更新"
 msgid "Settings"
 msgstr "設置"
 
-#: src/components/layouts/Event/index.tsx:127
+#: src/components/layouts/Event/index.tsx:130
 msgid "Setup & Design"
 msgstr "設定與設計"
 
@@ -17231,8 +17277,8 @@ msgstr "形狀"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17247,8 +17293,8 @@ msgstr "分享"
 msgid "Share Affiliate Link"
 msgstr "分享推廣連結"
 
-#: src/components/layouts/Event/index.tsx:277
-#: src/components/layouts/Event/index.tsx:283
+#: src/components/layouts/Event/index.tsx:280
+#: src/components/layouts/Event/index.tsx:290
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:102
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:131
 msgid "Share Event"
@@ -17328,7 +17374,7 @@ msgstr "改為顯示姓名縮寫"
 msgid "Show keys"
 msgstr "顯示金鑰"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "收起"
@@ -17705,7 +17751,7 @@ msgstr "略過 30 天寬限期。此操作無法撤銷。"
 msgid "Skip this step"
 msgstr "跳過此步驟"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "跳至主要內容"
 
@@ -17713,7 +17759,7 @@ msgstr "跳至主要內容"
 msgid "Skipped sheets without recognisable columns:"
 msgstr "已略過沒有可識別欄位的工作表："
 
-#: src/locales.ts:86
+#: src/locales.ts:88
 msgid "Slovak"
 msgstr "斯洛伐克語"
 
@@ -17782,6 +17828,7 @@ msgid "Sold out"
 msgstr "售罄"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:128
+#: src/components/layouts/AuthLayout/AuthShell.tsx:106
 #: src/components/layouts/EventHomepage/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:221
 #: src/components/routes/event/Reports/OccurrenceSummaryReport/index.tsx:22
@@ -17879,12 +17926,12 @@ msgstr "出錯了！請重試"
 msgid "Something went wrong."
 msgstr "出問題了"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:141
+#: src/components/modals/JoinWaitlistModal/index.tsx:139
 msgid "Something went wrong. Please try again later."
 msgstr "出了點問題。請稍後再試。"
 
 #: src/components/common/TwoFactor/TwoFactorSetupFlow.tsx:30
-#: src/components/layouts/Event/index.tsx:102
+#: src/components/layouts/Event/index.tsx:105
 #: src/components/layouts/OrganizerLayout/index.tsx:146
 #: src/components/routes/admin/DeletionRequests/index.tsx:64
 #: src/components/routes/admin/Users/index.tsx:33
@@ -17930,11 +17977,15 @@ msgstr "調音台、贊助商座位……"
 msgid "Source"
 msgstr "來源"
 
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "原始碼"
+
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
 msgstr "垃圾郵件投訴"
 
-#: src/locales.ts:68
+#: src/locales.ts:70
 msgid "Spanish"
 msgstr "西班牙語"
 
@@ -18234,7 +18285,7 @@ msgstr "統計"
 #: src/components/common/AdminOrdersTable/index.tsx:85
 #: src/components/common/AffiliateTable/index.tsx:84
 #: src/components/common/AttendeeTable/index.tsx:265
-#: src/components/common/CheckInListTable/index.tsx:167
+#: src/components/common/CheckInListTable/index.tsx:173
 #: src/components/common/OrderDetails/index.tsx:73
 #: src/components/common/OrdersTable/index.tsx:342
 #: src/components/common/OrganizerWebhookTable/index.tsx:244
@@ -18437,7 +18488,7 @@ msgid "Subtotal"
 msgstr "小計"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:244
+#: src/components/layouts/Checkout/index.tsx:242
 #: src/hooks/useOrderActions.tsx:84
 msgid "Success"
 msgstr "成功"
@@ -18645,7 +18696,7 @@ msgstr "已停用"
 msgid "Suspended on {0}. Members can't sign in and its API keys are blocked."
 msgstr "於 {0} 暫停。成員無法登入，其 API 金鑰已被封鎖。"
 
-#: src/locales.ts:84
+#: src/locales.ts:86
 msgid "Swedish"
 msgstr "瑞典語"
 
@@ -18797,7 +18848,7 @@ msgstr "稅項及費用"
 msgid "Taxes and Fees"
 msgstr "税費"
 
-#: src/components/layouts/Event/index.tsx:166
+#: src/components/layouts/Event/index.tsx:169
 #: src/components/layouts/OrganizerLayout/index.tsx:133
 #: src/components/layouts/SettingsLayout/index.tsx:67
 #: src/components/routes/event/Team/index.tsx:13
@@ -18806,12 +18857,12 @@ msgstr "税費"
 msgid "Team"
 msgstr "團隊"
 
-#: src/components/layouts/Event/index.tsx:167
+#: src/components/layouts/Event/index.tsx:170
 #: src/components/layouts/OrganizerLayout/index.tsx:134
 msgid "Team Access"
 msgstr "團隊存取權限"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:22
+#: src/components/layouts/AuthLayout/AuthShell.tsx:21
 msgid "Team collaboration"
 msgstr "團隊協作"
 
@@ -18872,7 +18923,7 @@ msgstr "付款方式"
 msgid "Term"
 msgstr "關鍵字"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "服務條款"
 
@@ -19094,15 +19145,15 @@ msgstr "{0}的最大產品數量是{1}"
 msgid "The new event keeps this event's repeat schedule. You can change its dates after duplicating."
 msgstr "新活動會沿用此活動的重複時間表。複製後可以修改日期。"
 
-#: src/components/layouts/Checkout/index.tsx:499
+#: src/components/layouts/Checkout/index.tsx:497
 msgid "The order was not paid in time, so the places are no longer held. Let {0} know so they can register again."
 msgstr "訂單未有準時付款，名額已不再保留。請通知 {0}，以便其重新登記。"
 
-#: src/components/layouts/Checkout/index.tsx:500
+#: src/components/layouts/Checkout/index.tsx:498
 msgid "The order was not paid in time, so the places are no longer held. Let the person who registered know so they can register again."
 msgstr "訂單未有準時付款，名額已不再保留。請通知登記人，以便其重新登記。"
 
-#: src/components/layouts/Checkout/index.tsx:501
+#: src/components/layouts/Checkout/index.tsx:499
 msgid "The order was not paid in time, so your places have been released. Return to the event page to start a new order."
 msgstr "訂單未有準時付款，你的名額已被釋出。請返回活動頁面重新下單。"
 
@@ -19561,7 +19612,7 @@ msgstr "呢個活動未發佈"
 msgid "This event is not published. Sales are still recorded."
 msgstr "此活動未發布。銷售仍會被記錄。"
 
-#: src/components/layouts/Event/index.tsx:201
+#: src/components/layouts/Event/index.tsx:204
 msgid "This event is pending manual review and cannot be published until the review is complete."
 msgstr "該活動正在等待人工審核，審核完成前無法發佈。"
 
@@ -19747,7 +19798,7 @@ msgstr "呢個主辦方資料未發佈"
 msgid "This overrides all visibility settings and will hide the product from all customers."
 msgstr "這將覆蓋所有可見性設置，並將該產品對所有客户隱藏。"
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "This payment link has expired"
 msgstr "此付款連結已過期"
 
@@ -19820,7 +19871,7 @@ msgstr "此登入方式無法使用"
 msgid "This space is reserved for wheelchair users and guests with access needs."
 msgstr "此空間為輪椅使用者及有無障礙需求的賓客保留。"
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "This ticket is no longer valid"
 msgstr "此門票已失效"
 
@@ -19887,7 +19938,7 @@ msgstr "登錄時剔選\"信任此裝置\",即可在該瀏覽器上 30 天內免
 msgid "ticket"
 msgstr "入場券"
 
-#: src/components/common/AttendeeTicket/index.tsx:130
+#: src/components/common/AttendeeTicket/index.tsx:129
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:442
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:580
 #: src/components/forms/ProductForm/index.tsx:227
@@ -19910,7 +19961,7 @@ msgstr "門票設計"
 msgid "Ticket design saved successfully"
 msgstr "門票設計儲存成功"
 
-#: src/components/layouts/Event/index.tsx:137
+#: src/components/layouts/Event/index.tsx:140
 msgid "Ticket Designer"
 msgstr "門票設計器"
 
@@ -19931,7 +19982,7 @@ msgstr "票務持有人"
 msgid "Ticket Holders"
 msgstr "票務持有人"
 
-#: src/components/common/AttendeeTicket/index.tsx:166
+#: src/components/common/AttendeeTicket/index.tsx:165
 msgid "Ticket ID"
 msgstr "門票 ID"
 
@@ -19976,7 +20027,7 @@ msgstr "門票類型"
 msgid "Ticket Type"
 msgstr "門票類型"
 
-#: src/components/layouts/Event/index.tsx:142
+#: src/components/layouts/Event/index.tsx:145
 msgid "Ticketing & Sales"
 msgstr "票務與銷售"
 
@@ -19996,7 +20047,7 @@ msgstr "門票"
 msgid "Tickets"
 msgstr "門票"
 
-#: src/components/layouts/Event/index.tsx:143
+#: src/components/layouts/Event/index.tsx:146
 #: src/components/routes/event/products.tsx:68
 msgid "Tickets & Products"
 msgstr "票券與產品"
@@ -20078,7 +20129,7 @@ msgstr "TikTok"
 msgid "Time"
 msgstr "時間"
 
-#: src/components/layouts/Checkout/index.tsx:410
+#: src/components/layouts/Checkout/index.tsx:408
 msgid "Time left"
 msgstr "剩餘時間"
 
@@ -20387,7 +20438,7 @@ msgstr "重試"
 msgid "Try another email"
 msgstr "嘗試其他郵箱"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "免費試用Hi.Events"
 
@@ -20409,7 +20460,7 @@ msgstr "星期二"
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: src/locales.ts:78
+#: src/locales.ts:80
 msgid "Turkish"
 msgstr "土耳其語"
 
@@ -20617,7 +20668,7 @@ msgstr "無法擷取參與者資料"
 msgid "Unable to find seats. Check the connection and try again."
 msgstr "無法找到座位。請檢查網絡連線後重試。"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:138
+#: src/components/modals/JoinWaitlistModal/index.tsx:136
 msgid "Unable to join waitlist"
 msgstr "無法加入候補名單"
 
@@ -20775,7 +20826,7 @@ msgstr "未命名地點"
 msgid "Unnamed venue"
 msgstr "未命名場地"
 
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/modals/ManageOrderModal/index.tsx:162
 #: src/ee/box-office/components/layouts/BoxOffice/tabs/OrdersTab.tsx:26
 msgid "Unpaid"
@@ -21341,7 +21392,7 @@ msgstr "驗證電郵"
 msgid "Verify recovery code"
 msgstr "驗證復原碼"
 
-#: src/components/layouts/Event/index.tsx:336
+#: src/components/layouts/Event/index.tsx:343
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:156
 msgid "Verify your email"
 msgstr "驗證您的電郵"
@@ -21370,7 +21421,7 @@ msgstr "影片"
 msgid "Video link"
 msgstr "影片連結"
 
-#: src/locales.ts:76
+#: src/locales.ts:78
 msgid "Vietnamese"
 msgstr "越南語"
 
@@ -21479,7 +21530,7 @@ msgstr "查看訊息"
 msgid "View on event page"
 msgstr "在活動頁面查看"
 
-#: src/components/layouts/Event/index.tsx:247
+#: src/components/layouts/Event/index.tsx:250
 #: src/components/layouts/OrganizerLayout/index.tsx:237
 msgid "View only"
 msgstr "僅供查看"
@@ -21613,8 +21664,8 @@ msgid "Waiting for Stripe to confirm your payment…"
 msgstr "正在等待 Stripe 確認您的付款…"
 
 #: src/components/forms/ProductForm/index.tsx:466
-#: src/components/layouts/AuthLayout/AuthShell.tsx:16
-#: src/components/layouts/Event/index.tsx:154
+#: src/components/layouts/AuthLayout/AuthShell.tsx:15
+#: src/components/layouts/Event/index.tsx:157
 #: src/components/routes/event/Settings/index.tsx:100
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:55
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:73
@@ -21810,11 +21861,11 @@ msgstr "我們會以電郵向對方發送加入你帳戶的連結。"
 msgid "We'll email you the link too, and send your order confirmation as soon as they complete checkout."
 msgstr "我們亦會以電郵將連結傳送給你，並在對方完成付款後立即傳送訂單確認。"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:113
+#: src/components/modals/JoinWaitlistModal/index.tsx:111
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName} on {occurrenceDate}."
 msgstr "如果{productDisplayName}在{occurrenceDate}有空位，我們將通過電郵通知您。"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:114
+#: src/components/modals/JoinWaitlistModal/index.tsx:112
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName}."
 msgstr "如果{productDisplayName}有空位，我們將通過電郵通知您。"
 
@@ -21857,7 +21908,7 @@ msgstr "Webhook 創建成功"
 msgid "Webhook deleted successfully"
 msgstr "Webhook 刪除成功"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:24
+#: src/components/layouts/AuthLayout/AuthShell.tsx:23
 msgid "Webhook integrations"
 msgstr "Webhook 整合"
 
@@ -21883,7 +21934,7 @@ msgstr "Webhook 不會發送通知"
 msgid "Webhook will send notifications"
 msgstr "Webhook 將發送通知"
 
-#: src/components/layouts/Event/index.tsx:165
+#: src/components/layouts/Event/index.tsx:168
 #: src/components/layouts/OrganizerLayout/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:167
 #: src/components/routes/event/Webhooks/index.tsx:67
@@ -22207,7 +22258,7 @@ msgstr "已建立小工具"
 msgid "Widget deleted"
 msgstr "已刪除小工具"
 
-#: src/components/layouts/Event/index.tsx:164
+#: src/components/layouts/Event/index.tsx:167
 #: src/components/layouts/OrganizerLayout/index.tsx:123
 msgid "Widget Embed"
 msgstr "嵌入小部件"
@@ -22253,7 +22304,7 @@ msgstr "工作"
 #: src/components/modals/EditProductCategoryModal/index.tsx:73
 #: src/components/modals/EditPromoCodeModal/index.tsx:87
 #: src/components/modals/EditQuestionModal/index.tsx:103
-#: src/components/modals/JoinWaitlistModal/index.tsx:207
+#: src/components/modals/JoinWaitlistModal/index.tsx:205
 #: src/components/routes/auth/Register/index.tsx:188
 msgid "Working..."
 msgstr "工作..."
@@ -22311,7 +22362,7 @@ msgstr "是"
 msgid "Yes - I have a valid EU VAT registration number"
 msgstr "是 - 我有有效的歐盟增值稅註冊號碼"
 
-#: src/components/layouts/Checkout/index.tsx:541
+#: src/components/layouts/Checkout/index.tsx:539
 msgid "Yes, cancel my order"
 msgstr "是，取消我的訂單"
 
@@ -22446,7 +22497,7 @@ msgstr "您已更改提供者詳細資料，請重新輸入客戶端密鑰。"
 msgid "You confirmed it's you. Continue within a few minutes."
 msgstr "您已確認身份。請在數分鐘內繼續。"
 
-#: src/components/layouts/Event/index.tsx:230
+#: src/components/layouts/Event/index.tsx:233
 msgid "You don't have access to this event"
 msgstr "您沒有此活動的存取權限"
 
@@ -22474,7 +22525,7 @@ msgstr "您有付費門票，但尚未連接 Stripe，因此無法收款。"
 msgid "You have reached your messaging limit."
 msgstr "您已達到訊息限制。"
 
-#: src/components/layouts/Checkout/index.tsx:493
+#: src/components/layouts/Checkout/index.tsx:491
 msgid "You have run out of time to complete your order."
 msgstr "您已超時，未能完成訂單。"
 
@@ -22499,7 +22550,7 @@ msgstr "您必須確認此電子郵件並非促銷郵件"
 msgid "You must acknowledge your responsibilities before saving"
 msgstr "儲存前必須確認您的責任"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:58
+#: src/components/modals/JoinWaitlistModal/index.tsx:56
 msgid "You must agree to receive messages"
 msgstr "您必須同意接收訊息"
 
@@ -22611,11 +22662,11 @@ msgstr "你正在更改場次時間"
 msgid "You're going to {0}!"
 msgstr "您將參加 {0}！"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:174
+#: src/components/modals/JoinWaitlistModal/index.tsx:172
 msgid "You're joining the waitlist for {occurrenceDate}."
 msgstr "您正在加入{occurrenceDate}的候補名單。"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:109
+#: src/components/modals/JoinWaitlistModal/index.tsx:107
 msgid "You're on the waitlist!"
 msgstr "您已加入候補名單！"
 
@@ -22735,7 +22786,7 @@ msgstr "你的封面是橫向圖片，在這裡會顯得較小。海報風最適
 msgid "Your cover sits beside the details like a poster. Best with square or portrait artwork."
 msgstr "封面會像海報一樣顯示在詳情旁邊。最適合方形或直身圖片。"
 
-#: src/components/layouts/Checkout/index.tsx:526
+#: src/components/layouts/Checkout/index.tsx:524
 msgid "Your current order will be lost."
 msgstr "您當前的訂單將丟失。"
 
@@ -22848,7 +22899,7 @@ msgstr "您的訂單詳情已更新。確認電郵已發送到新的電郵地址
 msgid "Your order has been cancelled"
 msgstr "您的訂單已被取消"
 
-#: src/components/layouts/Checkout/index.tsx:266
+#: src/components/layouts/Checkout/index.tsx:264
 msgid "Your order has been cancelled."
 msgstr "您的訂單已被取消。"
 
@@ -22920,7 +22971,7 @@ msgstr "您的付款受到銀行級加密保護"
 msgid "Your payment is still processing"
 msgstr "您的付款仍在處理中"
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "Your payment link has expired"
 msgstr "你的付款連結已過期"
 

@@ -567,6 +567,62 @@ class CreateEventServiceTest extends TestCase
         $this->assertTrue(true);
     }
 
+    public function test_create_event_uses_the_ekklesia_colours_when_organizer_has_no_theme(): void
+    {
+        $eventData = $this->createMockEventDomainObjectWithCategory('MUSIC');
+        $organizer = $this->createMockOrganizerDomainObject()
+            ->shouldReceive('getOrganizerSettings')
+            ->andReturn(new OrganizerSettingDomainObject)
+            ->getMock();
+
+        $this->databaseManager->shouldReceive('transaction')->once()->andReturnUsing(function ($callback) {
+            return $callback();
+        });
+
+        $this->organizerRepository
+            ->shouldReceive('loadRelation')
+            ->with(OrganizerSettingDomainObject::class)
+            ->once()
+            ->andReturnSelf()
+            ->getMock()
+            ->shouldReceive('findFirstWhere')
+            ->andReturn($organizer);
+
+        $this->eventRepository->shouldReceive('create')->andReturn($eventData);
+
+        $this->config->shouldReceive('get')
+            ->with('filesystems.public')
+            ->andReturn('public');
+        $this->config->shouldReceive('get')
+            ->with('app.event_categories_cover_images_path')
+            ->andReturn('event-covers');
+
+        $mockDisk = Mockery::mock();
+        $mockDisk->shouldReceive('exists')
+            ->with('event-covers/MUSIC.jpg')
+            ->andReturn(false);
+
+        $this->filesystemManager->shouldReceive('disk')
+            ->with('public')
+            ->andReturn($mockDisk);
+
+        $this->eventSettingsRepository->shouldReceive('create')
+            ->with(Mockery::on(function ($arg) {
+                return $arg['homepage_theme_settings']['accent'] === '#26306B'
+                    && $arg['homepage_theme_settings']['background'] === '#FBF8F3';
+            }));
+
+        $this->eventStatisticsRepository->shouldReceive('create');
+        $this->checkInListRepository->shouldReceive('create');
+        $this->boxOfficeRepository->shouldReceive('create');
+
+        $this->purifier->shouldReceive('purify')->andReturn('Test Description');
+
+        $this->createEventService->createEvent($eventData);
+
+        $this->assertTrue(true);
+    }
+
     private function createMockEventDomainObject(): EventDomainObject
     {
         return Mockery::mock(EventDomainObject::class, static function ($mock) {

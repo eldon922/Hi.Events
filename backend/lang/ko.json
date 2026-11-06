@@ -1440,5 +1440,6 @@
     "The reference buyers should use when paying offline. Empty when the order reference is not used as the payment reference.": "구매자가 오프라인 결제 시 사용해야 하는 참조 번호입니다. 주문 번호를 결제 참조 번호로 사용하지 않으면 비어 있습니다.",
     "Order placed: payment needed": "주문 완료: 결제가 필요합니다",
     "How to pay": "결제 방법",
-    "Payment was successful, but the order had already been placed to pay later. Order: :id": "결제가 완료되었지만 주문이 이미 나중에 결제로 접수되었습니다. 주문: :id"
+    "Payment was successful, but the order had already been placed to pay later. Order: :id": "결제가 완료되었지만 주문이 이미 나중에 결제로 접수되었습니다. 주문: :id",
+    "Source code": "소스 코드"
 }

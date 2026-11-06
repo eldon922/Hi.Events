@@ -3,7 +3,7 @@ import {expect, test} from '../../fixtures';
 test.describe('@smoke server-rendered translations', () => {
   test('each request is translated in its own locale on the server', async ({request}) => {
     for (const [language, feature] of [['de', 'Wiederkehrende Veranstaltungen'], ['en', 'Recurring events']]) {
-      const html = await (await request.get('/auth/login', {headers: {'Accept-Language': language}})).text();
+      const html = await (await request.get('/auth/login', {headers: {Cookie: `locale=${language}`}})).text();
       expect(html).toContain(feature);
     }
   });

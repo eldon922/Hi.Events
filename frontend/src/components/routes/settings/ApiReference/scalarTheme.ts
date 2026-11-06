@@ -1,7 +1,7 @@
 export const SCALAR_THEME_CSS = `
 .light-mode,
 .scalar-app.light-mode {
-  --scalar-font: 'Outfit', sans-serif;
+  --scalar-font: 'Plus Jakarta Sans', sans-serif;
   --scalar-font-code: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --scalar-color-1: var(--mantine-color-primary-9);
   --scalar-color-2: #4b5563;

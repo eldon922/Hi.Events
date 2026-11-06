@@ -137,7 +137,7 @@ const Login = () => {
     return (
         <>
             <header className={classes.header}>
-                <h2>{passwordLoginEnabled ? t`Welcome back` : t`Sign in to ${getConfig("VITE_APP_NAME", "Hi.Events")}`}</h2>
+                <h2>{passwordLoginEnabled ? t`Welcome back` : t`Sign in to ${getConfig("VITE_APP_NAME")}`}</h2>
                 {registrationEnabled && (
                     <p>
                         <Trans>

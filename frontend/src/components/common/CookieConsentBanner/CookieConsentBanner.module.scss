@@ -46,7 +46,7 @@
 
 .iconWrapper {
     flex-shrink: 0;
-    color: var(--event-primary-color, #7c3aed);
+    color: var(--event-primary-color, #26306B);
     margin-top: 1px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .privacyLink {
-    color: var(--event-primary-color, #7c3aed);
+    color: var(--event-primary-color, #26306B);
     text-decoration: underline;
 
     &:hover {
@@ -123,7 +123,7 @@
 }
 
 .primaryButton {
-    background: var(--event-primary-color, #7c3aed);
+    background: var(--event-primary-color, #26306B);
     color: var(--event-accent-contrast, #ffffff);
 }
 

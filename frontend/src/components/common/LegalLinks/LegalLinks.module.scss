@@ -1,0 +1,26 @@
+.legalLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px 16px;
+    max-width: 640px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: inherit;
+
+    .link {
+        color: inherit;
+        font-size: inherit;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .companyInfo {
+        flex-basis: 100%;
+    }
+}

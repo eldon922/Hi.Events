@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { defineConfig, devices } from '@playwright/test';
 import { grantedConsentCookie } from './utils/consent';
+import { localeCookie } from './utils/locale';
 
 const baseURL = process.env.E2E_BASE_URL ?? 'http://localhost:8123';
 const isCI = !!process.env.CI;
@@ -24,7 +25,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     testIdAttribute: 'data-testid',
-    storageState: { cookies: [grantedConsentCookie()], origins: [] },
+    storageState: { cookies: [grantedConsentCookie(), localeCookie('en')], origins: [] },
   },
   projects: [
     {

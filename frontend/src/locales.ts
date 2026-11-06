@@ -23,9 +23,12 @@ export type SupportedLocales =
     | "el"
     | "ko"
     | "ja"
+    | "id"
     | "fi";
 
-export const availableLocales = ["en", "de", "fr", "it", "nl", "pt", "es", "zh-cn", "zh-hk", "pt-br", "vi", "tr", "hu", "pl", "se", "sk", "el", "ko", "ja", "fi"];
+export const defaultLocale = "id";
+
+export const availableLocales = ["id", "en", "de", "fr", "it", "nl", "pt", "es", "zh-cn", "zh-hk", "pt-br", "vi", "tr", "hu", "pl", "se", "sk", "el", "ko", "ja", "fi"];
 
 export const localeToFlagEmojiMap: Record<SupportedLocales, string> = {
     en: '🇬🇧',
@@ -47,6 +50,7 @@ export const localeToFlagEmojiMap: Record<SupportedLocales, string> = {
     el: '🇬🇷',
     ko: '🇰🇷',
     ja: '🇯🇵',
+    id: '🇮🇩',
     fi: '🇫🇮',
 };
 
@@ -90,6 +94,8 @@ export const getLocaleName = (locale: SupportedLocales): string => {
             return t`Korean`;
         case "ja":
             return t`Japanese`;
+        case "id":
+            return t`Indonesian`;
         case "fi":
             return t`Finnish`;
         default:
@@ -115,10 +121,10 @@ export const getClientLocale = () => {
             return getSupportedLocale(storedLocale);
         }
 
-        return getSupportedLocale(window.navigator.language);
+        return defaultLocale;
     }
 
-    return getSsrRequestContext()?.locale ?? "en";
+    return getSsrRequestContext()?.locale ?? defaultLocale;
 };
 
 const intlLocaleOverrides: Partial<Record<SupportedLocales, string>> = {
@@ -157,11 +163,12 @@ const dayjsLocaleLoaders: Partial<Record<SupportedLocales, () => Promise<unknown
     el: () => import("dayjs/locale/el"),
     ko: () => import("dayjs/locale/ko"),
     ja: () => import("dayjs/locale/ja"),
+    id: () => import("dayjs/locale/id"),
     fi: () => import("dayjs/locale/fi"),
 };
 
 export async function dynamicActivateLocale(locale: string): Promise<string> {
-    locale = availableLocales.includes(locale) ? locale : "en";
+    locale = availableLocales.includes(locale) ? locale : defaultLocale;
     try {
         const [module] = await Promise.all([
             import(`./locales/${locale}.po`),
@@ -196,5 +203,5 @@ export const getSupportedLocale = (userLocale: string) => {
         return mainLocale;
     }
 
-    return "en";
+    return defaultLocale;
 };

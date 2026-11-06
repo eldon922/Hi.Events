@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/layouts/Event/index.tsx:260
+#: src/components/layouts/Event/index.tsx:263
 #: src/components/layouts/OrganizerLayout/index.tsx:248
 msgid "- Click to Publish"
 msgstr "- 클릭하여 게시"
 
-#: src/components/layouts/Event/index.tsx:262
+#: src/components/layouts/Event/index.tsx:265
 #: src/components/layouts/OrganizerLayout/index.tsx:250
 msgid "- Click to Unpublish"
 msgstr "- 클릭하여 게시 취소"
@@ -145,7 +145,7 @@ msgid "{0} left"
 msgstr "{0}개 남음"
 
 #: src/components/layouts/AppLayout/Sidebar/index.tsx:100
-#: src/components/layouts/AuthLayout/AuthShell.tsx:153
+#: src/components/layouts/AuthLayout/AuthShell.tsx:152
 msgid "{0} logo"
 msgstr "{0} 로고"
 
@@ -907,7 +907,7 @@ msgstr "취소 안내가 다음으로 발송되었습니다:"
 msgid "a change in duration"
 msgstr "소요 시간 변경"
 
-#: src/components/common/CheckInListTable/index.tsx:287
+#: src/components/common/CheckInListTable/index.tsx:317
 msgid "A check-in list lets staff scan tickets at the door on a phone, tablet, or USB scanner. Share the link with your team, no account needed."
 msgstr "체크인 목록을 사용하면 스태프가 현장에서 휴대폰, 태블릿 또는 USB 스캐너로 티켓을 스캔할 수 있습니다. 링크를 팀과 공유하세요. 계정이 필요하지 않습니다."
 
@@ -930,6 +930,10 @@ msgstr "몇 가지 간단한 단계만 거치면 판매를 시작할 수 있습�
 #: src/components/routes/event/HomepageDesigner/LayoutPicker/index.tsx:26
 msgid "A focused reading column. Tickets appear wherever you place them in Sections."
 msgstr "읽기 좋은 단일 열 구성입니다. 티켓은 섹션에서 배치한 위치에 표시됩니다."
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:40
+msgid "A free promotion tool for your event."
+msgstr "이벤트를 무료로 홍보하는 도구."
 
 #: src/components/routes/event/HomepageDesigner/SectionsEditor/SectionContentEditor.tsx:238
 msgid "A gallery can have up to {MAX_GALLERY_PHOTOS} photos."
@@ -1261,7 +1265,7 @@ msgstr "활성화 날짜"
 #: src/components/common/AttendeeStatusBadge/index.tsx:27
 #: src/components/common/AttendeeTable/index.tsx:274
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:177
+#: src/components/common/CheckInListTable/index.tsx:183
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
@@ -1738,6 +1742,11 @@ msgstr "관리자 대시보드"
 msgid "Admins"
 msgstr "관리자"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:50
+#: src/components/layouts/AuthLayout/AuthShell.tsx:72
+msgid "Admit One"
+msgstr "1인 입장"
+
 #: src/components/forms/ProductForm/index.tsx:228
 msgid "Admits attendees to your event"
 msgstr "참가자를 이벤트에 입장시킵니다"
@@ -1762,7 +1771,7 @@ msgstr "제휴사가 성공적으로 생성되었습니다"
 msgid "Affiliate deleted successfully"
 msgstr "제휴사가 성공적으로 삭제되었습니다"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:21
+#: src/components/layouts/AuthLayout/AuthShell.tsx:20
 msgid "Affiliate program"
 msgstr "제휴 프로그램"
 
@@ -1778,7 +1787,7 @@ msgstr "제휴사 판매가 추적되지 않습니다. 제휴사가 비활성화
 msgid "Affiliate updated successfully"
 msgstr "제휴사가 성공적으로 수정되었습니다"
 
-#: src/components/layouts/Event/index.tsx:146
+#: src/components/layouts/Event/index.tsx:149
 #: src/components/modals/DuplicateEventModal/index.tsx:126
 #: src/components/routes/event/Affiliates/index.tsx:67
 msgid "Affiliates"
@@ -1888,7 +1897,7 @@ msgstr "전체 날짜"
 msgid "All dates"
 msgstr "모든 날짜"
 
-#: src/components/common/CheckInListTable/index.tsx:116
+#: src/components/common/CheckInListTable/index.tsx:122
 #: src/components/modals/ProductPurchasesModal/index.tsx:276
 #: src/components/routes/event/attendees.tsx:236
 #: src/components/routes/event/orders.tsx:226
@@ -2539,11 +2548,11 @@ msgstr "이 템플릿을 삭제하시겠습니까? 이 작업은 되돌릴 수 �
 msgid "Are you sure you want to delete this webhook?"
 msgstr "이 웹훅을 삭제하시겠습니까?"
 
-#: src/components/layouts/Checkout/index.tsx:523
+#: src/components/layouts/Checkout/index.tsx:521
 msgid "Are you sure you want to leave?"
 msgstr "나가시겠습니까?"
 
-#: src/components/layouts/Event/index.tsx:210
+#: src/components/layouts/Event/index.tsx:213
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "이 이벤트를 초안으로 변경하시겠습니까? 이벤트가 공개적으로 표시되지 않습니다"
 
@@ -2616,7 +2625,7 @@ msgid "Are you sure you would like to delete this Capacity Assignment?"
 msgstr "이 정원 할당을 삭제하시겠습니까?"
 
 #: src/components/common/CheckInListList/index.tsx:184
-#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/common/CheckInListTable/index.tsx:252
 msgid "Are you sure you would like to delete this Check-In List?"
 msgstr "이 체크인 목록을 삭제하시겠습니까?"
 
@@ -2653,7 +2662,7 @@ msgstr "예술"
 msgid "As your business is based in Ireland, Irish VAT at 23% applies automatically to all platform fees."
 msgstr "귀하의 사업체가 아일랜드에 소재하므로 모든 플랫폼 수수료에 아일랜드 부가가치세 23%가 자동으로 적용됩니다."
 
-#: src/components/layouts/Event/index.tsx:231
+#: src/components/layouts/Event/index.tsx:234
 #: src/components/layouts/OrganizerLayout/index.tsx:221
 msgid "Ask an account admin to give you access, or open one of your own events."
 msgstr "계정 관리자에게 접근 권한을 요청하거나 본인의 이벤트 중 하나를 여세요."
@@ -2744,7 +2753,7 @@ msgstr "모든 이벤트의 참석률 및 체크인율"
 msgid "attendee"
 msgstr "참가자"
 
-#: src/components/common/AttendeeTicket/index.tsx:101
+#: src/components/common/AttendeeTicket/index.tsx:100
 #: src/components/common/QuestionsTable/index.tsx:473
 #: src/components/routes/product-widget/CollectInformation/index.tsx:670
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:365
@@ -2835,7 +2844,7 @@ msgstr "참가자"
 #: src/components/common/ProductsTable/index.tsx:96
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:530
 #: src/components/common/StatBoxes/index.tsx:75
-#: src/components/layouts/Event/index.tsx:150
+#: src/components/layouts/Event/index.tsx:153
 #: src/components/modals/ManageOccurrenceModal/index.tsx:179
 #: src/components/modals/ManageOrderModal/index.tsx:336
 #: src/components/routes/admin/Dashboard/index.tsx:367
@@ -2927,7 +2936,7 @@ msgstr "이용 가능"
 msgid "Available"
 msgstr "이용 가능"
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "Available once payment completes"
 msgstr "결제 완료 후 이용 가능"
 
@@ -2963,7 +2972,7 @@ msgstr "결제 대기 중"
 
 #: src/components/layouts/CheckIn/AttendeeDetailSheet.tsx:117
 #: src/components/layouts/CheckIn/tabs/SearchTab.tsx:225
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/modals/ProductPurchasesModal/index.tsx:79
 #: src/components/modals/ProductPurchasesModal/index.tsx:209
 #: src/components/modals/ProductPurchasesModal/index.tsx:247
@@ -3012,8 +3021,8 @@ msgstr "계정으로 돌아가기"
 msgid "Back to Event"
 msgstr "이벤트로 돌아가기"
 
-#: src/components/layouts/Checkout/index.tsx:362
-#: src/components/layouts/Checkout/index.tsx:363
+#: src/components/layouts/Checkout/index.tsx:360
+#: src/components/layouts/Checkout/index.tsx:361
 msgid "Back to event page"
 msgstr "이벤트 페이지로 돌아가기"
 
@@ -3267,7 +3276,7 @@ msgstr "현장 매표소"
 msgid "Box office"
 msgstr "매표소"
 
-#: src/components/layouts/Event/index.tsx:152
+#: src/components/layouts/Event/index.tsx:155
 #: src/components/routes/event/orders.tsx:86
 #: src/ee/box-office/components/common/BoxOfficeTable/index.tsx:74
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:50
@@ -3330,7 +3339,7 @@ msgstr "브랜딩"
 msgid "Branding & emails"
 msgstr "브랜딩 및 이메일"
 
-#: src/locales.ts:74
+#: src/locales.ts:76
 msgid "Brazilian Portuguese"
 msgstr "브라질 포르투갈어"
 
@@ -3676,7 +3685,7 @@ msgstr "취소하면 이 주문과 연결된 모든 참가자가 취소되고, �
 
 #: src/components/common/AttendeeStatusBadge/index.tsx:28
 #: src/components/common/AttendeeTable/index.tsx:286
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/common/OrdersTable/index.tsx:378
 #: src/components/common/OrderStatusBadge/index.tsx:9
 #: src/components/common/WaitlistTable/index.tsx:29
@@ -3732,11 +3741,11 @@ msgstr "정원 할당이 성공적으로 삭제되었습니다"
 msgid "Capacity assignments"
 msgstr "수용 인원 할당"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:27
+#: src/components/layouts/AuthLayout/AuthShell.tsx:26
 msgid "Capacity management"
 msgstr "정원 관리"
 
-#: src/components/layouts/Event/index.tsx:157
+#: src/components/layouts/Event/index.tsx:160
 msgid "Capacity Management"
 msgstr "정원 관리"
 
@@ -3997,7 +4006,7 @@ msgstr "체크아웃"
 msgid "Check out this event: {0}"
 msgstr "이 이벤트를 확인해 보세요: {0}"
 
-#: src/components/layouts/Checkout/index.tsx:428
+#: src/components/layouts/Checkout/index.tsx:426
 msgid "Check out this event!"
 msgstr "이 이벤트를 확인해 보세요!"
 
@@ -4058,7 +4067,7 @@ msgstr "체크인을 이용할 수 없습니다"
 msgid "Check-in list"
 msgstr "체크인 목록"
 
-#: src/components/common/CheckInListTable/index.tsx:69
+#: src/components/common/CheckInListTable/index.tsx:75
 msgid "Check-In List"
 msgstr "체크인 목록"
 
@@ -4067,7 +4076,7 @@ msgid "Check-In List Created"
 msgstr "체크인 목록 생성됨"
 
 #: src/components/common/CheckInListList/index.tsx:34
-#: src/components/common/CheckInListTable/index.tsx:56
+#: src/components/common/CheckInListTable/index.tsx:62
 msgid "Check-In List deleted successfully"
 msgstr "체크인 목록이 성공적으로 삭제되었습니다"
 
@@ -4095,7 +4104,7 @@ msgstr "체크인 목록"
 msgid "Check-in Lists"
 msgstr "체크인 목록"
 
-#: src/components/layouts/Event/index.tsx:151
+#: src/components/layouts/Event/index.tsx:154
 #: src/components/routes/event/CheckInLists/index.tsx:38
 msgid "Check-In Lists"
 msgstr "체크인 목록"
@@ -4128,11 +4137,11 @@ msgid "Check-in Summary"
 msgstr "체크인 요약"
 
 #: src/components/common/CheckInListList/index.tsx:162
-#: src/components/common/CheckInListTable/index.tsx:41
+#: src/components/common/CheckInListTable/index.tsx:45
 msgid "Check-In URL copied to clipboard"
 msgstr "체크인 URL이 클립보드에 복사되었습니다"
 
-#: src/components/common/CheckInListTable/index.tsx:139
+#: src/components/common/CheckInListTable/index.tsx:145
 #: src/components/modals/ManageAttendeeModal/index.tsx:184
 msgid "Check-Ins"
 msgstr "체크인"
@@ -4180,7 +4189,7 @@ msgstr "확인 중…"
 msgid "Checkout"
 msgstr "결제"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Checkout · step {stepNumber} of {stepCount}"
 msgstr "결제 · {stepCount}단계 중 {stepNumber}단계"
 
@@ -4205,11 +4214,11 @@ msgstr "결제 설정"
 msgid "Checkout, payments, homepage design and SEO"
 msgstr "결제, 결제 수단, 페이지 디자인 및 SEO"
 
-#: src/locales.ts:70
+#: src/locales.ts:72
 msgid "Chinese (Simplified)"
 msgstr "중국어(간체)"
 
-#: src/locales.ts:72
+#: src/locales.ts:74
 msgid "Chinese (Traditional)"
 msgstr "중국어(번체)"
 
@@ -4501,8 +4510,8 @@ msgstr "닫기"
 #: src/components/layouts/EventHomepage/Lineup/SessionModal.tsx:86
 #: src/components/layouts/EventHomepage/Sections/GallerySection.tsx:122
 #: src/components/modals/CreateEventModal/index.tsx:288
-#: src/components/modals/JoinWaitlistModal/index.tsx:117
-#: src/components/modals/JoinWaitlistModal/index.tsx:144
+#: src/components/modals/JoinWaitlistModal/index.tsx:115
+#: src/components/modals/JoinWaitlistModal/index.tsx:142
 #: src/components/modals/RefundOrderModal/index.tsx:172
 #: src/components/routes/event/OccurrencesTab/RecurrenceScheduleDrawer/index.tsx:892
 #: src/components/routes/product-widget/SelectProducts/index.tsx:1245
@@ -4627,6 +4636,10 @@ msgstr "이벤트를 설명하는 쉼표로 구분된 키워드입니다. 검색
 #: src/components/routes/admin/Dashboard/index.tsx:332
 msgid "Commission"
 msgstr "수수료"
+
+#: src/components/common/LegalLinks/index.tsx:17
+msgid "Community Guidelines"
+msgstr "커뮤니티 가이드라인"
 
 #: src/ee/box-office/components/layouts/BoxOffice/TenderStage.tsx:180
 #: src/ee/box-office/utilites/boxOfficeTender.ts:11
@@ -4836,7 +4849,7 @@ msgstr "이메일 확인"
 msgid "Confirm your email address"
 msgstr "이메일 주소를 인증하세요"
 
-#: src/components/layouts/Event/index.tsx:337
+#: src/components/layouts/Event/index.tsx:344
 msgid "Confirm your email to access all features."
 msgstr "모든 기능을 이용하려면 이메일을 확인하세요."
 
@@ -4968,6 +4981,10 @@ msgstr "연락처"
 msgid "Contact {0}"
 msgstr "{0}에게 문의"
 
+#: src/components/common/LegalLinks/index.tsx:18
+msgid "Contact and Complaints"
+msgstr "문의 및 불만 접수"
+
 #: src/components/modals/CreateOrganizerModal/index.tsx:39
 msgid "Contact email"
 msgstr "연락처 이메일"
@@ -5083,13 +5100,14 @@ msgstr "전환율"
 msgid "Cookie settings"
 msgstr "쿠키 설정"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/common/TwoFactor/RecoveryCodesDisplay.tsx:84
 #: src/components/common/WidgetEditor/index.tsx:221
 #: src/components/common/WidgetEditor/InstallPanel.tsx:52
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ShareModal/index.tsx:255
@@ -5126,6 +5144,7 @@ msgstr "ChatGPT, Claude, Cursor 또는 사이트 빌더의 AI 어시스턴트에
 #: src/components/common/CopyButton/index.tsx:14
 #: src/components/common/OfflinePaymentDetails/index.tsx:31
 #: src/components/modals/CheckInListSuccessModal/index.tsx:42
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:46
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:75
 #: src/components/modals/ManageOrderModal/index.tsx:227
 #: src/components/modals/ManageOrderModal/index.tsx:233
@@ -5167,7 +5186,7 @@ msgid "Copy check-in link"
 msgstr "체크인 링크 복사"
 
 #: src/components/common/CheckInListList/index.tsx:156
-#: src/components/common/CheckInListTable/index.tsx:209
+#: src/components/common/CheckInListTable/index.tsx:215
 msgid "Copy Check-In URL"
 msgstr "체크인 URL 복사"
 
@@ -5210,7 +5229,7 @@ msgstr "키 복사"
 msgid "Copy link"
 msgstr "링크 복사"
 
-#: src/components/common/AttendeeTicket/index.tsx:192
+#: src/components/common/AttendeeTicket/index.tsx:191
 #: src/components/modals/ShareModal/index.tsx:171
 msgid "Copy Link"
 msgstr "링크 복사"
@@ -5457,7 +5476,7 @@ msgstr "커버 이미지는 주최자 페이지 상단에 표시됩니다"
 msgid "Covers"
 msgstr "적용 범위"
 
-#: src/components/common/CheckInListTable/index.tsx:92
+#: src/components/common/CheckInListTable/index.tsx:98
 msgid "Covers every ticket"
 msgstr "모든 티켓에 적용"
 
@@ -5583,7 +5602,7 @@ msgid "Create Category"
 msgstr "카테고리 생성"
 
 #: src/components/common/CheckInListList/index.tsx:60
-#: src/components/common/CheckInListTable/index.tsx:295
+#: src/components/common/CheckInListTable/index.tsx:325
 #: src/components/modals/CreateCheckInListModal/index.tsx:89
 #: src/components/modals/CreateCheckInListModal/index.tsx:110
 #: src/components/routes/event/CheckInLists/index.tsx:76
@@ -5811,7 +5830,7 @@ msgstr "곡선형 줄과 발코니."
 msgid "Custom"
 msgstr "사용자 지정"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:14
+#: src/components/layouts/AuthLayout/AuthShell.tsx:13
 msgid "Custom branding"
 msgstr "맞춤 브랜딩"
 
@@ -5835,7 +5854,7 @@ msgstr "맞춤 지도 URL"
 msgid "Custom order and ticket emails for this event"
 msgstr "이 이벤트의 맞춤 주문 및 티켓 이메일"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:23
+#: src/components/layouts/AuthLayout/AuthShell.tsx:22
 msgid "Custom questions"
 msgstr "맞춤 질문"
 
@@ -5941,7 +5960,7 @@ msgstr "댄스 플로어"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:155
 #: src/components/common/CheckInListList/index.tsx:176
-#: src/components/common/CheckInListTable/index.tsx:225
+#: src/components/common/CheckInListTable/index.tsx:244
 #: src/components/common/EntityActions/index.tsx:58
 #: src/components/common/LocationsTable/index.tsx:71
 #: src/components/common/OrganizerWebhookTable/index.tsx:121
@@ -5968,7 +5987,7 @@ msgid "Dark"
 msgstr "다크"
 
 #: src/components/layouts/Admin/index.tsx:17
-#: src/components/layouts/Event/index.tsx:117
+#: src/components/layouts/Event/index.tsx:120
 #: src/components/routes/admin/Dashboard/index.tsx:179
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:60
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
@@ -5976,7 +5995,7 @@ msgid "Dashboard"
 msgstr "대시보드"
 
 #: src/components/common/AdminOrdersTable/index.tsx:94
-#: src/components/common/CheckInListTable/index.tsx:107
+#: src/components/common/CheckInListTable/index.tsx:113
 #: src/components/common/OrderDetails/index.tsx:44
 #: src/components/common/WaitlistTable/index.tsx:187
 #: src/components/common/WidgetEditor/ContentFields.tsx:77
@@ -5999,7 +6018,7 @@ msgctxt "Lineup spreadsheet column"
 msgid "Date"
 msgstr "날짜"
 
-#: src/components/common/AttendeeTicket/index.tsx:110
+#: src/components/common/AttendeeTicket/index.tsx:109
 #: src/components/routes/event/OccurrencesTab/OccurrenceEditModal/index.tsx:443
 msgid "Date & Time"
 msgstr "날짜 및 시간"
@@ -6132,7 +6151,7 @@ msgstr "감소"
 msgid "Decrease quantity"
 msgstr "수량 감소"
 
-#: src/components/common/CheckInListTable/index.tsx:87
+#: src/components/common/CheckInListTable/index.tsx:93
 #: src/components/routes/admin/Accounts/AccountDetail/OrganizerAdminModal.tsx:117
 #: src/components/routes/event/OccurrencesTab/PriceOverrideForm/index.tsx:292
 #: src/components/routes/settings/TaxesAndFees/index.tsx:51
@@ -6261,7 +6280,7 @@ msgid "Delete category"
 msgstr "카테고리 삭제"
 
 #: src/components/common/CheckInListList/index.tsx:179
-#: src/components/common/CheckInListTable/index.tsx:228
+#: src/components/common/CheckInListTable/index.tsx:247
 msgid "Delete Check-In List"
 msgstr "체크인 목록 삭제"
 
@@ -6473,7 +6492,7 @@ msgstr "개발"
 msgid "Development licence"
 msgstr "개발용 라이선스"
 
-#: src/components/common/PoweredByFooter/index.tsx:100
+#: src/components/common/PoweredByFooter/index.tsx:107
 msgid "Development licence, not for production use"
 msgstr "개발용 라이선스, 운영 환경에서 사용 불가"
 
@@ -6656,6 +6675,14 @@ msgstr "기부"
 msgid "Done"
 msgstr "완료"
 
+#: src/components/layouts/AuthLayout/AuthShell.tsx:57
+msgid "Door"
+msgstr "출입구"
+
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:25
+msgid "Door staff can open this link or scan this QR code on their phone. Treat it like a shared password."
+msgstr "출입 담당 직원은 이 링크를 열거나 휴대폰으로 이 QR 코드를 스캔할 수 있습니다. 공용 비밀번호처럼 다뤄 주세요."
+
 #: src/components/common/CheckIn/CheckInDescriptionModal.tsx:20
 msgid "Door staff instructions"
 msgstr "현장 스태프 안내 사항"
@@ -6692,7 +6719,7 @@ msgstr "CSV 다운로드"
 msgid "Download invoice"
 msgstr "인보이스 다운로드"
 
-#: src/components/layouts/Checkout/index.tsx:450
+#: src/components/layouts/Checkout/index.tsx:448
 msgid "Download Invoice"
 msgstr "인보이스 다운로드"
 
@@ -6708,13 +6735,13 @@ msgstr "완료된 모든 주문의 판매, 참가자, 재무 보고서를 다운
 msgid "Download spreadsheet (.xlsx)"
 msgstr "스프레드시트 다운로드(.xlsx)"
 
-#: src/components/layouts/Checkout/index.tsx:240
+#: src/components/layouts/Checkout/index.tsx:238
 #: src/hooks/useOrderActions.tsx:80
 msgid "Downloading Invoice"
 msgstr "인보이스 다운로드 중"
 
 #: src/components/common/EventCard/index.tsx:99
-#: src/components/layouts/Event/index.tsx:259
+#: src/components/layouts/Event/index.tsx:262
 #: src/components/layouts/OrganizerLayout/index.tsx:247
 #: src/components/routes/admin/Announcements/index.tsx:183
 #: src/components/routes/admin/Announcements/index.tsx:472
@@ -6838,7 +6865,7 @@ msgstr "소요 시간(분)"
 msgid "Duration must be at least 1 minute."
 msgstr "소요 시간은 최소 1분 이상이어야 합니다."
 
-#: src/locales.ts:64
+#: src/locales.ts:66
 msgid "Dutch"
 msgstr "네덜란드어"
 
@@ -7018,7 +7045,7 @@ msgid "Edit category"
 msgstr "카테고리 수정"
 
 #: src/components/common/CheckInListList/index.tsx:147
-#: src/components/common/CheckInListTable/index.tsx:200
+#: src/components/common/CheckInListTable/index.tsx:206
 #: src/components/modals/EditCheckInListModal/index.tsx:77
 msgid "Edit Check-In List"
 msgstr "체크인 목록 수정"
@@ -7159,6 +7186,11 @@ msgstr "편집기"
 msgid "Education"
 msgstr "교육"
 
+#: src/components/common/CheckInListTable/index.tsx:233
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:22
+msgid "Ekklesia Check-In link and QR code"
+msgstr "Ekklesia 체크인 링크 및 QR 코드"
+
 #: src/components/routes/admin/Messages/index.tsx:325
 msgid "Eligibility Failures"
 msgstr "자격 확인 실패"
@@ -7171,7 +7203,7 @@ msgstr "해당하는 체크인 목록"
 #: src/components/common/QuestionsTable/index.tsx:264
 #: src/components/forms/AffiliateForm/index.tsx:89
 #: src/components/modals/InviteUserModal/index.tsx:61
-#: src/components/modals/JoinWaitlistModal/index.tsx:190
+#: src/components/modals/JoinWaitlistModal/index.tsx:188
 #: src/components/modals/ManageAttendeeModal/index.tsx:174
 #: src/components/modals/ManageOrderModal/index.tsx:141
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:165
@@ -7193,7 +7225,7 @@ msgstr "이메일"
 msgid "Email & Notification Settings"
 msgstr "이메일 및 알림 설정"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:19
+#: src/components/layouts/AuthLayout/AuthShell.tsx:18
 msgid "Email & scheduled messages"
 msgstr "이메일 및 예약 메시지"
 
@@ -7236,7 +7268,7 @@ msgstr "이메일 변경이 성공적으로 취소되었습니다"
 msgid "Email change pending"
 msgstr "이메일 변경 대기 중"
 
-#: src/components/layouts/Event/index.tsx:98
+#: src/components/layouts/Event/index.tsx:101
 #: src/components/layouts/OrganizerLayout/index.tsx:142
 #: src/components/routes/settings/Profile/index.tsx:136
 msgid "Email confirmation resent successfully"
@@ -7332,7 +7364,7 @@ msgstr "이메일은 주최자 이름으로 발송되며, 버튼과 링크는 �
 msgid "Embed Widget"
 msgstr "임베드 위젯"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:20
+#: src/components/layouts/AuthLayout/AuthShell.tsx:19
 msgid "Embeddable widget"
 msgstr "임베드 가능한 위젯"
 
@@ -7460,7 +7492,7 @@ msgstr "다음 날 종료"
 
 #: src/components/common/LanguageSwitcher/index.tsx:22
 #: src/components/modals/CreateAttendeeModal/index.tsx:241
-#: src/locales.ts:56
+#: src/locales.ts:58
 msgid "English"
 msgstr "영어"
 
@@ -7647,7 +7679,7 @@ msgid "Entries will appear here when customers join the waitlist for sold out pr
 msgstr "고객이 매진된 상품의 대기자 명단에 등록하면 여기에 표시됩니다."
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:248
+#: src/components/layouts/Checkout/index.tsx:246
 #: src/hooks/useOrderActions.tsx:88
 msgid "Error"
 msgstr "오류"
@@ -7823,7 +7855,7 @@ msgstr "이용할 수 없는 이벤트입니다"
 msgid "Event not live"
 msgstr "이벤트가 게시되지 않음"
 
-#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:333
 msgid "Event Page"
 msgstr "이벤트 페이지"
 
@@ -7835,7 +7867,7 @@ msgstr "이벤트 미리보기"
 msgid "Event restored successfully"
 msgstr "이벤트가 성공적으로 복원되었습니다"
 
-#: src/components/layouts/Event/index.tsx:134
+#: src/components/layouts/Event/index.tsx:137
 #: src/components/routes/event/Settings/index.tsx:183
 msgid "Event Settings"
 msgstr "이벤트 설정"
@@ -7846,14 +7878,14 @@ msgstr "이벤트 설정"
 
 #: src/components/common/EventCard/index.tsx:82
 #: src/components/common/StatusToggle/index.tsx:62
-#: src/components/layouts/Event/index.tsx:221
+#: src/components/layouts/Event/index.tsx:224
 #: src/components/modals/PublishEventModal/index.tsx:129
 msgid "Event status update failed. Please try again later"
 msgstr "이벤트 상태 업데이트에 실패했습니다. 나중에 다시 시도해 주세요"
 
 #: src/components/common/EventCard/index.tsx:79
 #: src/components/common/StatusToggle/index.tsx:54
-#: src/components/layouts/Event/index.tsx:218
+#: src/components/layouts/Event/index.tsx:221
 msgid "Event status updated"
 msgstr "이벤트 상태가 업데이트되었습니다"
 
@@ -8185,7 +8217,7 @@ msgstr "실패한 작업"
 msgid "Failed Jobs"
 msgstr "실패한 작업"
 
-#: src/components/layouts/Checkout/index.tsx:263
+#: src/components/layouts/Checkout/index.tsx:261
 msgid "Failed to abandon order. Please try again."
 msgstr "주문 중단 처리에 실패했습니다. 다시 시도해 주세요."
 
@@ -8314,7 +8346,7 @@ msgstr "질문 삭제에 실패했습니다"
 msgid "Failed to delete template"
 msgstr "템플릿 삭제에 실패했습니다"
 
-#: src/components/layouts/Checkout/index.tsx:249
+#: src/components/layouts/Checkout/index.tsx:247
 #: src/hooks/useOrderActions.tsx:89
 msgid "Failed to download invoice. Please try again."
 msgstr "인보이스 다운로드에 실패했습니다. 다시 시도해 주세요."
@@ -8700,7 +8732,7 @@ msgstr "설정 완료"
 msgid "Finish signing in to {providerName} in the window that opened."
 msgstr "열린 창에서 {providerName} 로그인을 완료하세요."
 
-#: src/locales.ts:94
+#: src/locales.ts:98
 msgid "Finnish"
 msgstr "핀란드어"
 
@@ -8747,7 +8779,7 @@ msgstr "이름"
 #: src/components/common/QuestionsTable/index.tsx:262
 #: src/components/modals/EditUserModal/index.tsx:87
 #: src/components/modals/InviteUserModal/index.tsx:54
-#: src/components/modals/JoinWaitlistModal/index.tsx:180
+#: src/components/modals/JoinWaitlistModal/index.tsx:178
 #: src/components/routes/auth/AcceptInvitation/index.tsx:226
 #: src/components/routes/auth/Register/index.tsx:139
 #: src/components/routes/product-widget/CollectInformation/index.tsx:478
@@ -8757,7 +8789,7 @@ msgstr "이름"
 msgid "First Name"
 msgstr "이름"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:56
+#: src/components/modals/JoinWaitlistModal/index.tsx:54
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:31
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:31
 msgid "First name is required"
@@ -8902,7 +8934,7 @@ msgstr "넷째"
 msgid "Foyer"
 msgstr "로비"
 
-#: src/components/common/AttendeeTicket/index.tsx:138
+#: src/components/common/AttendeeTicket/index.tsx:137
 #: src/components/common/Currency/index.tsx:88
 #: src/components/common/Currency/index.tsx:128
 #: src/components/common/OrderSummary/index.tsx:58
@@ -8910,6 +8942,8 @@ msgstr "로비"
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:160
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:170
 #: src/components/forms/ProductForm/index.tsx:296
+#: src/components/layouts/AuthLayout/AuthShell.tsx:66
+#: src/components/layouts/AuthLayout/AuthShell.tsx:102
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:157
 #: src/components/routes/product-widget/SelectProducts/Prices/Tiered/index.tsx:229
 #: src/ee/box-office/components/layouts/BoxOffice/AmountSheet.tsx:37
@@ -8929,7 +8963,7 @@ msgstr "무료 주문, 결제가 필요하지 않습니다"
 msgid "Free, open source, with end-to-end encrypted backups"
 msgstr "무료, 오픈 소스, 종단 간 암호화 백업 지원"
 
-#: src/locales.ts:60
+#: src/locales.ts:62
 msgid "French"
 msgstr "프랑스어"
 
@@ -8999,7 +9033,7 @@ msgstr "앞쪽 오른쪽"
 msgid "Full access to every event, the team, payments and account settings."
 msgstr "모든 이벤트, 팀, 결제 및 계정 설정에 대한 전체 접근 권한."
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:25
+#: src/components/layouts/AuthLayout/AuthShell.tsx:24
 msgid "Full data ownership"
 msgstr "완전한 데이터 소유권"
 
@@ -9062,7 +9096,7 @@ msgstr "새 복구 코드 생성"
 msgid "Generated {0}"
 msgstr "{0} 생성"
 
-#: src/locales.ts:58
+#: src/locales.ts:60
 msgid "German"
 msgstr "독일어"
 
@@ -9178,7 +9212,7 @@ msgstr "일정으로 이동"
 msgid "Go to seating settings"
 msgstr "좌석 설정으로 이동"
 
-#: src/components/layouts/Event/index.tsx:232
+#: src/components/layouts/Event/index.tsx:235
 #: src/components/layouts/OrganizerLayout/index.tsx:222
 msgid "Go to your events"
 msgstr "내 이벤트로 이동"
@@ -9209,7 +9243,7 @@ msgstr "유예 기간"
 msgid "Grace period ends"
 msgstr "유예 기간 종료"
 
-#: src/locales.ts:88
+#: src/locales.ts:90
 msgid "Greek"
 msgstr "그리스어"
 
@@ -9259,7 +9293,7 @@ msgstr "그룹"
 msgid "Guest"
 msgstr "게스트"
 
-#: src/components/layouts/Event/index.tsx:149
+#: src/components/layouts/Event/index.tsx:152
 msgid "Guest Management"
 msgstr "참가자 관리"
 
@@ -9581,7 +9615,7 @@ msgstr "좌석 보류 시간"
 msgid "Homepage Design"
 msgstr "홈페이지 디자인"
 
-#: src/components/layouts/Event/index.tsx:136
+#: src/components/layouts/Event/index.tsx:139
 #: src/components/layouts/OrganizerLayout/index.tsx:122
 msgid "Homepage Designer"
 msgstr "홈페이지 디자이너"
@@ -9693,7 +9727,7 @@ msgstr "https://example-maps-service.com/..."
 msgid "https://webhook-domain.com/webhook"
 msgstr "https://webhook-domain.com/webhook"
 
-#: src/locales.ts:80
+#: src/locales.ts:82
 msgid "Hungarian"
 msgstr "헝가리어"
 
@@ -9701,7 +9735,7 @@ msgstr "헝가리어"
 msgid "I acknowledge my responsibilities as a data controller"
 msgstr "데이터 관리자로서의 책임을 인지하고 동의합니다"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:196
+#: src/components/modals/JoinWaitlistModal/index.tsx:194
 msgid "I agree to receive email notifications related to this event"
 msgstr "이 이벤트와 관련된 이메일 알림 수신에 동의합니다"
 
@@ -9872,7 +9906,7 @@ msgstr "ID 공급자에서 인증 코드 흐름을 사용하는 기밀(confident
 
 #: src/components/common/AffiliateTable/index.tsx:132
 #: src/components/common/CheckInListList/index.tsx:115
-#: src/components/common/CheckInListTable/index.tsx:182
+#: src/components/common/CheckInListTable/index.tsx:188
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:280
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
@@ -9930,12 +9964,12 @@ msgid "Included in your plan. Hi.Events branding is hidden on your event pages, 
 msgstr "플랜에 포함되어 있습니다. 이벤트 페이지, 위젯, 티켓, 이메일에서 Hi.Events 브랜딩이 숨겨집니다."
 
 #: src/components/common/CheckInListList/index.tsx:102
-#: src/components/common/CheckInListTable/index.tsx:95
+#: src/components/common/CheckInListTable/index.tsx:101
 msgid "Includes {0} products"
 msgstr "{0}개 상품 포함"
 
 #: src/components/common/CheckInListList/index.tsx:103
-#: src/components/common/CheckInListTable/index.tsx:94
+#: src/components/common/CheckInListTable/index.tsx:100
 msgid "Includes 1 product"
 msgstr "1개 상품 포함"
 
@@ -9954,6 +9988,10 @@ msgstr "수량 늘리기"
 #: src/components/common/MessageList/index.tsx:28
 msgid "Individual attendees"
 msgstr "개별 참가자"
+
+#: src/locales.ts:96
+msgid "Indonesian"
+msgstr "인도네시아어"
 
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:258
 msgid "Ink saver"
@@ -9984,16 +10022,12 @@ msgstr "도구 모음의 중괄호 버튼으로 개인화 토큰을 삽입하세
 msgid "Instagram"
 msgstr "Instagram"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:13
-msgid "Instant Stripe payouts"
-msgstr "즉시 Stripe 정산"
-
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:165
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:180
 msgid "Instructions"
 msgstr "안내"
 
-#: src/components/layouts/Event/index.tsx:163
+#: src/components/layouts/Event/index.tsx:166
 #: src/components/layouts/OrganizerLayout/index.tsx:130
 #: src/components/modals/DuplicateEventModal/index.tsx:165
 msgid "Integrations"
@@ -10073,7 +10107,7 @@ msgstr "초대됨"
 msgid "Invoice"
 msgstr "인보이스"
 
-#: src/components/layouts/Checkout/index.tsx:245
+#: src/components/layouts/Checkout/index.tsx:243
 #: src/hooks/useOrderActions.tsx:85
 msgid "Invoice downloaded successfully"
 msgstr "인보이스가 성공적으로 다운로드되었습니다"
@@ -10123,7 +10157,7 @@ msgstr "다른 사용자에게 연결되어 있습니다. 다른 {providerName} 
 msgid "It's shown above your instructions so you can match every payment to its order. Turn this off if you give buyers your own reference, or if none applies, such as cash at the door."
 msgstr "결제 안내 위에 표시되므로 각 입금을 주문과 대조할 수 있습니다. 구매자에게 별도 참조 번호를 안내하거나 현장 현금 결제처럼 필요 없는 경우 끄세요."
 
-#: src/locales.ts:62
+#: src/locales.ts:64
 msgid "Italian"
 msgstr "이탈리아어"
 
@@ -10144,7 +10178,7 @@ msgstr "항목"
 msgid "January"
 msgstr "1월"
 
-#: src/locales.ts:92
+#: src/locales.ts:94
 msgid "Japanese"
 msgstr "일본어"
 
@@ -10188,11 +10222,11 @@ msgid "Join from anywhere"
 msgstr "어디서든 참여하세요"
 
 #: src/components/common/JoinWaitlistButton/index.tsx:38
-#: src/components/modals/JoinWaitlistModal/index.tsx:208
+#: src/components/modals/JoinWaitlistModal/index.tsx:206
 msgid "Join Waitlist"
 msgstr "대기자 명단 등록"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:157
+#: src/components/modals/JoinWaitlistModal/index.tsx:155
 msgid "Join Waitlist for {productDisplayName}"
 msgstr "{productDisplayName} 대기자 명단 등록"
 
@@ -10241,10 +10275,6 @@ msgstr "짧게 작성하세요 — 배너는 한 줄만 표시됩니다. {0}/200
 msgid "Keep me updated on news and events from {0}"
 msgstr "{0}의 소식과 이벤트 업데이트 받기"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:42
-msgid "Keep the profit."
-msgstr "수익을 온전히 가져가세요."
-
 #: src/components/routes/event/Lineup/ProfileDrawer.tsx:263
 msgid "Keep them off the public lineup and schedule until you're ready to announce"
 msgstr "발표할 준비가 될 때까지 공개 라인업과 일정에 표시하지 않습니다"
@@ -10281,7 +10311,7 @@ msgstr "키로는 로그인하거나 팀, 정산, 프로필, 보안 설정을 �
 msgid "Keys that never expire stay valid until you revoke them. Only use this for servers you control."
 msgstr "만료되지 않는 키는 폐기할 때까지 유효합니다. 직접 관리하는 서버에서만 사용하세요."
 
-#: src/locales.ts:90
+#: src/locales.ts:92
 msgid "Korean"
 msgstr "한국어"
 
@@ -10393,7 +10423,7 @@ msgstr "성"
 #: src/components/common/QuestionsTable/index.tsx:263
 #: src/components/modals/EditUserModal/index.tsx:88
 #: src/components/modals/InviteUserModal/index.tsx:55
-#: src/components/modals/JoinWaitlistModal/index.tsx:185
+#: src/components/modals/JoinWaitlistModal/index.tsx:183
 #: src/components/routes/auth/AcceptInvitation/index.tsx:232
 #: src/components/routes/auth/Register/index.tsx:145
 #: src/components/routes/product-widget/CollectInformation/index.tsx:485
@@ -10640,7 +10670,7 @@ msgstr "라인업"
 msgid "Lineup & schedule"
 msgstr "라인업 및 일정표"
 
-#: src/components/layouts/Event/index.tsx:135
+#: src/components/layouts/Event/index.tsx:138
 #: src/components/routes/event/Lineup/index.tsx:58
 msgid "Lineup & Schedule"
 msgstr "라인업 및 일정"
@@ -10717,7 +10747,7 @@ msgid "List your upcoming events on your own website. Visitors can buy tickets w
 msgstr "내 웹사이트에 예정된 이벤트를 표시하세요. 방문자는 페이지를 벗어나지 않고 티켓을 구매할 수 있습니다."
 
 #: src/components/common/EventCard/index.tsx:102
-#: src/components/layouts/Event/index.tsx:261
+#: src/components/layouts/Event/index.tsx:264
 #: src/components/layouts/OrganizerLayout/index.tsx:249
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:115
 #: src/components/routes/event/Lineup/EventStatusBadge.tsx:8
@@ -10798,8 +10828,8 @@ msgstr "불러오는 중…"
 msgid "Loads content from {service}"
 msgstr "{service}에서 콘텐츠를 불러옵니다"
 
-#: src/components/common/AttendeeTicket/index.tsx:120
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:119
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/common/LocationPicker/index.tsx:173
 #: src/components/common/LocationPicker/index.tsx:221
 #: src/components/common/LocationPicker/index.tsx:294
@@ -10933,7 +10963,7 @@ msgstr "이벤트 페이지, 위젯, 티켓, 이메일을 온전히 내 브랜�
 
 #: src/components/common/CapacityAssignmentList/index.tsx:141
 #: src/components/common/CheckInListList/index.tsx:144
-#: src/components/common/CheckInListTable/index.tsx:221
+#: src/components/common/CheckInListTable/index.tsx:240
 #: src/components/common/EntityActions/index.tsx:44
 #: src/components/common/LocationsTable/index.tsx:60
 #: src/components/common/OrganizerWebhookTable/index.tsx:98
@@ -11194,7 +11224,7 @@ msgid "Message Sent"
 msgstr "메시지 전송됨"
 
 #: src/components/layouts/Admin/index.tsx:22
-#: src/components/layouts/Event/index.tsx:153
+#: src/components/layouts/Event/index.tsx:156
 #: src/components/routes/event/messages.tsx:228
 msgid "Messages"
 msgstr "메시지"
@@ -11435,7 +11465,7 @@ msgstr "{lastOccurrenceDate}까지 여러 날짜"
 msgid "Multiple locations"
 msgstr "여러 위치"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:26
+#: src/components/layouts/AuthLayout/AuthShell.tsx:25
 msgid "Multiple ticket types"
 msgstr "여러 티켓 유형"
 
@@ -11820,7 +11850,7 @@ msgid "No changes"
 msgstr "변경 사항 없음"
 
 #: src/components/common/CheckInListList/index.tsx:45
-#: src/components/common/CheckInListTable/index.tsx:282
+#: src/components/common/CheckInListTable/index.tsx:312
 msgid "No Check-In Lists"
 msgstr "체크인 목록 없음"
 
@@ -12305,7 +12335,7 @@ msgstr "이 엔드포인트에 대해 기록된 웹훅 이벤트가 아직 없�
 msgid "No Webhooks"
 msgstr "웹훅 없음"
 
-#: src/components/layouts/Checkout/index.tsx:533
+#: src/components/layouts/Checkout/index.tsx:531
 msgid "No, keep me here"
 msgstr "아니요, 여기 머무르겠습니다"
 
@@ -12595,7 +12625,7 @@ msgstr "회차"
 msgid "Occurrence Cancelled"
 msgstr "회차 취소됨"
 
-#: src/components/layouts/Event/index.tsx:130
+#: src/components/layouts/Event/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/index.tsx:499
 msgid "Occurrence Schedule"
 msgstr "회차 일정"
@@ -12839,7 +12869,7 @@ msgstr "온라인 및 오프라인"
 msgid "Online & in-person — see schedule"
 msgstr "온라인 및 오프라인 — 일정 참조"
 
-#: src/components/common/AttendeeTicket/index.tsx:127
+#: src/components/common/AttendeeTicket/index.tsx:126
 #: src/components/modals/ManageOccurrenceModal/index.tsx:151
 #: src/components/widget/WidgetSections/index.tsx:59
 msgid "Online event"
@@ -12985,16 +13015,23 @@ msgstr "매표소 열기"
 msgid "Open check-in"
 msgstr "체크인 열기"
 
-#: src/components/common/CheckInListTable/index.tsx:256
+#: src/components/common/CheckInListTable/index.tsx:275
 #: src/components/routes/event/CheckInLists/index.tsx:58
 msgid "Open Check-In"
 msgstr "체크인 열기"
 
 #: src/components/common/CheckInListList/index.tsx:167
-#: src/components/common/CheckInListTable/index.tsx:214
+#: src/components/common/CheckInListTable/index.tsx:220
 #: src/components/modals/CheckInListSuccessModal/index.tsx:56
 msgid "Open Check-In Page"
 msgstr "체크인 페이지 열기"
+
+#: src/components/common/CheckInListTable/index.tsx:227
+#: src/components/common/CheckInListTable/index.tsx:286
+#: src/components/common/OpenEkklesiaCheckInButton/index.tsx:24
+#: src/components/modals/EkklesiaCheckInLinkModal/index.tsx:59
+msgid "Open Ekklesia Check-In"
+msgstr "Ekklesia 체크인 열기"
 
 #: src/components/common/WidgetEditor/ContentFields.tsx:205
 #: src/components/routes/admin/SpamEvents/index.tsx:238
@@ -13020,7 +13057,7 @@ msgstr "사진 {photoNumber} 열기"
 msgid "Open settings"
 msgstr "설정 열기"
 
-#: src/components/layouts/AppLayout/index.tsx:31
+#: src/components/layouts/AppLayout/index.tsx:32
 #: src/components/layouts/AppLayout/Topbar/index.tsx:38
 msgid "Open sidebar"
 msgstr "사이드바 열기"
@@ -13162,7 +13199,7 @@ msgstr "주문이 취소되었습니다"
 msgid "Order Cancelled"
 msgstr "주문 취소됨"
 
-#: src/components/layouts/Checkout/index.tsx:376
+#: src/components/layouts/Checkout/index.tsx:374
 #: src/components/routes/product-widget/CollectInformation/index.tsx:384
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:430
 msgid "Order complete"
@@ -13312,7 +13349,7 @@ msgstr "주문"
 #: src/components/common/OccurrenceAttendeesAndOrders/index.tsx:65
 #: src/components/common/WidgetEditor/WidgetStats.tsx:16
 #: src/components/layouts/Admin/index.tsx:21
-#: src/components/layouts/Event/index.tsx:144
+#: src/components/layouts/Event/index.tsx:147
 #: src/components/modals/ManageOccurrenceModal/index.tsx:183
 #: src/components/routes/admin/Attribution/index.tsx:200
 #: src/components/routes/admin/Dashboard/index.tsx:236
@@ -13382,7 +13419,7 @@ msgstr "주최자"
 msgid "Organizer archived successfully"
 msgstr "주최자가 성공적으로 보관되었습니다"
 
-#: src/components/layouts/Event/index.tsx:110
+#: src/components/layouts/Event/index.tsx:113
 #: src/components/layouts/OrganizerLayout/index.tsx:106
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:158
 msgid "Organizer Dashboard"
@@ -13434,6 +13471,10 @@ msgstr "주최자 상태 업데이트에 실패했습니다. 나중에 다시 �
 #: src/components/layouts/OrganizerLayout/index.tsx:177
 msgid "Organizer status updated"
 msgstr "주최자 상태가 업데이트되었습니다"
+
+#: src/components/common/LegalLinks/index.tsx:16
+msgid "Organizer Terms"
+msgstr "주최자 약관"
 
 #: src/components/routes/admin/LifecycleEmails/lifecycleEmailLabels.ts:33
 msgid "Organizer's past events"
@@ -13505,7 +13546,7 @@ msgstr "재정의가 제거되었습니다"
 msgid "Override the global default for this account."
 msgstr "이 계정의 전역 기본값을 재정의합니다."
 
-#: src/components/layouts/Event/index.tsx:116
+#: src/components/layouts/Event/index.tsx:119
 msgid "Overview"
 msgstr "개요"
 
@@ -13741,11 +13782,11 @@ msgstr "일시중지됨"
 msgid "Pay"
 msgstr "결제"
 
-#: src/components/layouts/Checkout/index.tsx:392
+#: src/components/layouts/Checkout/index.tsx:390
 msgid "Pay by"
 msgstr "결제 기한"
 
-#: src/components/layouts/Checkout/index.tsx:393
+#: src/components/layouts/Checkout/index.tsx:391
 msgid "Pay by {0}"
 msgstr "결제 기한 {0}"
 
@@ -13865,7 +13906,7 @@ msgstr "결제 알림됨"
 msgid "Payment reported by buyer"
 msgstr "구매자가 결제를 알림"
 
-#: src/components/layouts/Checkout/index.tsx:382
+#: src/components/layouts/Checkout/index.tsx:380
 msgid "Payment request"
 msgstr "결제 요청"
 
@@ -13919,7 +13960,7 @@ msgid "Pending review"
 msgstr "검토 대기 중"
 
 #: src/components/common/EventCard/index.tsx:96
-#: src/components/layouts/Event/index.tsx:257
+#: src/components/layouts/Event/index.tsx:260
 #: src/components/routes/admin/Messages/index.tsx:124
 msgid "Pending Review"
 msgstr "검토 대기 중"
@@ -14177,7 +14218,7 @@ msgstr "접수됨"
 msgid "Plan"
 msgstr "플랜"
 
-#: src/components/common/PoweredByFooter/index.tsx:69
+#: src/components/common/PoweredByFooter/index.tsx:75
 msgid "Planning an event?"
 msgstr "이벤트를 계획 중이신가요?"
 
@@ -14260,7 +14301,7 @@ msgstr "티켓을 생성해 주세요"
 msgid "Please don't leave a single empty seat: {0}"
 msgstr "좌석 하나만 비워두지 마세요: {0}"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:57
+#: src/components/modals/JoinWaitlistModal/index.tsx:55
 msgid "Please enter a valid email address"
 msgstr "유효한 이메일 주소를 입력해 주세요"
 
@@ -14301,7 +14342,7 @@ msgstr "이미지를 제공해 주세요."
 msgid "Please restart the checkout process."
 msgstr "결제 절차를 다시 시작해 주세요."
 
-#: src/components/layouts/Checkout/index.tsx:502
+#: src/components/layouts/Checkout/index.tsx:500
 msgid "Please return to the event page to start over."
 msgstr "처음부터 다시 시작하려면 이벤트 페이지로 돌아가세요."
 
@@ -14339,7 +14380,7 @@ msgstr "제휴사 내보내기를 준비하는 동안 잠시 기다려 주세요
 msgid "Please wait while we prepare your attendees for export..."
 msgstr "참가자 내보내기를 준비하는 동안 잠시 기다려 주세요..."
 
-#: src/components/layouts/Checkout/index.tsx:241
+#: src/components/layouts/Checkout/index.tsx:239
 #: src/hooks/useOrderActions.tsx:81
 msgid "Please wait while we prepare your invoice..."
 msgstr "인보이스를 준비하는 동안 잠시 기다려 주세요..."
@@ -14348,7 +14389,7 @@ msgstr "인보이스를 준비하는 동안 잠시 기다려 주세요..."
 msgid "Please wait while we prepare your orders for export..."
 msgstr "주문 내보내기를 준비하는 동안 잠시 기다려 주세요..."
 
-#: src/locales.ts:82
+#: src/locales.ts:84
 msgid "Polish"
 msgstr "폴란드어"
 
@@ -14368,7 +14409,7 @@ msgstr "내 사이트의 팝업"
 msgid "Portrait"
 msgstr "세로"
 
-#: src/locales.ts:66
+#: src/locales.ts:68
 msgid "Portuguese"
 msgstr "포르투갈어"
 
@@ -14381,9 +14422,12 @@ msgid "Post Checkout message"
 msgstr "결제 완료 후 메시지"
 
 #: src/components/common/BrandingUpsell/BrandingAnimation.tsx:28
-#: src/components/common/PoweredByFooter/index.tsx:81
 msgid "Powered by"
 msgstr "제공:"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:53
+msgid "Prayer Night"
+msgstr "기도의 밤"
 
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
 msgid "Pre Checkout message"
@@ -14425,8 +14469,8 @@ msgstr "미리보기"
 msgid "Preview checkout form"
 msgstr "결제 양식 미리보기"
 
-#: src/components/layouts/Event/index.tsx:319
-#: src/components/layouts/Event/index.tsx:323
+#: src/components/layouts/Event/index.tsx:326
+#: src/components/layouts/Event/index.tsx:330
 msgid "Preview Event page"
 msgstr "이벤트 페이지 미리보기"
 
@@ -14446,10 +14490,11 @@ msgstr "이전 달"
 msgid "Previous photo"
 msgstr "이전 사진"
 
-#: src/components/common/AttendeeTicket/index.tsx:137
+#: src/components/common/AttendeeTicket/index.tsx:136
 #: src/components/common/ProductsTable/index.tsx:93
 #: src/components/forms/ProductForm/index.tsx:319
 #: src/components/forms/ProductForm/ProductPriceTierForm.tsx:173
+#: src/components/layouts/AuthLayout/AuthShell.tsx:65
 msgid "Price"
 msgstr "가격"
 
@@ -14519,12 +14564,12 @@ msgstr "인쇄 미리보기는 마지막으로 저장된 디자인을 사용합�
 msgid "Print Ticket"
 msgstr "티켓 인쇄"
 
-#: src/components/layouts/Checkout/index.tsx:438
+#: src/components/layouts/Checkout/index.tsx:436
 #: src/components/routes/my-tickets/index.tsx:136
 msgid "Print Tickets"
 msgstr "티켓 인쇄"
 
-#: src/components/common/AttendeeTicket/index.tsx:181
+#: src/components/common/AttendeeTicket/index.tsx:180
 msgid "Print to PDF"
 msgstr "PDF로 인쇄"
 
@@ -14537,7 +14582,7 @@ msgid "Printed {0}"
 msgstr "{0} 인쇄"
 
 #: src/components/common/CookieConsentBanner/index.tsx:82
-#: src/components/layouts/HomepageFrame/index.tsx:65
+#: src/components/common/LegalLinks/index.tsx:15
 msgid "Privacy Policy"
 msgstr "개인정보 처리방침"
 
@@ -14714,12 +14759,12 @@ msgstr "프로모션 코드 사용 및 할인 내역"
 msgid "promo codes"
 msgstr "프로모션 코드"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:17
+#: src/components/layouts/AuthLayout/AuthShell.tsx:16
 #: src/components/modals/DuplicateEventModal/index.tsx:124
 msgid "Promo codes"
 msgstr "프로모션 코드"
 
-#: src/components/layouts/Event/index.tsx:145
+#: src/components/layouts/Event/index.tsx:148
 #: src/components/routes/event/promo-codes.tsx:34
 msgid "Promo Codes"
 msgstr "프로모션 코드"
@@ -14821,7 +14866,7 @@ msgstr "새 키를 <0>APP_LICENCE_KEY</0>에 넣고 백엔드를 다시 배포�
 msgid "QR Code"
 msgstr "QR 코드"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:15
+#: src/components/layouts/AuthLayout/AuthShell.tsx:14
 msgid "QR code check-in"
 msgstr "QR 코드 체크인"
 
@@ -14928,7 +14973,7 @@ msgstr "이 날짜를 재활성화하시겠습니까? 향후 판매를 위해 �
 msgid "Read and write"
 msgstr "읽기 및 쓰기"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Read more"
 msgstr "더 보기"
@@ -14950,7 +14995,7 @@ msgstr "라인업에 추가 가능"
 msgid "Ready to go live?"
 msgstr "공개할 준비가 되셨나요?"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:18
+#: src/components/layouts/AuthLayout/AuthShell.tsx:17
 msgid "Real-time analytics"
 msgstr "실시간 분석"
 
@@ -15204,9 +15249,13 @@ msgid "Register"
 msgstr "등록"
 
 #: src/components/common/QuestionsTable/index.tsx:424
-#: src/components/layouts/Event/index.tsx:139
+#: src/components/layouts/Event/index.tsx:142
 msgid "Registration Questions"
 msgstr "등록 질문"
+
+#: src/components/layouts/AuthLayout/AuthShell.tsx:41
+msgid "Registration, invitations and QR check-in."
+msgstr "등록, 초대, QR 코드 체크인."
 
 #: src/components/common/CookieConsentBanner/index.tsx:135
 msgid "Reject all"
@@ -15470,7 +15519,7 @@ msgstr "반복"
 msgid "Report not found"
 msgstr "보고서를 찾을 수 없습니다"
 
-#: src/components/layouts/Event/index.tsx:120
+#: src/components/layouts/Event/index.tsx:123
 #: src/components/layouts/OrganizerLayout/index.tsx:112
 #: src/components/routes/event/Reports/index.tsx:54
 #: src/components/routes/organizer/Reports/index.tsx:55
@@ -15551,7 +15600,7 @@ msgstr "확인 재발송"
 msgid "Resend Confirmation Email"
 msgstr "확인 이메일 재발송"
 
-#: src/components/layouts/Event/index.tsx:339
+#: src/components/layouts/Event/index.tsx:346
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:162
 msgid "Resend email"
 msgstr "이메일 재발송"
@@ -15716,7 +15765,7 @@ msgstr "작업 재시도"
 msgid "Return to Event"
 msgstr "이벤트로 돌아가기"
 
-#: src/components/layouts/Checkout/index.tsx:509
+#: src/components/layouts/Checkout/index.tsx:507
 msgid "Return to Event Page"
 msgstr "이벤트 페이지로 돌아가기"
 
@@ -16468,7 +16517,8 @@ msgstr "검색 중..."
 msgid "Seasonal"
 msgstr "시즌"
 
-#: src/components/common/AttendeeTicket/index.tsx:133
+#: src/components/common/AttendeeTicket/index.tsx:132
+#: src/components/layouts/AuthLayout/AuthShell.tsx:61
 #: src/components/modals/ManageAttendeeModal/index.tsx:170
 #: src/ee/seating/components/ManualSeatField/index.tsx:42
 #: src/ee/seating/components/routes/event/SeatingPrint/index.tsx:339
@@ -16554,7 +16604,7 @@ msgstr "좌석 간격"
 msgid "Seated"
 msgstr "지정 좌석"
 
-#: src/components/layouts/Event/index.tsx:138
+#: src/components/layouts/Event/index.tsx:141
 #: src/ee/seating/components/routes/event/Seating/AttachSeatMap.tsx:40
 #: src/ee/seating/components/routes/event/Seating/index.tsx:62
 #: src/ee/seating/components/routes/event/Seating/index.tsx:67
@@ -16850,10 +16900,6 @@ msgstr "현장 판매"
 #: src/ee/box-office/components/layouts/BoxOffice/ReaderSwitchSheet.tsx:64
 msgid "Sell cash only"
 msgstr "현금으로만 판매"
-
-#: src/components/layouts/AuthLayout/AuthShell.tsx:41
-msgid "Sell out your event."
-msgstr "이벤트를 매진시키세요."
 
 #: src/ee/box-office/components/routes/event/BoxOffices/index.tsx:48
 msgid "Sell tickets at the door with cash, comps, or a card reader."
@@ -17200,7 +17246,7 @@ msgstr "설정이 수정되었습니다"
 msgid "Settings"
 msgstr "설정"
 
-#: src/components/layouts/Event/index.tsx:127
+#: src/components/layouts/Event/index.tsx:130
 msgid "Setup & Design"
 msgstr "설정 및 디자인"
 
@@ -17231,8 +17277,8 @@ msgstr "도형"
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
 #: src/components/layouts/EventHomepage/EventIntro.tsx:66
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
-#: src/components/layouts/OrganizerHomepage/index.tsx:333
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
+#: src/components/layouts/OrganizerHomepage/index.tsx:332
 #: src/components/layouts/OrganizerLayout/index.tsx:269
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
@@ -17247,8 +17293,8 @@ msgstr "공유"
 msgid "Share Affiliate Link"
 msgstr "제휴 링크 공유"
 
-#: src/components/layouts/Event/index.tsx:277
-#: src/components/layouts/Event/index.tsx:283
+#: src/components/layouts/Event/index.tsx:280
+#: src/components/layouts/Event/index.tsx:290
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:102
 #: src/components/modals/EventLiveCelebrationModal/index.tsx:131
 msgid "Share Event"
@@ -17328,7 +17374,7 @@ msgstr "대신 이니셜 표시"
 msgid "Show keys"
 msgstr "키 표시"
 
-#: src/components/layouts/OrganizerHomepage/index.tsx:324
+#: src/components/layouts/OrganizerHomepage/index.tsx:323
 #: src/components/widget/WidgetSections/index.tsx:91
 msgid "Show less"
 msgstr "접기"
@@ -17705,7 +17751,7 @@ msgstr "30일 유예 기간을 건너뜁니다. 이 작업은 되돌릴 수 없�
 msgid "Skip this step"
 msgstr "이 단계 건너뛰기"
 
-#: src/components/layouts/AppLayout/index.tsx:84
+#: src/components/layouts/AppLayout/index.tsx:85
 msgid "Skip to main content"
 msgstr "본문으로 건너뛰기"
 
@@ -17713,7 +17759,7 @@ msgstr "본문으로 건너뛰기"
 msgid "Skipped sheets without recognisable columns:"
 msgstr "인식할 수 있는 열이 없는 시트를 건너뛰었습니다:"
 
-#: src/locales.ts:86
+#: src/locales.ts:88
 msgid "Slovak"
 msgstr "슬로바키아어"
 
@@ -17782,6 +17828,7 @@ msgid "Sold out"
 msgstr "매진"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:128
+#: src/components/layouts/AuthLayout/AuthShell.tsx:106
 #: src/components/layouts/EventHomepage/index.tsx:133
 #: src/components/routes/event/OccurrencesTab/OccurrenceMenu.tsx:221
 #: src/components/routes/event/Reports/OccurrenceSummaryReport/index.tsx:22
@@ -17879,12 +17926,12 @@ msgstr "문제가 발생했습니다! 다시 시도해 주세요"
 msgid "Something went wrong."
 msgstr "문제가 발생했습니다."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:141
+#: src/components/modals/JoinWaitlistModal/index.tsx:139
 msgid "Something went wrong. Please try again later."
 msgstr "문제가 발생했습니다. 나중에 다시 시도해 주세요."
 
 #: src/components/common/TwoFactor/TwoFactorSetupFlow.tsx:30
-#: src/components/layouts/Event/index.tsx:102
+#: src/components/layouts/Event/index.tsx:105
 #: src/components/layouts/OrganizerLayout/index.tsx:146
 #: src/components/routes/admin/DeletionRequests/index.tsx:64
 #: src/components/routes/admin/Users/index.tsx:33
@@ -17930,11 +17977,15 @@ msgstr "음향 조정석, 스폰서석…"
 msgid "Source"
 msgstr "소스"
 
+#: src/components/common/PoweredByFooter/index.tsx:92
+msgid "Source code"
+msgstr "소스 코드"
+
 #: src/components/routes/admin/EmailDelivery/index.tsx:100
 msgid "Spam complaints"
 msgstr "스팸 신고"
 
-#: src/locales.ts:68
+#: src/locales.ts:70
 msgid "Spanish"
 msgstr "스페인어"
 
@@ -18234,7 +18285,7 @@ msgstr "통계"
 #: src/components/common/AdminOrdersTable/index.tsx:85
 #: src/components/common/AffiliateTable/index.tsx:84
 #: src/components/common/AttendeeTable/index.tsx:265
-#: src/components/common/CheckInListTable/index.tsx:167
+#: src/components/common/CheckInListTable/index.tsx:173
 #: src/components/common/OrderDetails/index.tsx:73
 #: src/components/common/OrdersTable/index.tsx:342
 #: src/components/common/OrganizerWebhookTable/index.tsx:244
@@ -18437,7 +18488,7 @@ msgid "Subtotal"
 msgstr "소계"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:155
-#: src/components/layouts/Checkout/index.tsx:244
+#: src/components/layouts/Checkout/index.tsx:242
 #: src/hooks/useOrderActions.tsx:84
 msgid "Success"
 msgstr "성공"
@@ -18645,7 +18696,7 @@ msgstr "일시 중지됨"
 msgid "Suspended on {0}. Members can't sign in and its API keys are blocked."
 msgstr "{0}에 정지되었습니다. 멤버는 로그인할 수 없으며 API 키가 차단되었습니다."
 
-#: src/locales.ts:84
+#: src/locales.ts:86
 msgid "Swedish"
 msgstr "스웨덴어"
 
@@ -18797,7 +18848,7 @@ msgstr "세금 및 수수료"
 msgid "Taxes and Fees"
 msgstr "세금 및 수수료"
 
-#: src/components/layouts/Event/index.tsx:166
+#: src/components/layouts/Event/index.tsx:169
 #: src/components/layouts/OrganizerLayout/index.tsx:133
 #: src/components/layouts/SettingsLayout/index.tsx:67
 #: src/components/routes/event/Team/index.tsx:13
@@ -18806,12 +18857,12 @@ msgstr "세금 및 수수료"
 msgid "Team"
 msgstr "팀"
 
-#: src/components/layouts/Event/index.tsx:167
+#: src/components/layouts/Event/index.tsx:170
 #: src/components/layouts/OrganizerLayout/index.tsx:134
 msgid "Team Access"
 msgstr "팀 접근 권한"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:22
+#: src/components/layouts/AuthLayout/AuthShell.tsx:21
 msgid "Team collaboration"
 msgstr "팀 협업"
 
@@ -18872,7 +18923,7 @@ msgstr "결제 수단"
 msgid "Term"
 msgstr "기간"
 
-#: src/components/layouts/HomepageFrame/index.tsx:68
+#: src/components/common/LegalLinks/index.tsx:14
 msgid "Terms of Service"
 msgstr "서비스 약관"
 
@@ -19094,15 +19145,15 @@ msgstr "{0}의 최대 상품 수는 {1}입니다"
 msgid "The new event keeps this event's repeat schedule. You can change its dates after duplicating."
 msgstr "새 이벤트는 이 이벤트의 반복 일정을 유지합니다. 복제 후 날짜를 변경할 수 있습니다."
 
-#: src/components/layouts/Checkout/index.tsx:499
+#: src/components/layouts/Checkout/index.tsx:497
 msgid "The order was not paid in time, so the places are no longer held. Let {0} know so they can register again."
 msgstr "주문이 기한 내에 결제되지 않아 더 이상 좌석이 확보되어 있지 않습니다. 다시 등록할 수 있도록 {0}님에게 알려 주세요."
 
-#: src/components/layouts/Checkout/index.tsx:500
+#: src/components/layouts/Checkout/index.tsx:498
 msgid "The order was not paid in time, so the places are no longer held. Let the person who registered know so they can register again."
 msgstr "주문이 기한 내에 결제되지 않아 더 이상 좌석이 확보되어 있지 않습니다. 다시 등록할 수 있도록 등록한 분에게 알려 주세요."
 
-#: src/components/layouts/Checkout/index.tsx:501
+#: src/components/layouts/Checkout/index.tsx:499
 msgid "The order was not paid in time, so your places have been released. Return to the event page to start a new order."
 msgstr "주문이 기한 내에 결제되지 않아 좌석이 해제되었습니다. 이벤트 페이지로 돌아가 새 주문을 시작하세요."
 
@@ -19561,7 +19612,7 @@ msgstr "이 이벤트는 아직 게시되지 않았습니다"
 msgid "This event is not published. Sales are still recorded."
 msgstr "이 이벤트는 게시되지 않았습니다. 판매는 계속 기록됩니다."
 
-#: src/components/layouts/Event/index.tsx:201
+#: src/components/layouts/Event/index.tsx:204
 msgid "This event is pending manual review and cannot be published until the review is complete."
 msgstr "이 이벤트는 수동 검토 대기 중이며 검토가 완료될 때까지 게시할 수 없습니다."
 
@@ -19747,7 +19798,7 @@ msgstr "이 주최자 프로필은 아직 게시되지 않았습니다"
 msgid "This overrides all visibility settings and will hide the product from all customers."
 msgstr "이 설정은 모든 노출 설정을 재정의하며 모든 고객에게 상품을 숨깁니다."
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "This payment link has expired"
 msgstr "이 결제 링크는 만료되었습니다"
 
@@ -19820,7 +19871,7 @@ msgstr "이 로그인 방법은 사용할 수 없습니다"
 msgid "This space is reserved for wheelchair users and guests with access needs."
 msgstr "이 공간은 휠체어 이용자와 접근성이 필요한 손님을 위해 마련되었습니다."
 
-#: src/components/common/AttendeeTicket/index.tsx:152
+#: src/components/common/AttendeeTicket/index.tsx:151
 msgid "This ticket is no longer valid"
 msgstr "이 티켓은 더 이상 유효하지 않습니다"
 
@@ -19887,7 +19938,7 @@ msgstr "로그인할 때 \"이 기기를 신뢰\"를 선택하면 해당 브라�
 msgid "ticket"
 msgstr "티켓"
 
-#: src/components/common/AttendeeTicket/index.tsx:130
+#: src/components/common/AttendeeTicket/index.tsx:129
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:442
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:580
 #: src/components/forms/ProductForm/index.tsx:227
@@ -19910,7 +19961,7 @@ msgstr "티켓 디자인"
 msgid "Ticket design saved successfully"
 msgstr "티켓 디자인이 성공적으로 저장되었습니다"
 
-#: src/components/layouts/Event/index.tsx:137
+#: src/components/layouts/Event/index.tsx:140
 msgid "Ticket Designer"
 msgstr "티켓 디자이너"
 
@@ -19931,7 +19982,7 @@ msgstr "티켓 소지자"
 msgid "Ticket Holders"
 msgstr "티켓 소지자"
 
-#: src/components/common/AttendeeTicket/index.tsx:166
+#: src/components/common/AttendeeTicket/index.tsx:165
 msgid "Ticket ID"
 msgstr "티켓 ID"
 
@@ -19976,7 +20027,7 @@ msgstr "티켓 유형"
 msgid "Ticket Type"
 msgstr "티켓 유형"
 
-#: src/components/layouts/Event/index.tsx:142
+#: src/components/layouts/Event/index.tsx:145
 msgid "Ticketing & Sales"
 msgstr "티케팅 및 판매"
 
@@ -19996,7 +20047,7 @@ msgstr "티켓"
 msgid "Tickets"
 msgstr "티켓"
 
-#: src/components/layouts/Event/index.tsx:143
+#: src/components/layouts/Event/index.tsx:146
 #: src/components/routes/event/products.tsx:68
 msgid "Tickets & Products"
 msgstr "티켓 및 상품"
@@ -20078,7 +20129,7 @@ msgstr "TikTok"
 msgid "Time"
 msgstr "시간"
 
-#: src/components/layouts/Checkout/index.tsx:410
+#: src/components/layouts/Checkout/index.tsx:408
 msgid "Time left"
 msgstr "남은 시간"
 
@@ -20387,7 +20438,7 @@ msgstr "다시 시도"
 msgid "Try another email"
 msgstr "다른 이메일 시도"
 
-#: src/components/common/PoweredByFooter/index.tsx:76
+#: src/components/common/PoweredByFooter/index.tsx:82
 msgid "Try Hi.Events Free"
 msgstr "Hi.Events 무료로 체험하기"
 
@@ -20409,7 +20460,7 @@ msgstr "화요일"
 msgid "Tumblr"
 msgstr "Tumblr"
 
-#: src/locales.ts:78
+#: src/locales.ts:80
 msgid "Turkish"
 msgstr "터키어"
 
@@ -20617,7 +20668,7 @@ msgstr "참가자 정보를 가져올 수 없습니다"
 msgid "Unable to find seats. Check the connection and try again."
 msgstr "좌석을 찾을 수 없습니다. 연결을 확인하고 다시 시도하세요."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:138
+#: src/components/modals/JoinWaitlistModal/index.tsx:136
 msgid "Unable to join waitlist"
 msgstr "대기자 명단에 등록할 수 없습니다"
 
@@ -20775,7 +20826,7 @@ msgstr "이름 없는 위치"
 msgid "Unnamed venue"
 msgstr "이름 없는 장소"
 
-#: src/components/common/AttendeeTicket/index.tsx:92
+#: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/modals/ManageOrderModal/index.tsx:162
 #: src/ee/box-office/components/layouts/BoxOffice/tabs/OrdersTab.tsx:26
 msgid "Unpaid"
@@ -21341,7 +21392,7 @@ msgstr "이메일 인증"
 msgid "Verify recovery code"
 msgstr "복구 코드 확인"
 
-#: src/components/layouts/Event/index.tsx:336
+#: src/components/layouts/Event/index.tsx:343
 #: src/components/routes/event/EventDashboard/SetupChecklist.tsx:156
 msgid "Verify your email"
 msgstr "이메일을 인증하세요"
@@ -21370,7 +21421,7 @@ msgstr "동영상"
 msgid "Video link"
 msgstr "동영상 링크"
 
-#: src/locales.ts:76
+#: src/locales.ts:78
 msgid "Vietnamese"
 msgstr "베트남어"
 
@@ -21479,7 +21530,7 @@ msgstr "메시지 보기"
 msgid "View on event page"
 msgstr "이벤트 페이지에서 보기"
 
-#: src/components/layouts/Event/index.tsx:247
+#: src/components/layouts/Event/index.tsx:250
 #: src/components/layouts/OrganizerLayout/index.tsx:237
 msgid "View only"
 msgstr "보기 전용"
@@ -21613,8 +21664,8 @@ msgid "Waiting for Stripe to confirm your payment…"
 msgstr "Stripe의 결제 확인을 기다리는 중…"
 
 #: src/components/forms/ProductForm/index.tsx:466
-#: src/components/layouts/AuthLayout/AuthShell.tsx:16
-#: src/components/layouts/Event/index.tsx:154
+#: src/components/layouts/AuthLayout/AuthShell.tsx:15
+#: src/components/layouts/Event/index.tsx:157
 #: src/components/routes/event/Settings/index.tsx:100
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:55
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:73
@@ -21810,11 +21861,11 @@ msgstr "계정에 참여할 수 있는 링크를 이메일로 보내드립니다
 msgid "We'll email you the link too, and send your order confirmation as soon as they complete checkout."
 msgstr "링크를 이메일로도 보내 드리며, 결제가 완료되는 즉시 주문 확인을 보내 드립니다."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:113
+#: src/components/modals/JoinWaitlistModal/index.tsx:111
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName} on {occurrenceDate}."
 msgstr "{occurrenceDate}의 {productDisplayName} 자리가 나면 이메일로 알려드립니다."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:114
+#: src/components/modals/JoinWaitlistModal/index.tsx:112
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName}."
 msgstr "{productDisplayName}에 자리가 생기면 이메일로 알려드리겠습니다."
 
@@ -21857,7 +21908,7 @@ msgstr "웹훅이 성공적으로 생성되었습니다"
 msgid "Webhook deleted successfully"
 msgstr "웹훅이 성공적으로 삭제되었습니다"
 
-#: src/components/layouts/AuthLayout/AuthShell.tsx:24
+#: src/components/layouts/AuthLayout/AuthShell.tsx:23
 msgid "Webhook integrations"
 msgstr "웹훅 연동"
 
@@ -21883,7 +21934,7 @@ msgstr "웹훅이 알림을 보내지 않습니다"
 msgid "Webhook will send notifications"
 msgstr "웹훅이 알림을 보냅니다"
 
-#: src/components/layouts/Event/index.tsx:165
+#: src/components/layouts/Event/index.tsx:168
 #: src/components/layouts/OrganizerLayout/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:167
 #: src/components/routes/event/Webhooks/index.tsx:67
@@ -22207,7 +22258,7 @@ msgstr "위젯이 생성되었습니다"
 msgid "Widget deleted"
 msgstr "위젯이 삭제되었습니다"
 
-#: src/components/layouts/Event/index.tsx:164
+#: src/components/layouts/Event/index.tsx:167
 #: src/components/layouts/OrganizerLayout/index.tsx:123
 msgid "Widget Embed"
 msgstr "위젯 임베드"
@@ -22253,7 +22304,7 @@ msgstr "작동 중"
 #: src/components/modals/EditProductCategoryModal/index.tsx:73
 #: src/components/modals/EditPromoCodeModal/index.tsx:87
 #: src/components/modals/EditQuestionModal/index.tsx:103
-#: src/components/modals/JoinWaitlistModal/index.tsx:207
+#: src/components/modals/JoinWaitlistModal/index.tsx:205
 #: src/components/routes/auth/Register/index.tsx:188
 msgid "Working..."
 msgstr "작동 중..."
@@ -22311,7 +22362,7 @@ msgstr "예"
 msgid "Yes - I have a valid EU VAT registration number"
 msgstr "예 - 유효한 EU 부가가치세 등록 번호가 있습니다"
 
-#: src/components/layouts/Checkout/index.tsx:541
+#: src/components/layouts/Checkout/index.tsx:539
 msgid "Yes, cancel my order"
 msgstr "예, 주문을 취소합니다"
 
@@ -22446,7 +22497,7 @@ msgstr "공급자 정보를 변경했으므로 클라이언트 시크릿을 다�
 msgid "You confirmed it's you. Continue within a few minutes."
 msgstr "본인 확인이 완료되었습니다. 몇 분 안에 계속 진행하세요."
 
-#: src/components/layouts/Event/index.tsx:230
+#: src/components/layouts/Event/index.tsx:233
 msgid "You don't have access to this event"
 msgstr "이 이벤트에 대한 접근 권한이 없습니다"
 
@@ -22474,7 +22525,7 @@ msgstr "유료 티켓이 있지만 Stripe가 아직 연결되지 않아 결제�
 msgid "You have reached your messaging limit."
 msgstr "메시지 한도에 도달했습니다."
 
-#: src/components/layouts/Checkout/index.tsx:493
+#: src/components/layouts/Checkout/index.tsx:491
 msgid "You have run out of time to complete your order."
 msgstr "주문을 완료할 시간이 초과되었습니다."
 
@@ -22499,7 +22550,7 @@ msgstr "이 이메일이 홍보성이 아님을 확인해야 합니다"
 msgid "You must acknowledge your responsibilities before saving"
 msgstr "저장하기 전에 책임 사항에 동의해야 합니다"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:58
+#: src/components/modals/JoinWaitlistModal/index.tsx:56
 msgid "You must agree to receive messages"
 msgstr "메시지 수신에 동의해야 합니다"
 
@@ -22611,11 +22662,11 @@ msgstr "세션 시간을 변경하고 있습니다"
 msgid "You're going to {0}!"
 msgstr "{0}에 참석하시는군요!"
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:174
+#: src/components/modals/JoinWaitlistModal/index.tsx:172
 msgid "You're joining the waitlist for {occurrenceDate}."
 msgstr "{occurrenceDate}의 대기자 명단에 등록합니다."
 
-#: src/components/modals/JoinWaitlistModal/index.tsx:109
+#: src/components/modals/JoinWaitlistModal/index.tsx:107
 msgid "You're on the waitlist!"
 msgstr "대기자 명단에 등록되었습니다!"
 
@@ -22735,7 +22786,7 @@ msgstr "커버 이미지가 가로형이라 여기서는 작게 보입니다. �
 msgid "Your cover sits beside the details like a poster. Best with square or portrait artwork."
 msgstr "커버 이미지가 포스터처럼 세부 정보 옆에 표시됩니다. 정사각형이나 세로 이미지에 가장 잘 어울립니다."
 
-#: src/components/layouts/Checkout/index.tsx:526
+#: src/components/layouts/Checkout/index.tsx:524
 msgid "Your current order will be lost."
 msgstr "현재 주문이 사라집니다."
 
@@ -22848,7 +22899,7 @@ msgstr "주문 정보가 업데이트되었습니다. 새 이메일 주소로 �
 msgid "Your order has been cancelled"
 msgstr "주문이 취소되었습니다"
 
-#: src/components/layouts/Checkout/index.tsx:266
+#: src/components/layouts/Checkout/index.tsx:264
 msgid "Your order has been cancelled."
 msgstr "주문이 취소되었습니다."
 
@@ -22920,7 +22971,7 @@ msgstr "결제는 은행 수준의 암호화로 보호됩니다"
 msgid "Your payment is still processing"
 msgstr "결제가 아직 처리 중입니다"
 
-#: src/components/layouts/Checkout/index.tsx:492
+#: src/components/layouts/Checkout/index.tsx:490
 msgid "Your payment link has expired"
 msgstr "결제 링크가 만료되었습니다"
 

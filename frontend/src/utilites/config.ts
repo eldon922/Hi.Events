@@ -20,10 +20,15 @@ export const clientBuildEnv: { [K in ConfigKeys]: string } = {
     'VITE_HIDE_ABOUT_LINK': import.meta.env.VITE_HIDE_ABOUT_LINK,
     'VITE_TOS_URL': import.meta.env.VITE_TOS_URL,
     'VITE_PRIVACY_URL': import.meta.env.VITE_PRIVACY_URL,
+    'VITE_ORGANIZER_TERMS_URL': import.meta.env.VITE_ORGANIZER_TERMS_URL,
+    'VITE_COMMUNITY_GUIDELINES_URL': import.meta.env.VITE_COMMUNITY_GUIDELINES_URL,
+    'VITE_CONTACT_URL': import.meta.env.VITE_CONTACT_URL,
+    'VITE_COMPANY_INFO': import.meta.env.VITE_COMPANY_INFO,
     'VITE_PLATFORM_SUPPORT_EMAIL': import.meta.env.VITE_PLATFORM_SUPPORT_EMAIL,
     'VITE_STRIPE_PUBLISHABLE_KEY': import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY,
     'VITE_TURNSTILE_SITE_KEY': import.meta.env.VITE_TURNSTILE_SITE_KEY,
     'VITE_I_HAVE_PURCHASED_A_LICENCE': import.meta.env.VITE_I_HAVE_PURCHASED_A_LICENCE,
+    'VITE_CHECKIN_APP_URL': import.meta.env.VITE_CHECKIN_APP_URL,
     'VITE_FRONTEND_URL': import.meta.env.VITE_FRONTEND_URL,
     'VITE_DEFAULT_IMAGE_URL': import.meta.env.VITE_DEFAULT_IMAGE_URL,
     'VITE_API_URL_SERVER': import.meta.env.VITE_API_URL_SERVER,
@@ -35,12 +40,23 @@ export const clientBuildEnv: { [K in ConfigKeys]: string } = {
     'VITE_GOOGLE_ADS_CONVERSION_LABELS': import.meta.env.VITE_GOOGLE_ADS_CONVERSION_LABELS,
 }
 
+const brandDefaults: Partial<Record<ConfigKeys, string>> = {
+    'VITE_APP_NAME': 'Ekklesia',
+    'VITE_APP_FAVICON': '/manifest-icons/favicon.svg',
+    'VITE_APP_LOGO_LIGHT': '/logos/ekklesia-on-dark.svg',
+    'VITE_APP_LOGO_DARK': '/logos/ekklesia-on-light.svg',
+    'VITE_APP_PRIMARY_COLOR': '#26306B',
+    'VITE_APP_SECONDARY_COLOR': '#33408A',
+}
+
 export const getConfig = (key: ConfigKeys, fallback?: string): string | undefined => {
+    const defaultValue = brandDefaults[key] ?? fallback;
+
     if (isSsr()) {
         const serverEnv = typeof process !== "undefined" && process.env ? process.env : {};
-        return serverEnv[key] as string | undefined || fallback;
+        return serverEnv[key] as string | undefined || defaultValue;
     }
 
     const clientEnv = typeof window !== "undefined" && window.hievents ? window.hievents : {};
-    return clientEnv[key] || clientBuildEnv[key] || fallback;
+    return clientEnv[key] || clientBuildEnv[key] || defaultValue;
 };
